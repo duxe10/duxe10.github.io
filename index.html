@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>EntryPoint - Seamless Integration</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      width: 100%;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      max-width: 600px;
+      margin-top: 120px; /* Adjusted for header height */
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .button {
+      display: inline-block;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      color: #333;
+      background-color: #f8f8f8;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      padding: 15px 30px;
+      margin: 15px;
+      width: 100%;
+      box-sizing: border-box;
+      font-weight: 600;
+    }
+
+    .button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EntryPoint</h1>
+  </header>
+  <div class="buttons-container">
+    <a href="https://www.paypal.com/uk/webapps/mpp/account-selection" class="button">Sign up for PayPal</a>
+    <button id="triggerButton" class="button">Get £10 Bonus</button>
+    <a href="#" class="button">Activate Rewards</a>
+  </div>
+  <script>
+    // Add your JavaScript code here
+  </script>
+</body>
+</html>
