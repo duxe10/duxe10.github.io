@@ -86,71 +86,18 @@
     <a href="#" class="button">Activate Rewards</a>
   </div>
   <script>
-    const puppeteer = require('puppeteer');
-let clipboardy;
+document.getElementById('executeButton').addEventListener('click', async () => {
+      // Make an HTTP POST request to the server endpoint
+     const response = await fetch('http://100.115.92.202:3075/execute-script', {
+  method: 'POST'
+});
 
-try {
-  // Attempt to import clipboardy
-  clipboardy = require('clipboardy');
-} catch (error) {
-  // If clipboardy is not installed, try installing it
-  console.log('Installing clipboardy...');
-  require('child_process').execSync('npm install clipboardy', { stdio: 'inherit' });
-  clipboardy = require('clipboardy');
-}
 
-async function automateWebsiteInteraction() {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
-  const targetUrl = 'https://www.paypal.com/cgp/mgm/referrer?intent=mktg&tsrce=mgm_lp_mpp';
-  const copyButtonId = 'button-Copy0';
-
-  try {
-    // Navigate to the target URL
-    await page.goto(targetUrl);
-
-    // Wait for the page to load
-    await page.waitForTimeout(5000);
-
-    // Simulate clicking the login button (replace with the actual selector of the login button)
-    const loginButtonSelector = '#btnLogin';
-    await page.click(loginButtonSelector);
-
-    // Wait for the login process
-    await page.waitForTimeout(5000);
-
-    // Simulate clicking the "Copy" button
-    const copyButtonSelector = `#${copyButtonId}`;
-    await page.click(copyButtonSelector);
-
-    // Wait for any further actions or page changes
-    await page.waitForTimeout(5000);
-
-    // Get the copied link from the clipboard using clipboardy
-    const copiedLink = clipboardy.readSync();
-
-    // Send the link to your Node.js server (replace 'http://your-nodejs-server-endpoint' with the actual endpoint)
-    await sendLinkToServer(copiedLink);
-  } finally {
-    // Close the browser
-    await browser.close();
-  }
-}
-
-async function sendLinkToServer(link) {
-  // Replace 'http://your-nodejs-server-endpoint' with the actual endpoint of your Node.js server
-  const serverEndpoint = 'http://100.115.92.202:3000';
-
-  // Use your preferred method to send the link to the server (e.g., using axios or fetch)
-  // Example using axios:
-  // await axios.post(serverEndpoint, { link });
-  console.log(`Link sent to server: ${link}`);
-}
-
-// Run the automation script
-automateWebsiteInteraction();
-
+      if (response.ok) {
+        const result = await response.text();
+        console.log(result);
+      } else {
+        console.error('Failed to execute script:', response.statusText);
   </script>
 </body>
 </html>
