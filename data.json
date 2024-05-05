@@ -1,0 +1,800 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem Ipsum Dolor Sit Amet",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+1",
+        "price": "$19.99",
+        "rating": 4.5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 2,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+2",
+        "price": "$29.99",
+        "rating": 3.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 3,
+        "title": "Sed Do Eiusmod Tempor Incididunt",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+3",
+        "price": "$24.99",
+        "rating": 4.2,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 4,
+        "title": "Ut Labore Et Dolore Magna Aliqua",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+4",
+        "price": "$39.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 5,
+        "title": "Lorem Ipsum Sit Amet",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+5",
+        "price": "$49.99",
+        "rating": 4.1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 6,
+        "title": "Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+6",
+        "price": "$34.99",
+        "rating": 3.7,
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    },
+    {
+        "id": 7,
+        "title": "Dolor Sit Amet",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+7",
+        "price": "$44.99",
+        "rating": 4.3,
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    },
+    {
+        "id": 8,
+        "title": "Tempor Incididunt Ut Labore Et Dolore",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+8",
+        "price": "$54.99",
+        "rating": 4.6,
+        "description": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+    },
+    {
+        "id": 9,
+        "title": "Fugiat Nulla Pariatur",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+9",
+        "price": "$39.99",
+        "rating": 4.7,
+        "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    },
+    {
+        "id": 10,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+10",
+        "price": "$49.99",
+        "rating": 4.2,
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+    },
+    {
+        "id": 11,
+        "title": "Dolorem Ipsum Quia Dolor Sit Amet",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+11",
+        "price": "$59.99",
+        "rating": 4.8,
+        "description": "Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio."
+    },
+    {
+        "id": 12,
+        "title": "Consectetur Adipisicing Elit",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+12",
+        "price": "$29.99",
+        "rating": 3.9,
+        "description": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus."
+    },
+    {
+        "id": 13,
+        "title": "Temporibus Autem Quibusdam",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+13",
+        "price": "$19.99",
+        "rating": 4.5,
+        "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
+    },
+    {
+        "id": 14,
+        "title": "Velit Esse Quam Nihil",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+14",
+        "price": "$69.99",
+        "rating": 4.6,
+        "description": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 15,
+        "title": "Molestiae Consequatur",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+15",
+        "price": "$79.99",
+        "rating": 4.1,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 16,
+        "title": "Voluptatem Sequi Nesciunt",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+16",
+        "price": "$89.99",
+        "rating": 4.9,
+        "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"
+    },
+    {
+        "id": 17,
+        "title": "Quis Autem Vel Eum Iure",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+17",
+        "price": "$99.99",
+        "rating": 4.4,
+        "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+    }
+
+    {
+        "id": 18,
+        "title": "Sed Quia Non Numquam",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+18",
+        "price": "$49.99",
+        "rating": 4.3,
+        "description": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+    },
+    {
+        "id": 19,
+        "title": "Aliquam Quia Voluptatem",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+19",
+        "price": "$59.99",
+        "rating": 4.7,
+        "description": "Aliquam quaerat voluptatem ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+    },
+    {
+        "id": 20,
+        "title": "Magnam Aliquam Quaerat",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+20",
+        "price": "$39.99",
+        "rating": 4.6,
+        "description": "Magnam aliquam quaerat voluptatem ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam."
+    },
+    {
+        "id": 21,
+        "title": "Dolor Sit Amet Consectetur",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+21",
+        "price": "$69.99",
+        "rating": 4.4,
+        "description": "Dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 22,
+        "title": "Ut Enim Ad Minima Veniam",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+22",
+        "price": "$79.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?"
+    },
+    {
+        "id": 23,
+        "title": "Quis Autem Vel Eum",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+23",
+        "price": "$89.99",
+        "rating": 4.2,
+        "description": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+    },
+    {
+        "id": 24,
+        "title": "Temporibus Autem Quibusdam",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+24",
+        "price": "$99.99",
+        "rating": 4.9,
+        "description": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 25,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+25",
+        "price": "$109.99",
+        "rating": 4.5,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 26,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+26",
+        "price": "$79.99",
+        "rating": 4.6,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 27,
+        "title": "Consectetur Adipisicing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+27",
+        "price": "$89.99",
+        "rating": 4.3,
+        "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    {
+        "id": 28,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+28",
+        "price": "$99.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 29,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+29",
+        "price": "$109.99",
+        "rating": 4.5,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 30,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+30",
+        "price": "$119.99",
+        "rating": 4.8,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 31,
+        "title": "Laboris Nisi Ut Aliquip",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+31",
+        "price": "$129.99",
+        "rating": 4.4,
+        "description": "Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 32,
+        "title": "Commodo Consequat",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+32",
+        "price": "$139.99",
+        "rating": 4.9,
+        "description": "Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 33,
+        "title": "Reprehenderit in Voluptate",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+33",
+        "price": "$149.99",
+        "rating": 4.2,
+        "description": "Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 34,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+34",
+        "price": "$79.99",
+        "rating": 4.6,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 35,
+        "title": "Consectetur Adipisicing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+35",
+        "price": "$89.99",
+        "rating": 4.3,
+        "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    {
+        "id": 36,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+36",
+        "price": "$99.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 37,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+37",
+        "price": "$109.99",
+        "rating": 4.5,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 38,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+38",
+        "price": "$119.99",
+        "rating": 4.8,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 39,
+        "title": "Laboris Nisi Ut Aliquip",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+39",
+        "price": "$129.99",
+        "rating": 4.4,
+        "description": "Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 40,
+        "title": "Commodo Consequat",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+40",
+        "price": "$139.99",
+        "rating": 4.9,
+        "description": "Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 41,
+        "title": "Reprehenderit in Voluptate",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+41",
+        "price": "$149.99",
+        "rating": 4.2,
+        "description": "Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 42,
+        "title": "Dolor Sit Amet",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+42",
+        "price": "$159.99",
+        "rating": 4.7,
+        "description": "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 43,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+43",
+        "price": "$169.99",
+        "rating": 4.6,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+    },
+    {
+        "id": 44,
+        "title": "Sed Do Eiusmod",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+44",
+        "price": "$179.99",
+        "rating": 4.8,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 45,
+        "title": "Ut Enim Ad Minim",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+45",
+        "price": "$189.99",
+        "rating": 4.5,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 46,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+46",
+        "price": "$199.99",
+        "rating": 4.4,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 47,
+        "title": "Laboris Nisi",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+47",
+        "price": "$209.99",
+        "rating": 4.9,
+        "description": "Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 48,
+        "title": "Commodo Consequat",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+48",
+        "price": "$219.99",
+        "rating": 4.3,
+        "description": "Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 49,
+        "title": "Reprehenderit in Voluptate",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+49",
+        "price": "$229.99",
+        "rating": 4.7,
+        "description": "Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 50,
+        "title": "Lorem Ipsum",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+50",
+        "price": "$239.99",
+        "rating": 4.6,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 51,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+51",
+        "price": "$249.99",
+        "rating": 4.5,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 52,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+52",
+        "price": "$259.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 53,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+53",
+        "price": "$269.99",
+        "rating": 4.7,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 54,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+54",
+        "price": "$279.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 55,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+55",
+        "price": "$289.99",
+        "rating": 4.4,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 56,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+56",
+        "price": "$299.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 57,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+57",
+        "price": "$309.99",
+        "rating": 4.8,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+
+    {
+        "id": 58,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+58",
+        "price": "$319.99",
+        "rating": 4.7,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 59,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+59",
+        "price": "$329.99",
+        "rating": 4.5,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 60,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+60",
+        "price": "$339.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 61,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+61",
+        "price": "$349.99",
+        "rating": 4.7,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 62,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+62",
+        "price": "$359.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 63,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+63",
+        "price": "$369.99",
+        "rating": 4.4,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 64,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+64",
+        "price": "$379.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 65,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+65",
+        "price": "$389.99",
+        "rating": 4.8,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+       
+    }
+
+    {
+        "id": 66,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+66",
+        "price": "$399.99",
+        "rating": 4.5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 67,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+67",
+        "price": "$409.99",
+        "rating": 4.9,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 68,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+68",
+        "price": "$419.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 69,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+69",
+        "price": "$429.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 70,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+70",
+        "price": "$439.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 71,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+71",
+        "price": "$449.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 72,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+72",
+        "price": "$459.99",
+        "rating": 4.7,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 73,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+73",
+        "price": "$469.99",
+        "rating": 4.8,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 74,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+74",
+        "price": "$479.99",
+        "rating": 4.5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 75,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+75",
+        "price": "$489.99",
+        "rating": 4.9,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 76,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+76",
+        "price": "$499.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 77,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+77",
+        "price": "$509.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 78,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+78",
+        "price": "$519.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 79,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+79",
+        "price": "$529.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 80,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+80",
+        "price": "$539.99",
+        "rating": 4.7,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 81,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+81",
+        "price": "$549.99",
+        "rating": 4.8,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 82,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+82",
+        "price": "$479.99",
+        "rating": 4.5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 83,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+83",
+        "price": "$489.99",
+        "rating": 4.9,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 84,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+84",
+        "price": "$499.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 85,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+85",
+        "price": "$509.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 86,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+86",
+        "price": "$519.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Today's Deals"
+    },
+    {
+        "id": 87,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+87",
+        "price": "$529.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 88,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+88",
+        "price": "$539.99",
+        "rating": 4.7,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "id": 89,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/00FFFF/808080?text=Product+89",
+        "price": "$549.99",
+        "rating": 4.8,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+
+    {
+        "id": 90,
+        "title": "Lorem Ipsum Dolor Sit",
+        "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+90",
+        "price": "$559.99",
+        "rating": 4.6,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 91,
+        "title": "Consectetur Adipiscing Elit",
+        "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+91",
+        "price": "$569.99",
+        "rating": 4.9,
+        "description": "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 92,
+        "title": "Sed Do Eiusmod Tempor",
+        "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+92",
+        "price": "$579.99",
+        "rating": 4.7,
+        "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 93,
+        "title": "Ut Enim Ad Minim Veniam",
+        "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+93",
+        "price": "$589.99",
+        "rating": 4.8,
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "id": 94,
+        "title": "Duis Aute Irure Dolor",
+        "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+94",
+        "price": "$599.99",
+        "rating": 4.6,
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 95,
+        "title": "Excepteur Sint Occaecat",
+        "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+95",
+        "price": "$609.99",
+        "rating": 4.9,
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "category": "Best Sellers"
+    },
+    {
+        "id": 96,
+        "title": "Sunt in Culpa Qui Officia",
+        "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+96",
+        "price": "$619.99",
+        "rating": 4.7,
+        "description": "Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "category": "Today's Deals"
+    }
+]
+
+
