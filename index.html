@@ -525,31 +525,34 @@
 fetch('https://duxe10.github.io/duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
-    const container = document.querySelector('.best-sellers-container'); // Assuming you want to display best sellers
-    data.forEach(product => {
-      const card = document.createElement('div');
-      card.classList.add('card');
+    const containers = document.querySelectorAll('.scrollable-container'); // Select both containers
 
-      const image = document.createElement('img');
-      image.src = product.image;
-      // Add more attributes and styles as needed
+    containers.forEach(container => {
+      const cards = container.querySelectorAll('.card'); // Select all cards within the container
+      cards.forEach(card => {
+        const productId = card.getAttribute('data-product-id'); // Get the product id from the data-product-id attribute
+        const product = data.find(item => item.id.toString() === productId); // Find the product in the data array
 
-      const name = document.createElement('h3');
-      name.textContent = product.name;
+        if (product) { // If the product is found
+          const image = card.querySelector('img');
+          const name = card.querySelector('h3');
+          const price = card.querySelector('.price'); // Assuming there's a class for price
+          const rating = card.querySelector('.rating'); // Assuming there's a class for rating
+          const description = card.querySelector('.description'); // Assuming there's a class for description
 
-      const description = document.createElement('p');
-      description.textContent = product.description;
-
-      // Append elements to the card
-      card.appendChild(image);
-      card.appendChild(name);
-      card.appendChild(description);
-
-      // Append the card to the container
-      container.appendChild(card);
+          // Update the card content with product information
+          image.src = product.image;
+          name.textContent = product.title;
+          price.textContent = product.price;
+          rating.textContent = product.rating;
+          description.textContent = product.description;
+          // You can update other elements like price, description, etc., similarly
+        }
+      });
     });
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
