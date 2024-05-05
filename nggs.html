@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px; /* Add padding-top to create space between header and content */
+}
+
+/* Header styles */
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height:67px;
+    top: 0; /* Position header at the very top */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.category-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.categories {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.categories ul li a:hover {
+    background-color: #ddd;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.basket-button {
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 20px; /* Add margin-top to create space between header and content */
+    margin-bottom: 20px; /* Add margin-bottom for better spacing */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+        .product-details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+            max-width: 600px;
+            overflow: hidden;
+        }
+
+        .product-image .main-image {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .thumbnail-images {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            overflow-x: auto;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* Internet Explorer 10+ */
+        }
+
+        .thumbnail-images::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+
+        .thumbnail-images img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .thumbnail-images img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-info h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-info .rating {
+            color: #FFD700; /* Gold color */
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .price .original-price {
+            text-decoration: line-through;
+            margin-right: 10px;
+            color: #999;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+      .button {
+    background-color: black; /* Change background color to black */
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+        .button:hover {
+            background-color: grey;
+        }
+
+        .buy-now-button {
+            background-color: #28a745; /* Green color */
+        }
+
+        .buy-now-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        .product-description {
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        .product-description h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .product-description p {
+            color: #555;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .quantity-selector label {
+            margin-right: 10px;
+            color: #333;
+        }
+
+        .quantity-input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="left">
+        <span class="brand">E-store</span>
+        <div class="dropdown">
+            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
+            <div class="categories" id="categories">
+                <ul>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
+                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
+                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
+                    <li><a href="#toys-games">Toys & Games</a></li>
+                    <li><a href="#health">Health</a></li>
+                    <li><a href="#baby">Baby</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <input type="text" class="search-bar" placeholder="Search products...">
+        <button class="button search-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
+        </button>
+        <button class="button">Sign In</button>
+        <button class="button basket-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="Basket Icon">
+        </button>
+    </div>
+</div>
+<div class="container">
+    <div class="product-details">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/600" alt="Product Image" class="main-image" id="mainImage">
+            <div class="thumbnail-images">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 1" onclick="displayImage('https://via.placeholder.com/600')" data-large="https://via.placeholder.com/600">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 2" onclick="displayImage('https://via.placeholder.com/601')" data-large="https://via.placeholder.com/601">
+                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 3" onclick="displayImage('https://via.placeholder.com/602')" data-large="https://via.placeholder.com/602">
+                <!-- Add more thumbnail images here -->
+            </div>
+        </div>
+        <div class="product-info">
+            <h2>Command Picture & Frame Hanging Strips Value Pack</h2>
+            <div class="rating">
+                <span class="stars">⭐⭐⭐⭐⭐</span> 4.5 out of 5 stars (32,171 ratings)
+            </div>
+            <div class="price">
+                <span class="original-price">RRP £269.99</span>
+                £189.00
+                <br>
+                Save £80.99 (30% OFF)
+            </div>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" class="quantity-input" min="1" max="15" value="1">
+            </div>
+            <p>#1 Best Seller in Picture Hangers</p>
+            <p>5K+ bought in past month</p>
+           <div class="button-container">
+    <button class="button buy-now-button" onclick="redirectToUKF()">Buy Now</button>
+    <button class="button">Add to Cart</button>
+</div>
+    <div class="product-description">
+        <h3>About this item</h3>
+        <p>Keep frames flat and secure to the wall, discreet strips are hidden behind the picture frame. Item package may vary.</p>
+        <p>Strips lock and relock so frame can be removed and repositioned</p>
+        <p>Holding Power: 4 sets of strips can hold one frame weighing up to 7.2 kg, measuring up to 60 cm by 90 cm</p>
+        <p>Damage-free hanging, holds strongly and removes cleanly</p>
+        <p>Easy to apply, no need for nails, screws or drills</p>
+        <p>Strips stretch off cleanly without leaving holes, marks or sticky residue</p>
+        <p>Suitable for most smooth surfaces including painted walls, tiles, metal and wood</p>
+    </div>
+</div>
+
+<script>
+    function displayImage(imageSrc) {
+        document.getElementById('mainImage').src = imageSrc;
+    }
+    function redirectToUKF() {
+        window.location.href = "ukf.html";
+    }
+</script>
+        
+</body>
+</html>
