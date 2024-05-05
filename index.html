@@ -1,103 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <title>EntryPoint - Seamless Integration</title>
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f8f8;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #333;
-      color: white;
-      padding: 25px;
-      text-align: center;
-      width: 100%;
-      z-index: 1;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
 
-    h1 {
-      font-size: 32px;
-      margin: 0;
-      font-weight: 600;
-    }
+        /* Header styles */
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .buttons-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 60%;
-      max-width: 600px;
-      margin-top: 120px; /* Adjusted for header height */
-      background-color: #fff;
-      border: 2px solid #ddd;
-      border-radius: 10px;
-      padding: 30px;
-      box-sizing: border-box;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
+        .left {
+            display: flex;
+            align-items: center;
+        }
 
-    .button {
-      display: inline-block;
-      font-size: 16px;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-      color: #333;
-      background-color: #f8f8f8;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      transition: background-color 0.3s, color 0.3s;
-      padding: 15px 30px;
-      margin: 15px;
-      width: 100%;
-      box-sizing: border-box;
-      font-weight: 600;
-    }
+        .brand {
+            font-size: 24px;
+            margin-right: 20px;
+        }
 
-    .button:hover {
-      background-color: #333;
-      color: #fff;
-    }
-  </style>
+        .category-button {
+            background: none;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .category-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .categories {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .categories ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 550px; /* Adjusted width */
+            padding: 8px;
+            margin-right: 20px; /* Adjusted margin for better spacing */
+            border-radius: 5px;
+            border: none;
+        }
+
+        .search-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .basket-button {
+            margin-left: 10px;
+        }
+
+        /* Content styles */
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            justify-content: center;
+            gap: 20px;
+            max-width: 100%;
+        }
+
+        .card {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 270px; /* Adjusted width */
+            height: 300px; /* Adjusted height */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 18px;
+            color: #333;
+        }
+/* Container styles */
+.todays-deals-container,
+.best-sellers-container {
+  width: auto; /* Use auto width to fit content */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  padding: 20px 0;
+  display: inline-flex; /* Make containers inline */
+  flex-wrap: nowrap;
+  /* Scrollbar styles for WebKit-based browsers */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* Container wrapper styles */
+.scrollable-container {
+  width: 100%; /* Full width */
+  /* Removed overflow-x: auto; */  /* Not needed for full-width wrapper */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+/* Adjust card width and margins */
+.todays-deals-container .card,
+.best-sellers-container .card {
+  width: 270px;
+  height: 300px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+/* Remove margin from the last card */
+.todays-deals-container .card:last-child,
+.best-sellers-container .card:last-child {
+  margin-right: 0;
+}
+
+/* Scrollbar styles for WebKit-based browsers */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set thumb color */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set track color */
+}
+
+
+
+        .slider-container {
+            position: relative;
+            width: 1395px;
+            max-width: 1350px;
+            height: 350px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        .slider {
+            display: flex;
+            width: 200%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            flex: 0 0 50%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .button-container {
+            position: absolute;
+            top: 50%;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+
+        /* Media queries */
+        @media (max-width: 1024px) {
+            .card {
+                width: calc(33.333% - 10px); /* Adjusted margin */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 10px); /* Adjusted margin */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 10px); /* Adjusted margin */
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>EntryPoint</h1>
-  </header>
-  <div class="buttons-container">
-    <a href="https://www.paypal.com/uk/webapps/mpp/account-selection" class="button">Sign up for PayPal</a>
-    <button id="triggerButton" class="button">Get £10 Bonus</button>
-    <a href="#" class="button">Activate Rewards</a>
-  </div>
-  <script>
-document.getElementById('executeButton').addEventListener('click', async () => {
-      // Make an HTTP POST request to the server endpoint
-     const response = await fetch('http://100.115.92.202:3075/execute-script', {
-  method: 'POST'
-});
+<div class="header">
+    <div class="left">
+        <span class="brand">E-store</span>
+        <div class="dropdown">
+            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
+            <div class="categories" id="categories">
+                <ul>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
+                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
+                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
+                    <li><a href="#toys-games">Toys & Games</a></li>
+                    <li><a href="#health">Health</a></li>
+                    <li><a href="#baby">Baby</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <input type="text" class="search-bar" placeholder="Search...">
+        <button class="button search-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
+        </button>
+        <button class="button">Sign In</button>
+        <button class="button basket-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" class="basket-icon" alt="Basket Icon">
+        </button>
+    </div>
+</div>
+
+<!-- Promotional Slider -->
+<div class="slider-container">
+    <div class="slider">
+        <div class="slide">
+            <div class="slide-caption">
+                <h2>Promotion 1</h2>
+                <p>.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" alt="Promotion 2">
+            <div class="slide-caption">
+                <h2>Promotion 2</h2>
+                <p>Get 20% off on all products this weekend! Hurry, offer valid till Sunday.</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="button" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="button" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <a href="trending.html" id="trending-card">
+            <img src="https://via.placeholder.com/300x200/0000FF/808080?text=Trending" alt="Trending">
+            <div class="card-content">
+                <h3>Trending</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="home-kitchen.html" id="home-kitchen-card">
+            <img src="https://via.placeholder.com/300x200/FF0000/FFFFFF?text=Home%20%26%20Kitchen" alt="Home & Kitchen">
+            <div class="card-content">
+                <h3>Home & Kitchen</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="shoes.html" id="shoes-card">
+            <img src="https://via.placeholder.com/300x200/FFFF00/000000?text=Shoes" alt="Shoes">
+            <div class="card-content">
+                <h3>Shoes</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="jewelry-clothes.html" id="jewelry-clothes-card">
+            <img src="https://via.placeholder.com/300x200/008000/FFFFFF?text=Jewelry%20%26%20Clothes" alt="Jewelry & Clothes">
+            <div class="card-content">
+                <h3>Jewelry & Clothes</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="electronics.html" id="electronics-card">
+            <img src="https://via.placeholder.com/300x200/FFA500/000000?text=Electronics" alt="Electronics">
+            <div class="card-content">
+                <h3>Electronics</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="baby.html" id="baby-card">
+            <img src="https://via.placeholder.com/300x200/800080/FFFFFF?text=Baby" alt="Baby">
+            <div class="card-content">
+                <h3>Baby</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="beauty-personal-care.html" id="beauty-personal-care-card">
+            <img src="https://via.placeholder.com/300x200/FFC0CB/000000?text=Beauty%20%26%20Personal%20Care" alt="Beauty & Personal Care">
+            <div class="card-content">
+                <h3>Beauty & Personal Care</h3>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="health-outdoors.html" id="health-outdoors-card">
+            <img src="https://via.placeholder.com/300x200/00FFFF/000000?text=Health%20and%20Sports%20%26%20Outdoors" alt="Health and Sports & Outdoors">
+            <div class="card-content">
+                <h3>Health and Sports & Outdoors</h3>
+            </div>
+        </a>
+    </div>
+</div>
 
 
-      if (response.ok) {
-        const result = await response.text();
-        console.log(result);
-      } else {
-        console.error('Failed to execute script:', response.statusText);
-  </script>
+<div class="scrollable-container">
+    <div class="todays-deals-container">
+        <div class="card">
+            <div class="card-content">
+                <h3>Today's Deals</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/FF0000/808080?text=Product+1" alt="Product 1">
+            <div class="card-content">
+                <h3>Product 1</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/00FF00/808080?text=Product+2" alt="Product 2">
+            <div class="card-content">
+                <h3>Product 2</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/0000FF/808080?text=Product+3" alt="Product 3">
+            <div class="card-content">
+                <h3>Product 3</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/FFFF00/808080?text=Product+4" alt="Product 4">
+            <div class="card-content">
+                <h3>Product 4</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/FFA500/808080?text=Product+5" alt="Product 5">
+            <div class="card-content">
+                <h3>Product 5</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/800080/808080?text=Product+6" alt="Product 6">
+            <div class="card-content">
+                <h3>Product 6</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/008000/808080?text=Product+7" alt="Product 7">
+            <div class="card-content">
+                <h3>Product 7</h3>
+            </div>
+        </div>
+        <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+            <img src="https://via.placeholder.com/300x200/00FFFF/808080?text=Product+8" alt="Product 8">
+            <div class="card-content">
+                <h3>Product 8</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="scrollable-container">
+<div class="best-sellers-container">
+    <div class="card">
+        <div class="card-content">
+            <h3>Best Sellers</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/FF0000/808080?text=Product+1" alt="Product 1">
+        <div class="card-content">
+            <h3>Product 1</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/00FF00/808080?text=Product+2" alt="Product 2">
+        <div class="card-content">
+            <h3>Product 2</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/0000FF/808080?text=Product+3" alt="Product 3">
+        <div class="card-content">
+            <h3>Product 3</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/FFFF00/808080?text=Product+4" alt="Product 4">
+        <div class="card-content">
+            <h3>Product 4</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/FFA500/808080?text=Product+5" alt="Product 5">
+        <div class="card-content">
+            <h3>Product 5</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/800080/808080?text=Product+6" alt="Product 6">
+        <div class="card-content">
+            <h3>Product 6</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/008000/808080?text=Product+7" alt="Product 7">
+        <div class="card-content">
+            <h3>Product 7</h3>
+        </div>
+    </div>
+    <div class="card"> <a href="ngg.html?id=9" class="card-link" data-product-id="9">
+        <img src="https://via.placeholder.com/300x200/00FFFF/808080?text=Product+8" alt="Product 8">
+        <div class="card-content">
+            <h3>Product 8</h3>
+        </div>
+    </div>
+</div>
+
+<script>
+  fetch('https://duxe10.github.io/duxe10.github.io/data.json')
+  .then(response => response.json())
+  .then(data => {
+    const container = document.querySelector('.best-sellers-container'); // Assuming you want to display best sellers
+    data.forEach(product => {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      const image = document.createElement('img');
+      image.src = product.image;
+      // Add more attributes and styles as needed
+
+      const name = document.createElement('h3');
+      name.textContent = product.name;
+
+      const description = document.createElement('p');
+      description.textContent = product.description;
+
+      // Append elements to the card
+      card.appendChild(image);
+      card.appendChild(name);
+      card.appendChild(description);
+
+      // Append the card to the container
+      container.appendChild(card);
+    });
+  })
+  .catch(error => console.error('Error fetching and displaying products:', error));
+
+document.addEventListener("DOMContentLoaded", function() {
+        // Add event listener to toggle categories dropdown
+        document.getElementById("category-button").addEventListener("click", function() {
+            var categories = document.getElementById("categories");
+            if (categories.style.display === "none" || categories.style.display === "") {
+                categories.style.display = "block";
+            } else {
+                categories.style.display = "none";
+            }
+        });
+
+        // Add event listeners to category links
+        var categoryLinks = document.querySelectorAll('.categories ul li a');
+        categoryLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var categoryId = this.getAttribute('href').substring(1);
+                console.log("Category clicked: " + categoryId);
+                // You can perform further actions here, such as navigating to a specific page or loading content dynamically.
+            });
+        });
+
+        // Promotional slider JavaScript
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const slideWidth = slider.offsetWidth / 2;
+        const totalSlides = slides.length;
+
+        function showSlide() {
+            slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+        }
+
+        function nextSlide() {
+            currentSlide++;
+            if (currentSlide === totalSlides) {
+                currentSlide = 0;
+            }
+            showSlide();
+        }
+
+        function prevSlide() {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            }
+            showSlide();
+        }
+
+        setInterval(nextSlide, 6000);
+        showSlide();
+    });
+</script>
 </body>
 </html>
