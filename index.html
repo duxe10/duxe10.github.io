@@ -311,6 +311,25 @@
         </button>
     </div>
 </div>
+<script>
+    // Function to redirect to the product details page
+    function redirectToProductDetails(productId) {
+        window.location.href = `nggs.html?id=${productId}`;
+    }
+
+    // Add event listener to each product card
+    document.querySelectorAll('.card-link').forEach(card => {
+        card.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default link behavior
+
+            // Extract the product ID from the data-product-id attribute
+            const productId = this.getAttribute('data-product-id');
+
+            // Redirect to the product details page with the product ID
+            redirectToProductDetails(productId);
+        });
+    });
+</script>
 
 <!-- Promotional Slider -->
 <div class="slider-container">
