@@ -522,7 +522,7 @@
 </div>
 
 <script>
-  fetch('https://duxe10.github.io/duxe10.github.io/data.json')
+fetch('https://duxe10.github.io/duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector('.best-sellers-container'); // Assuming you want to display best sellers
@@ -550,6 +550,7 @@
     });
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
+
 
 document.addEventListener("DOMContentLoaded", function() {
         // Add event listener to toggle categories dropdown
