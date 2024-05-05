@@ -521,38 +521,35 @@
     </div>
 </div>
 
-<script>
-fetch('https://duxe10.github.io/data.json')
+<script>fetch('https://duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
-    const containers = document.querySelectorAll('.scrollable-container'); // Select both containers
+    const todaysDealsContainer = document.querySelector('.todays-deals-container');
+    const bestSellersContainer = document.querySelector('.best-sellers-container');
 
-    containers.forEach(container => {
-      const cards = container.querySelectorAll('.card'); // Select all cards within the container
-      cards.forEach(card => {
-        const productId = card.getAttribute('data-product-id'); // Get the product id from the data-product-id attribute
-        const product = data.find(item => item.id.toString() === productId); // Find the product in the data array
+    // Assuming you want the same products in both sections
+    data.forEach(product => {
+      // Create the card element
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <a href="ngg.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
+          <img src="${product.image}" alt="${product.title}">
+          <div class="card-content">
+            <h3>${product.title}</h3>
+            <p class="price">${product.price}</p>
+            <p class="rating">${'⭐'.repeat(Math.round(product.rating))}</p>
+            <p class="description">${product.description}</p>
+          </div>
+        </a>
+      `;
 
-        if (product) { // If the product is found
-          const image = card.querySelector('img');
-          const name = card.querySelector('h3');
-          const price = card.querySelector('.price'); // Assuming there's a class for price
-          const rating = card.querySelector('.rating'); // Assuming there's a class for rating
-          const description = card.querySelector('.description'); // Assuming there's a class for description
-
-          // Update the card content with product information
-          image.src = product.image;
-          name.textContent = product.title;
-          price.textContent = product.price;
-          rating.textContent = product.rating;
-          description.textContent = product.description;
-          // You can update other elements like price, description, etc., similarly
-        }
-      });
+      // Append the new card to both containers
+      todaysDealsContainer.appendChild(card.cloneNode(true));
+      bestSellersContainer.appendChild(card);
     });
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
-
 
 
 
