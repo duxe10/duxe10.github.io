@@ -301,58 +301,55 @@ body {
         </button>
     </div>
 </div>
-<div class="container">
-    <div class="product-details">
-        <div class="product-image">
-            <img src="https://via.placeholder.com/600" alt="Product Image" class="main-image" id="mainImage">
-            <div class="thumbnail-images">
-                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 1" onclick="displayImage('https://via.placeholder.com/600')" data-large="https://via.placeholder.com/600">
-                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 2" onclick="displayImage('https://via.placeholder.com/601')" data-large="https://via.placeholder.com/601">
-                <img src="https://via.placeholder.com/150" alt="Thumbnail Image 3" onclick="displayImage('https://via.placeholder.com/602')" data-large="https://via.placeholder.com/602">
-                <!-- Add more thumbnail images here -->
+ <div class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <img src="" alt="Product Image" class="main-image" id="mainImage">
+                <div class="thumbnail-images"></div>
+            </div>
+            <div class="product-info">
+                <h2 id="productName"></h2>
+                <div class="rating" id="productRating"></div>
+                <div class="price" id="productPrice"></div>
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" class="quantity-input" min="1" max="15" value="1">
+                </div>
+                <div class="button-container">
+                    <button class="button buy-now-button" onclick="redirectToUKF()">Buy Now</button>
+                    <button class="button">Add to Cart</button>
+                </div>
+                <div class="product-description" id="productDescription"></div>
             </div>
         </div>
-        <div class="product-info">
-            <h2>Command Picture & Frame Hanging Strips Value Pack</h2>
-            <div class="rating">
-                <span class="stars">⭐⭐⭐⭐⭐</span> 4.5 out of 5 stars (32,171 ratings)
-            </div>
-            <div class="price">
-                <span class="original-price">RRP £269.99</span>
-                £189.00
-                <br>
-                Save £80.99 (30% OFF)
-            </div>
-            <div class="quantity-selector">
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" class="quantity-input" min="1" max="15" value="1">
-            </div>
-            <p>#1 Best Seller in Picture Hangers</p>
-            <p>5K+ bought in past month</p>
-           <div class="button-container">
-    <button class="button buy-now-button" onclick="redirectToUKF()">Buy Now</button>
-    <button class="button">Add to Cart</button>
-</div>
-    <div class="product-description">
-        <h3>About this item</h3>
-        <p>Keep frames flat and secure to the wall, discreet strips are hidden behind the picture frame. Item package may vary.</p>
-        <p>Strips lock and relock so frame can be removed and repositioned</p>
-        <p>Holding Power: 4 sets of strips can hold one frame weighing up to 7.2 kg, measuring up to 60 cm by 90 cm</p>
-        <p>Damage-free hanging, holds strongly and removes cleanly</p>
-        <p>Easy to apply, no need for nails, screws or drills</p>
-        <p>Strips stretch off cleanly without leaving holes, marks or sticky residue</p>
-        <p>Suitable for most smooth surfaces including painted walls, tiles, metal and wood</p>
     </div>
-</div>
 
-<script>
-    function displayImage(imageSrc) {
-        document.getElementById('mainImage').src = imageSrc;
-    }
-    function redirectToUKF() {
-        window.location.href = "ukf.html";
-    }
-</script>
-        
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Extract the product ID from the URL query parameters
+            const queryParams = new URLSearchParams(window.location.search);
+            const productId = queryParams.get('id');
+
+            // Fetch product data from data.json
+            fetch('https://duxe10.github.io/data.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Find the product with the matching ID
+                    const product = data.find(item => item.id === productId);
+
+                    // Update the product details with fetched data
+                    document.getElementById('productName').textContent = product.title;
+                    document.getElementById('mainImage').src = product.image;
+                    document.getElementById('productRating').textContent = '⭐'.repeat(Math.round(product.rating));
+                    document.getElementById('productPrice').textContent = product.price;
+                    document.getElementById('productDescription').innerHTML = product.description;
+                })
+                .catch(error => console.error('Error fetching product details:', error));
+        });
+
+        function redirectToUKF() {
+            window.location.href = "ukf.html";
+        }
+    </script>
 </body>
 </html>
