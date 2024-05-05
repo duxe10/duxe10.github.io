@@ -499,6 +499,22 @@ function prevSlide() {
 
 setInterval(nextSlide, 6000);
 showSlide();
+    // Add event listener to each product card
+document.querySelectorAll('.card-link').forEach(card => {
+  card.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    // Extract the product ID from the data-product-id attribute
+    const productId = this.getAttribute('data-product-id');
+
+    // Construct the URL for the product details page with the product ID as a query parameter
+    const productDetailsPageUrl = `https://duxe10.github.io/nggs.html?id=${productId}`;
+
+    // Redirect to the product details page
+    window.location.href = productDetailsPageUrl;
+  });
+});
+
 
 </script>
 </body>
