@@ -524,12 +524,16 @@
 <script>fetch('https://duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
-    const todaysDealsContainer = document.querySelector('.todays-deals-container');
-    const bestSellersContainer = document.querySelector('.best-sellers-container');
+    const container = document.querySelector('.container');
+    
+    // Specify the IDs of the products you want to display
+    const productIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
-    // Assuming you want the same products in both sections
-    data.forEach(product => {
-      // Create the card element
+    // Filter products based on their IDs
+    const selectedProducts = data.filter(product => productIds.includes(product.id));
+
+    // Create and append cards for the selected products
+    selectedProducts.forEach(product => {
       const card = document.createElement('div');
       card.className = 'card';
       card.innerHTML = `
@@ -543,13 +547,13 @@
           </div>
         </a>
       `;
-
-      // Append the new card to both containers
-      todaysDealsContainer.appendChild(card.cloneNode(true));
-      bestSellersContainer.appendChild(card);
+      
+      // Append the new card to the container
+      container.appendChild(card);
     });
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
+
 
 // Promotional slider JavaScript
 const slider = document.querySelector('.slider');
