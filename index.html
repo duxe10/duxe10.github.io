@@ -522,7 +522,7 @@
 </div>
 
 <script>
-fetch('https://duxe10.github.io/duxe10.github.io/data.json')
+fetch('https://duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
     const containers = document.querySelectorAll('.scrollable-container'); // Select both containers
@@ -552,6 +552,7 @@ fetch('https://duxe10.github.io/duxe10.github.io/data.json')
     });
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
+
 
 
 
