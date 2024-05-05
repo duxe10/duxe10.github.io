@@ -524,33 +524,42 @@
 <script>fetch('https://duxe10.github.io/data.json')
   .then(response => response.json())
   .then(data => {
-    const container = document.querySelector('.container');
+    const todaysDealsContainer = document.querySelector('.todays-deals-container');
+    const bestSellersContainer = document.querySelector('.best-sellers-container');
     
-    // Specify the IDs of the products you want to display
-    const productIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    // Specify the IDs of the products for today's deals and best sellers
+    const todaysDealsIds = [1, 2, 3, 4, 5, 6, 7, 8];
+    const bestSellersIds = [9, 10, 11, 12, 13, 14, 15, 16];
 
-    // Filter products based on their IDs
-    const selectedProducts = data.filter(product => productIds.includes(product.id));
+    // Filter products for today's deals based on their IDs
+    const todaysDealsProducts = data.filter(product => todaysDealsIds.includes(product.id));
+    // Filter products for best sellers based on their IDs
+    const bestSellersProducts = data.filter(product => bestSellersIds.includes(product.id));
 
-    // Create and append cards for the selected products
-    selectedProducts.forEach(product => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <a href="ngg.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
-          <img src="${product.image}" alt="${product.title}">
-          <div class="card-content">
-            <h3>${product.title}</h3>
-            <p class="price">${product.price}</p>
-            <p class="rating">${'⭐'.repeat(Math.round(product.rating))}</p>
-            <p class="description">${product.description}</p>
-          </div>
-        </a>
-      `;
-      
-      // Append the new card to the container
-      container.appendChild(card);
-    });
+    // Function to create and append cards to a container
+    function appendCards(container, products) {
+      products.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <a href="ngg.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
+            <img src="${product.image}" alt="${product.title}">
+            <div class="card-content">
+              <h3>${product.title}</h3>
+              <p class="price">${product.price}</p>
+              <p class="rating">${'⭐'.repeat(Math.round(product.rating))}</p>
+              <p class="description">${product.description}</p>
+            </div>
+          </a>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Append today's deals cards to the container
+    appendCards(todaysDealsContainer, todaysDealsProducts);
+    // Append best sellers cards to the container
+    appendCards(bestSellersContainer, bestSellersProducts);
   })
   .catch(error => console.error('Error fetching and displaying products:', error));
 
