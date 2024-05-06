@@ -350,8 +350,8 @@ body {
             })
             .catch(error => console.error('Error fetching product details:', error));
     });
-     document.querySelector('.buy-now-button').addEventListener('click', function() {
-    // Get the product ID
+    document.querySelector('.buy-now-button').addEventListener('click', function() {
+    // Get the product ID from the current URL
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
     
@@ -359,6 +359,7 @@ body {
     const checkoutPageUrl = `https://duxe10.github.io/ukf.html?id=${productId}`;
     window.location.href = checkoutPageUrl;
 });
+
 
 
 
