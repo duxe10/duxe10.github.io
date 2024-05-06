@@ -355,10 +355,11 @@ body {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
     
-    // Redirect to the checkout page with the product ID
-    const checkoutPageUrl = `https://duxe10.github.io/ukf.html?id=${productId}`;
-    window.location.href = checkoutPageUrl;
-});
+   // Add event listener to the "Buy Now" button
+    document.querySelector('.buy-now-button').addEventListener('click', function() {
+        // Redirect to the checkout page with the product ID
+        window.location.href = `https://duxe10.github.io/ukf.html?id=${productId}`;
+    });
 
 
 
