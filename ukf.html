@@ -374,6 +374,13 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => console.error('Error fetching product data:', error));
 });
+
+document.querySelector('.buy-now-button').addEventListener('click', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
+
+  window.location.href = `https://duxe10.github.io/ukf.html?id=${productId}`;
+});
 </script>
 </body>
 </html>
