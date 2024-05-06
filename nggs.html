@@ -333,7 +333,7 @@ body {
     // Fetch the product details based on the product ID
     fetch('https://duxe10.github.io/data.json')
         .then(response => response.json())
-        .then(data => {
+    .then(data => {
     console.log(data); // Check the fetched data
     const product = data.find(item => item.id === parseInt(productId, 10));
     console.log(product); // Check the found product
@@ -347,7 +347,9 @@ body {
     } else {
         console.error('Product not found');
     }
-})
+}) // Make sure there's a closing parenthesis here
+.catch(error => console.error('Error fetching product details:', error)); // Make sure there's a semicolon here
+
 
 
     function redirectToUKF() {
