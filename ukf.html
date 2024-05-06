@@ -329,15 +329,14 @@
             }
         });
 
-        paymentOptions.forEach(function(option) {
-            option.addEventListener("change", function() {
-                if (option !== addCardOption) {
-                    cardEntryForm.style.display = "none";
-                }
-            });
-        });
-    });
-    });
+       paymentOptions.forEach(function(option) {
+  option.addEventListener("change", function() {
+    if (option !== addCardOption) {
+      cardEntryForm.style.display = "none";
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get('id');
