@@ -339,40 +339,40 @@
         });
     });
     });
-
 document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
 
-    fetch('https://duxe10.github.io/data.json')
-        .then(response => response.json())
-        .then(data => {
-            const product = data.find(product => product.id === parseInt(productId));
-            if (product) {
-                const productImage = document.getElementById('productImage');
-                const productTitle = document.getElementById('productTitle');
-                const productPrice = document.getElementById('productPrice');
+  fetch('https://duxe10.github.io/data.json')
+    .then(response => response.json())
+    .then(data => {
+      const product = data.find(product => product.id === parseInt(productId));
 
-                productImage.src = product.image;
-                productTitle.textContent = product.title;
-                productPrice.textContent = `$${product.price}`;
+      if (product) {
+        const productImage = document.getElementById('productImage');
+        const productTitle = document.getElementById('productTitle');
+        const productPrice = document.getElementById('productPrice');
 
-                const quantityInput = document.getElementById('quantity');
-                const orderTotal = document.getElementById('orderTotal');
+        productImage.src = product.image;
+        productTitle.textContent = product.title;
+        productPrice.textContent = `$${product.price}`;
 
-                const calculateOrderTotal = () => {
-                    const quantity = parseInt(quantityInput.value);
-                    const totalPrice = quantity * parseFloat(product.price.replace('$', ''));
-                    orderTotal.textContent = `Order Total: $${totalPrice.toFixed(2)}`;
-                };
+        const quantityInput = document.getElementById('quantity');
+        const orderTotal = document.getElementById('orderTotal');
 
-                quantityInput.addEventListener('input', calculateOrderTotal);
-                calculateOrderTotal();
-            } else {
-                console.error('Product not found');
-            }
-        })
-        .catch(error => console.error('Error fetching product data:', error));
+        const calculateOrderTotal = () => {
+          const quantity = parseInt(quantityInput.value);
+          const totalPrice = quantity * parseFloat(product.price.replace('$', ''));
+          orderTotal.textContent = `Order Total: $${totalPrice.toFixed(2)}`;
+        };
+
+        quantityInput.addEventListener('input', calculateOrderTotal);
+        calculateOrderTotal();
+      } else {
+        console.error('Product not found');
+      }
+    })
+    .catch(error => console.error('Error fetching product data:', error));
 });
 
 
