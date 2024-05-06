@@ -339,8 +339,8 @@
         });
     });
     });
-   document.addEventListener("DOMContentLoaded", function () {
-    // Extract product ID from URL
+  document.addEventListener("DOMContentLoaded", function () {
+    // Extract product ID from current page URL
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
@@ -387,6 +387,7 @@
         })
         .catch(error => console.error('Error fetching product data:', error));
 });
+
 
    
 
