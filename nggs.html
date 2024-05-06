@@ -353,12 +353,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.querySelector('.buy-now-button').addEventListener('click', function() {
-    // Get the product ID from the current URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
+  // Get the product ID from the current URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('id');
 
-    // Redirect to the checkout page with the product ID
-    window.location.href = `https://duxe10.github.io/ukf.html?id=${productId}`;
+  // Redirect to the checkout page with the product ID
+  window.location.href = `https://duxe10.github.io/ukf.html?id=${productId}`;
 });
 </script>
 </body>
