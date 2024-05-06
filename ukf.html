@@ -339,44 +339,54 @@
         });
     });
     });
-        document.addEventListener("DOMContentLoaded", function () {
+   document.addEventListener("DOMContentLoaded", function () {
+    // Extract product ID from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+
     // Fetch product data from data.json
     fetch('https://duxe10.github.io/data.json')
         .then(response => response.json())
         .then(data => {
-            // Populate product info section with fetched data
-            const productInfo = document.querySelector('.product-info');
-            productInfo.innerHTML = `
-                <div class="product-image">
-                    <img src="${data.image}" alt="Product Image">
-                </div>
-                <div class="product-details">
-                    <div class="product-title">${data.title}</div>
-                    <div class="product-price">$${data.price}</div>
-                    <div class="quantity-selector">
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            // Find the product with the matching ID
+            const product = data.find(product => product.id === productId);
+
+            if (product) {
+                // Populate product info section with fetched data
+                const productInfo = document.querySelector('.product-info');
+                productInfo.innerHTML = `
+                    <div class="product-image">
+                        <img src="${product.image}" alt="Product Image">
                     </div>
-                </div>
-            `;
+                    <div class="product-details">
+                        <div class="product-title">${product.title}</div>
+                        <div class="product-price">$${product.price}</div>
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                        </div>
+                    </div>
+                `;
 
-            // Calculate order total
-            const quantityInput = document.getElementById('quantity');
-            const orderTotal = document.querySelector('.summary-card p:last-child');
-            const calculateOrderTotal = () => {
-                const quantity = parseInt(quantityInput.value);
-                const price = parseFloat(data.price.replace('$', ''));
-                const total = quantity * price;
-                orderTotal.textContent = `Order Total: $${total.toFixed(2)}`;
-            };
+                // Calculate order total
+                const quantityInput = document.getElementById('quantity');
+                const orderTotal = document.querySelector('.summary-card p:last-child');
+                const calculateOrderTotal = () => {
+                    const quantity = parseInt(quantityInput.value);
+                    const price = parseFloat(product.price.replace('$', ''));
+                    const total = quantity * price;
+                    orderTotal.textContent = `Order Total: $${total.toFixed(2)}`;
+                };
 
-            // Update order total when quantity changes
-            quantityInput.addEventListener('input', calculateOrderTotal);
-            calculateOrderTotal();
+                // Update order total when quantity changes
+                quantityInput.addEventListener('input', calculateOrderTotal);
+                calculateOrderTotal();
+            } else {
+                console.error('Product not found');
+            }
         })
         .catch(error => console.error('Error fetching product data:', error));
 });
-
 
    
 
