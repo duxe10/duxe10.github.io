@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+       /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styles */
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; /* Position header at the top */
+    left: 0; /* Align header to the left */
+    width: 100%;
+    z-index: 1000;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.category-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.categories {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.categories ul li a:hover {
+    background-color: #ddd;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 250px;
+    padding: 8px;
+    margin-right: 10px; /* Reduced margin */
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px; /* Reduced margin */
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 5px; /* Reduced margin */
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.basket-button {
+    margin-left: 5px; /* Reduced margin */
+}
+
+        /* Content styles */
+        .product-container {
+            padding: 20px 20px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px; /* Adjusted height */
+            object-fit: cover; /* Ensure the image covers the entire container */
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-rating {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .card-price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Add this CSS to position the heading below the header */
+        h2 {
+            margin-top: 77px;
+             margin-left: 50px;
+       
+            
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <span class="brand">E-store</span>
+        <div class="dropdown">
+            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
+            <div class="categories" id="categories">
+                <ul>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
+                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
+                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
+                    <li><a href="#toys-games">Toys & Games</a></li>
+                    <li><a href="#health">Health</a></li>
+                    <li><a href="#baby">Baby</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <input type="text" class="search-bar" placeholder="Search products...">
+        <button class="button search-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
+        </button>
+        <button class="button">Sign In</button>
+        <button class="button basket-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="Basket Icon">
+        </button>
+    </div>
+</div>
+
+<h2>Trending</h2>
+<div id="productContainer" class="product-container">
+    <div class="card">
+        <a href="ngg.html?id=3" class="card-link" data-product-id="37">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2037" alt="Product 37" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 4</h3>
+                <p class="card-rating">Rating: 4.8</p>
+                <p class="card-price">$30</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=2" class="card-link" data-product-id="38">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2038" alt="Product 38" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 3</h3>
+                <p class="card-rating">Rating: 4.2</p>
+                <p class="card-price">$25</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=3" class="card-link" data-product-id="39">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2039" alt="Product 39" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 4</h3>
+                <p class="card-rating">Rating: 4.8</p>
+                <p class="card-price">$30</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=4" class="card-link" data-product-id="40">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2040" alt="Product 40" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 5</h3>
+                <p class="card-rating">Rating: 4.6</p>
+                <p class="card-price">$22</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=4" class="card-link" data-product-id="41">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2041" alt="Product 41" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 5</h3>
+                <p class="card-rating">Rating: 4.6</p>
+                <p class="card-price">$22</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=5" class="card-link" data-product-id="42">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2042" alt="Product 42" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 6</h3>
+                <p class="card-rating">Rating: 4.3</p>
+                <p class="card-price">$28</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=6" class="card-link" data-product-id="43">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2043" alt="Product 43" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 7</h3>
+                <p class="card-rating">Rating: 4.7</p>
+                <p class="card-price">$35</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=7" class="card-link" data-product-id="44">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2044" alt="Product 44" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 8</h3>
+                <p class="card-rating">Rating: 4.2</p>
+                <p class="card-price">$30</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=8" class="card-link" data-product-id="45">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2045" alt="Product 45" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 9</h3>
+                <p class="card-rating">Rating: 4.9</p>
+                <p class="card-price">$40</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=9" class="card-link" data-product-id="46">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2046" alt="Product 46" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 10</h3>
+                <p class="card-rating">Rating: 4.6</p>
+                <p class="card-price">$32</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=10" class="card-link" data-product-id="47">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2047" alt="Product 47" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 11</h3>
+                <p class="card-rating">Rating: 4.4</p>
+                <p class="card-price">$26</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="ngg.html?id=11" class="card-link" data-product-id="48">
+            <img src="https://via.placeholder.com/300x200/808080?text=Product%2048" alt="Product 48" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Product 12</h3>
+                <p class="card-rating">Rating: 4.7</p>
+                <p class="card-price">$38</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    function toggleCategories() {
+        var categories = document.getElementById("categories");
+        if (categories.style.display === "block") {
+            categories.style.display = "none";
+        } else {
+            categories.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
