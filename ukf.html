@@ -195,22 +195,20 @@
 </head>
 <body>
 <div class="container">
-    <h1>Checkout</h1>
-   <div class="product-info">
-    <div class="product-image">
-        <img src="" alt="Product Image" id="productImage">
-    </div>
-    <div class="product-details">
-        <div class="product-title" id="productTitle"></div>
-        <div class="product-price" id="productPrice"></div>
-        <div class="quantity-selector">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+    <div class="product-info">
+        <div class="product-image">
+            <img src="" alt="Product Image" id="productImage">
         </div>
-        <div class="postage">Postage: $0</div>
-        <!-- You can replace "X days" with actual postage information if needed -->
+        <div class="product-details">
+            <div class="product-title" id="productTitle"></div>
+            <div class="product-price" id="productPrice"></div>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+        </div>
     </div>
-</div>
+
 
     <form id="checkout-form" action="#" method="post">
         <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
@@ -310,14 +308,14 @@
         <input type="submit" value="Place Order">
     </form>
 </div>
- <div class="summary-card">
+<div class="summary-card">
         <h1>Item (X)</h1>
         <p>Postage Cost: $XX.XX</p>
         <hr>
         <p id="orderTotal">Order Total: $0.00</p>
         <button class="confirm-pay-btn">Confirm and Pay</button>
     </div>
-
+</div>
     <script>
  document.addEventListener("DOMContentLoaded", function () {
         const addCardOption = document.getElementById("addCard");
@@ -342,45 +340,32 @@
     });
     });
 document.addEventListener("DOMContentLoaded", function () {
-    // Extract product ID from the URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
-    // Fetch product data from data.json
     fetch('https://duxe10.github.io/data.json')
         .then(response => response.json())
         .then(data => {
-            // Find the product with the matching ID
             const product = data.find(product => product.id === parseInt(productId));
 
             if (product) {
-                // Populate product info section with fetched data
-                const productInfo = document.querySelector('.product-info');
-                productInfo.innerHTML = `
-                    <div class="product-image">
-                        <img src="${product.image}" alt="Product Image">
-                    </div>
-                    <div class="product-details">
-                        <div class="product-title">${product.title}</div>
-                        <div class="product-price">$${product.price}</div>
-                        <div class="quantity-selector">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
-                        </div>
-                    </div>
-                `;
+                const productImage = document.getElementById('productImage');
+                const productTitle = document.getElementById('productTitle');
+                const productPrice = document.getElementById('productPrice');
 
-                // Calculate order total
+                productImage.src = product.image;
+                productTitle.textContent = product.title;
+                productPrice.textContent = `$${product.price}`;
+
                 const quantityInput = document.getElementById('quantity');
-                const orderTotal = document.querySelector('.summary-card p:last-child');
+                const orderTotal = document.getElementById('orderTotal');
+
                 const calculateOrderTotal = () => {
                     const quantity = parseInt(quantityInput.value);
-                    const price = parseFloat(product.price.replace('$', ''));
-                    const total = quantity * price;
-                    orderTotal.textContent = `Order Total: $${total.toFixed(2)}`;
+                    const totalPrice = quantity * parseFloat(product.price.replace('$', ''));
+                    orderTotal.textContent = `Order Total: $${totalPrice.toFixed(2)}`;
                 };
 
-                // Update order total when quantity changes
                 quantityInput.addEventListener('input', calculateOrderTotal);
                 calculateOrderTotal();
             } else {
