@@ -341,8 +341,8 @@
         });
     });
     });
- document.addEventListener("DOMContentLoaded", function () {
-    // Extract product ID from current page URL
+document.addEventListener("DOMContentLoaded", function () {
+    // Extract product ID from the URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
@@ -351,7 +351,7 @@
         .then(response => response.json())
         .then(data => {
             // Find the product with the matching ID
-            const product = data.find(product => product.id === productId);
+            const product = data.find(product => product.id === parseInt(productId));
 
             if (product) {
                 // Populate product info section with fetched data
@@ -389,7 +389,6 @@
         })
         .catch(error => console.error('Error fetching product data:', error));
 });
-
 
    
 
