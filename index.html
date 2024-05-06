@@ -456,13 +456,17 @@
     // Select 8 random products for best sellers
     const bestSellersProducts = getRandomProducts(data, 8);
 
-    // Function to create and append cards to a container
+// Function to create and append cards to a container
 function appendCards(container, products) {
   products.forEach(product => {
     const card = document.createElement('div');
     card.className = 'card';
+    
+    // Construct the product details page URL with the product ID as a query parameter
+    const productDetailsPageUrl = `https://duxe10.github.io/nggs.html?id=${product.id}`;
+    
     card.innerHTML = `
-      <a href="https://duxe10.github.io/nggs.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
+      <a href="${productDetailsPageUrl}" class="card-link" data-product-id="${product.id}">
         <img src="${product.image}" alt="${product.title}">
         <div class="card-content">
           <h3>${product.title}</h3>
@@ -475,6 +479,7 @@ function appendCards(container, products) {
     container.appendChild(card);
   });
 }
+
 
 
     // Append today's deals cards to the container
