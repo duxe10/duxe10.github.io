@@ -457,24 +457,25 @@
     const bestSellersProducts = getRandomProducts(data, 8);
 
     // Function to create and append cards to a container
-    function appendCards(container, products) {
-      products.forEach(product => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <a href="ngg.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
-            <img src="${product.image}" alt="${product.title}">
-            <div class="card-content">
-              <h3>${product.title}</h3>
-              <p class="price">${product.price}</p>
-              <p class="rating">${'⭐'.repeat(Math.round(product.rating))}</p>
-              <p class="description">${product.description}</p>
-            </div>
-          </a>
-        `;
-        container.appendChild(card);
-      });
-    }
+function appendCards(container, products) {
+  products.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <a href="https://duxe10.github.io/nggs.html?id=${product.id}" class="card-link" data-product-id="${product.id}">
+        <img src="${product.image}" alt="${product.title}">
+        <div class="card-content">
+          <h3>${product.title}</h3>
+          <p class="price">${product.price}</p>
+          <p class="rating">${'⭐'.repeat(Math.round(product.rating))}</p>
+          <p class="description">${product.description}</p>
+        </div>
+      </a>
+    `;
+    container.appendChild(card);
+  });
+}
+
 
     // Append today's deals cards to the container
     appendCards(todaysDealsContainer, todaysDealsProducts);
