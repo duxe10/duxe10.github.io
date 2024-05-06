@@ -341,27 +341,41 @@
         });
     });
     });
-  document.addEventListener("DOMContentLoaded", function () {
-            // Retrieve product information from session storage
-            const storedProductInfo = sessionStorage.getItem('productInfo');
+ document.addEventListener("DOMContentLoaded", function () {
+    // Extract product ID from current page URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
 
-            if (storedProductInfo) {
-                const productInfo = JSON.parse(storedProductInfo);
+    // Fetch product data from data.json
+    fetch('https://duxe10.github.io/data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Find the product with the matching ID
+            const product = data.find(product => product.id === productId);
 
-                // Populate product info section with stored data
-                document.getElementById('productImage').src = productInfo.image;
-                document.getElementById('productTitle').textContent = productInfo.title;
-                document.getElementById('productPrice').textContent = productInfo.price;
-                // Add code to populate other product details if needed
+            if (product) {
+                // Populate product info section with fetched data
+                const productInfo = document.querySelector('.product-info');
+                productInfo.innerHTML = `
+                    <div class="product-image">
+                        <img src="${product.image}" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-title">${product.title}</div>
+                        <div class="product-price">$${product.price}</div>
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                        </div>
+                    </div>
+                `;
 
-                // Get quantity input and order total elements
+                // Calculate order total
                 const quantityInput = document.getElementById('quantity');
-                const orderTotal = document.getElementById('orderTotal');
-
-                // Function to calculate order total
+                const orderTotal = document.querySelector('.summary-card p:last-child');
                 const calculateOrderTotal = () => {
                     const quantity = parseInt(quantityInput.value);
-                    const price = parseFloat(productInfo.price.replace('$', ''));
+                    const price = parseFloat(product.price.replace('$', ''));
                     const total = quantity * price;
                     orderTotal.textContent = `Order Total: $${total.toFixed(2)}`;
                 };
@@ -370,9 +384,11 @@
                 quantityInput.addEventListener('input', calculateOrderTotal);
                 calculateOrderTotal();
             } else {
-                console.error('Product information not found in storage');
+                console.error('Product not found');
             }
-        });
+        })
+        .catch(error => console.error('Error fetching product data:', error));
+});
 
 
    
