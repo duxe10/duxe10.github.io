@@ -316,8 +316,8 @@
     <p>Order Total: $XX.XX</p>
     <button class="confirm-pay-btn">Confirm and Pay</button>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+ document.addEventListener("DOMContentLoaded", function () {
         const addCardOption = document.getElementById("addCard");
         const cardEntryForm = document.getElementById("card-entry-form");
         const paymentOptions = document.querySelectorAll(".payment-option input[type='radio']");
@@ -338,6 +338,48 @@
             });
         });
     });
+    });
+        document.addEventListener("DOMContentLoaded", function () {
+    // Fetch product data from data.json
+    fetch('https://duxe10.github.io/data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Populate product info section with fetched data
+            const productInfo = document.querySelector('.product-info');
+            productInfo.innerHTML = `
+                <div class="product-image">
+                    <img src="${data.image}" alt="Product Image">
+                </div>
+                <div class="product-details">
+                    <div class="product-title">${data.title}</div>
+                    <div class="product-price">$${data.price}</div>
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                    </div>
+                </div>
+            `;
+
+            // Calculate order total
+            const quantityInput = document.getElementById('quantity');
+            const orderTotal = document.querySelector('.summary-card p:last-child');
+            const calculateOrderTotal = () => {
+                const quantity = parseInt(quantityInput.value);
+                const price = parseFloat(data.price.replace('$', ''));
+                const total = quantity * price;
+                orderTotal.textContent = `Order Total: $${total.toFixed(2)}`;
+            };
+
+            // Update order total when quantity changes
+            quantityInput.addEventListener('input', calculateOrderTotal);
+            calculateOrderTotal();
+        })
+        .catch(error => console.error('Error fetching product data:', error));
+});
+
+
+   
+
 </script>
 </body>
 </html>
