@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "title": "Lorem Ipsum Dolor Sit Amet",
-    "image": "https://via.placeholder.com/300x200/FF0000/808080?text=Product+1",
-    "price": "$19.99",
-    "rating": 4.5,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "title": "Sony SRS-RA3000 360 Reality Audio Wi-Fi / Bluetooth Wireless Speaker, Works with Alexa and Google Assistant, Black ",
+    "image": "https://m.media-amazon.com/images/I/81cg0hGvVlL._AC_SX569_.jpg",
+    "price": "$398.00 ",
+    "rating": 3.9 ,
+    "description": "The SRS-RA3000 Wi-fi enabled wireless speaker delivers Sony’s new 360 Reality Audio technology into your home for a whole new level of immersion like never before. The ability to work with the Google Assistant and Alexa allows you to easily stream music from your favorite streaming services."
   },
   {
     "id": 2,
-    "title": "Consectetur Adipiscing Elit",
+    "title": "Sony WH-1000XM5 Noise Canceling Wireless Headphones - 30hr Battery Life - Over-Ear Style - Optimized for Alexa and Google Assistant - Built-in mic for Calls Limited Edition - Charcoal",
     "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+2",
-    "price": "$29.99",
+    "price": "$323.99",
     "rating": 3.8,
-    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "description": "WH-1000XM5B headphones Industry-leading noise cancellation* and high-res sound Looking for headphones that do not compromise? The WH-1000XM5B headphones rewrite the rules for distraction-free listening. Made up of two processors, eight microphones and a specially designed driver unit, it's no wonder the 1000X series won the What Hi-Fi Awards two years in a row. Distraction-free listening The WH-1000XM5B wireless headphones keep out all sounds, from airplane noise to peoples' voices."
   },
   {
     "id": 3,
