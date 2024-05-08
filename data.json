@@ -10,50 +10,50 @@
   {
     "id": 2,
     "title": "Sony WH-1000XM5 Noise Canceling Wireless Headphones - 30hr Battery Life - Over-Ear Style - Optimized for Alexa and Google Assistant - Built-in mic for Calls Limited Edition - Charcoal",
-    "image": "https://via.placeholder.com/300x200/00FF00/808080?text=Product+2",
+    "image": "https://m.media-amazon.com/images/I/41qwg67HMlL._AC_SY879_.jpg",
     "price": "$323.99",
     "rating": 3.8,
     "description": "WH-1000XM5B headphones Industry-leading noise cancellation* and high-res sound Looking for headphones that do not compromise? The WH-1000XM5B headphones rewrite the rules for distraction-free listening. Made up of two processors, eight microphones and a specially designed driver unit, it's no wonder the 1000X series won the What Hi-Fi Awards two years in a row. Distraction-free listening The WH-1000XM5B wireless headphones keep out all sounds, from airplane noise to peoples' voices."
   },
   {
     "id": 3,
-    "title": "Sed Do Eiusmod Tempor Incididunt",
-    "image": "https://via.placeholder.com/300x200/0000FF/808080?text=Product+3",
-    "price": "$24.99",
-    "rating": 4.2,
-    "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "title": "Fitbit Charge 5 Activity Tracker with 6-months Premium Membership Included, up to 7 days battery life and Daily Readiness Score, Black / Graphite Stainless Steel ",
+    "image": "https://m.media-amazon.com/images/I/61YXnbbNrgL._AC_SX569_.jpg",
+    "price": "$139.99",
+    "rating": 4.3,
+    "description": "Fitbit Charge 5 + Premium connects the dots between your activity, sleep and stress so you can make the best decisions for your body, mind and health. It all starts with your 6-month Premium membership and Daily Readiness, a score based on activity, sleep and heart rate variability (HRV) that helps you optimize your workout routine."
   },
   {
     "id": 4,
-    "title": "Ut Labore Et Dolore Magna Aliqua",
-    "image": "https://via.placeholder.com/300x200/FFFF00/808080?text=Product+4",
-    "price": "$39.99",
-    "rating": 4.9,
-    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "title": " SAMSUNG Galaxy Watch 6 40mm Aluminum Bluetooth Smartwatch | Latin American Version | Sapphire Crystal | IP68 - ",
+    "image": "https://m.media-amazon.com/images/I/711f6KLsMaL._AC_SX522_.jpg",
+    "price": " $172.97 ",
+    "rating": 4.1,
+    "description": "KEEP YOUR GOALS ON TRACK: Workout to your full potential with fitness tracking* on Galaxy Watch6; Get insights on duration, distance, calories burned and more; Watch recognizes activities from running to swimming and tracks over 90 other exercises"
   },
   {
     "id": 5,
-    "title": "Lorem Ipsum Sit Amet",
-    "image": "https://via.placeholder.com/300x200/FFA500/808080?text=Product+5",
-    "price": "$49.99",
+    "title": "Logitech Powered 3-in-1 Dock",
+    "image": "https://m.media-amazon.com/images/I/51g99SSij+L._AC_SX679_.jpg",
+    "price": "$106.55",
     "rating": 4.1,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "description": "logitech charger."
   },
   {
     "id": 6,
-    "title": "Adipiscing Elit",
-    "image": "https://via.placeholder.com/300x200/800080/808080?text=Product+6",
-    "price": "$34.99",
-    "rating": 3.7,
-    "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+    "title": "Beats Studio Buds - True Wireless Noise Cancelling Earbuds - Compatible with Apple & Android, Built-in Microphone, IPX4 Rating, Sweat Resistant Earphones, Class 1 Bluetooth Headphones",
+    "image": "https://m.media-amazon.com/images/I/51KaVGWWl4L._AC_SX679_.jpg",
+    "price": " $79.95",
+    "rating": 4.3,
+    "description": "These earphones feature two listening modes, Active Noise Cancelling (ANC) and Transparency mode, to give you total control of your sound. Each earbud has up to 8 hours of listening time with two additional charges provided by the pocket-sized charging case to give you up to 24 hours of combined playback."
   },
   {
     "id": 7,
-    "title": "Dolor Sit Amet",
-    "image": "https://via.placeholder.com/300x200/008000/808080?text=Product+7",
-    "price": "$44.99",
-    "rating": 4.3,
-    "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    "title": "Apple Watch Series 9 [GPS 41mm] Smartwatch with Starlight Aluminium Case with Starlight Sport Loop One Size. Fitness Tracker, ECG Apps, Always-On Retina Display, Carbon Neutral",
+    "image": "https://m.media-amazon.com/images/I/71V-xqNVjtL._AC_SX466_.jpg",
+    "price": "$499.00 ",
+    "rating": 4.8,
+    "description": "The Apple Watch is a smartwatch produced by Apple. It incorporates fitness tracking, health-oriented capabilities, and wireless telecommunication, and integrates with watchOS and other Apple products and services."
   },
   {
     "id": 8,
