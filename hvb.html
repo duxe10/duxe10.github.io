@@ -284,19 +284,27 @@
     </form>
 </div>
   
-<script src="https://www.paypal.com/sdk/js?client-id=BAAsdeq9Wp-83zTz5mxo2XoiimQGl84DsMuPm9VJkAZN7GVD6W3tt5iRYLg9McxUD2WO4EMFyLGzMNLWas&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
-
-<!-- Define the container for the PayPal hosted button -->
 <div class="card">
-    <div class="card-body">
-        <h3 class="card-title">Complete Your Purchase</h3>
-        <!-- PayPal hosted button -->
-        <div id="paypal-buttons"></div>
+    <h3 class="card-title">Order Summary</h3>
+    <div class="order-summary">
+        <div class="summary-item">
+            <label>Item:</label> <span id="summary-item">1</span>
+        </div>
+        <div class="summary-item">
+            <label>Postage:</label> <span id="summary-postage">£4.00</span>
+        </div>
+        <div class="summary-item">
+            <label>Discount:</label> <span id="summary-discount">-£5.00</span>
+        </div>
+        <hr>
+        <div class="summary-item">
+            <label>Order Total:</label> <span id="summary-total">$XX.XX</span>
+        </div>
+        <!-- Pay button linking to PayPal -->
+        <a href="https://www.paypal.com/ncp/payment/A3E3Y95ABXA78" class="pay-button">Pay here</a>
     </div>
 </div>
 
-<!-- PayPal hosted button ID -->
-<input type="hidden" name="hosted_button_id" value="A3E3Y95ABXA78">
-
+</div>
 </body>
 </html>
