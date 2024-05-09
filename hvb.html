@@ -276,17 +276,17 @@
     <h1>Checkout</h1>
     <div class="product-info">
         <div class="product-image">
-            <img src="https://via.placeholder.com/96" alt="Product Image">
+            <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image">
         </div>
         <div class="product-details">
-            <div class="product-title">Lorem Ipsum Product</div>
-            <div class="product-price">$XX.XX</div>
+            <div class="product-title">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
+            <div class="product-price">£65.50</div>
             <div class="quantity-selector">
                 <label for="quantity">Quantity:</label>
                 <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
             </div>
             <div class="postage">Postage</div>
-            <div>X days</div>
+            <div>4-6 days</div>
         </div>
     </div>
     <form id="checkout-form" action="#" method="post">
@@ -330,7 +330,7 @@
         </div>
 
        
-        <input type="submit" value="Confirm">
+        <input type="submit" value="Confirm Details">
     </form>
 </div>
   
@@ -356,5 +356,31 @@
 </div>
 
 </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const quantityInput = document.getElementById('quantity');
+        const totalPriceElement = document.getElementById('summary-total');
+        const itemElement = document.getElementById('summary-item');
+
+        // Assuming static values for price, discount, and postage
+        const pricePerItem = 20.00; // Update this price as needed
+        const discount = 5.00;
+        const postage = 4.00;
+
+        // Function to calculate and update the total
+        function updateTotal() {
+            const quantity = parseInt(quantityInput.value);
+            const total = (pricePerItem * quantity) - discount + postage;
+            totalPriceElement.textContent = `$${total.toFixed(2)}`;
+            itemElement.textContent = quantity; // Update item count in summary
+        }
+
+        // Update total when the quantity changes
+        quantityInput.addEventListener('input', updateTotal);
+
+        // Initial total update
+        updateTotal();
+    });
+</script>
 </body>
 </html>
