@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-card {
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .summary-container {
+            margin-top: 120px; /* Adjust this value as needed based on the height of the summary card */
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .half-width {
+            width: 48%;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 20px;
+        }
+
+        .third-width {
+            width: calc(33.33% - 8px);
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 20px;
+        }
+
+        .name-fields,
+        .address-fields {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .name-fields > div,
+        .address-fields > div {
+            width: 48%;
+        }
+
+        .payment-options {
+            margin-bottom: 20px;
+        }
+
+        .payment-option {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-option input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .payment-option label {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .payment-option label img {
+            width: 50px;
+            height: 34px;
+            margin-right: 5px;
+        }
+
+        .payment-option + .payment-option {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+
+        #card-entry-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #card-entry-form.show {
+            display: block;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image {
+            width: 96px;
+            height: 96px;
+            margin-right: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 1;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            margin-bottom: 5px;
+        }
+
+        .quantity-selector {
+            margin-bottom: 5px;
+        }
+
+        .postage {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .confirm-pay-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .confirm-pay-btn:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Checkout</h1>
+    <div class="product-info">
+        <div class="product-image">
+            <img src="https://via.placeholder.com/96" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <div class="product-title">Lorem Ipsum Product</div>
+            <div class="product-price">$XX.XX</div>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            </div>
+            <div class="postage">Postage</div>
+            <div>X days</div>
+        </div>
+    </div>
+    <form id="checkout-form" action="#" method="post">
+        <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <!-- Add more options as needed -->
+        </select>
+        <div class="name-fields">
+            <div>
+                <input type="text" id="fname" name="fname" required placeholder="First Name">
+            </div>
+            <div>
+                <input type="text" id="lname" name="lname" required placeholder="Surname">
+            </div>
+        </div>
+        <div class="address-fields">
+            <div>
+                <input type="text" id="address" name="address" required placeholder="Street Address">
+            </div>
+            <div>
+                <input type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)">
+            </div>
+        </div>
+        <div class="third-width">
+            <input type="text" id="city" name="city" required placeholder="City">
+        </div>
+        <div class="third-width">
+            <select id="state" name="state" required>
+                <option value="">Select State/Province</option>
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="third-width">
+            <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
+        </div>
+
+       
+        <input type="submit" value="Confirm">
+    </form>
+</div>
+  
+<script src="https://www.paypal.com/sdk/js?client-id=BAAE1w9ZddBAtk-shbm4X0mq3yNygo8-ZN28O_UhyhT0QYCTZGtpBolInTBOnaMh_iuQD_VnrNlhCe2ndo&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
+<div id="paypal-container-Q4EBY4HFTAJCU"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "Q4EBY4HFTAJCU",
+  }).render("#paypal-container-Q4EBY4HFTAJCU")
+</script>
+</body>
+</html>
