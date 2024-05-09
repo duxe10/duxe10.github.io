@@ -276,27 +276,12 @@
     </form>
 </div>
   
-<div id="paypal-buttons"></div>
-
-    <!-- PayPal SDK script -->
-    <script type="module">
-  import { loadScript } from "https://cdn.jsdelivr.net/npm/@paypal/paypal-js@3.1.2/dist/paypal-js.min.js";
-
-        // Define an async function to load PayPal SDK and render buttons
-        async function loadPayPalSDK() {
-            try {
-                // Load PayPal SDK
-                const paypal = await loadScript({ clientId: "BAAE1w9ZddBAtk-shbm4X0mq3yNygo8-ZN28O_UhyhT0QYCTZGtpBolInTBOnaMh_iuQD_VnrNlhCe2ndo" });
-
-                // Render PayPal buttons
-                await paypal.Buttons().render("#paypal-buttons");
-            } catch (error) {
-                console.error("Failed to load/render PayPal SDK:", error);
-            }
-        }
-
-        // Call the function to load the PayPal SDK
-        loadPayPalSDK();
-    </script>
+<script src="https://www.paypal.com/sdk/js?client-id=BAAsdeq9Wp-83zTz5mxo2XoiimQGl84DsMuPm9VJkAZN7GVD6W3tt5iRYLg9McxUD2WO4EMFyLGzMNLWas&components=hosted-buttons&disable-funding=venmo&currency=GBP"></script>
+<div id="paypal-container-A3E3Y95ABXA78"></div>
+<script>
+  paypal.HostedButtons({
+    hostedButtonId: "A3E3Y95ABXA78",
+  }).render("#paypal-container-A3E3Y95ABXA78")
+</script>
 </body>
 </html>
