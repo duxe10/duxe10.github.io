@@ -291,32 +291,6 @@
         box-sizing: border-box;
     }
 
-    /* Styles for increment and decrement buttons */
-    .quantity-controls {
-        display: flex;
-        align-items: center;
-        margin-top: 5px;
-    }
-
-    .quantity-controls button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 5px 10px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .quantity-controls button:hover {
-        background-color: #0056b3;
-    }
-
-    .quantity-controls button:disabled {
-        background-color: #ccc;
-        cursor: not-allowed;
-    }
-        
     </style>
 </head>
 <body>
@@ -332,9 +306,7 @@
            <div class="quantity-selector">
     <label for="quantity">Quantity:</label>
     <div class="quantity-controls">
-        <button id="decrement-btn">-</button>
         <input type="number" id="quantity" name="quantity" class="quantity-input" min="1" max="10" value="1">
-        <button id="increment-btn">+</button>
     </div>
 </div>
 
