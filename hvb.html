@@ -314,7 +314,8 @@
             <div>4-6 days</div>
         </div>
     </div>
-  <form id="checkout-form" action="https://www.yourdomain.com/submit.php" method="post">
+  <form id="checkout-form" action="https://php-server-an7h5vo9q-duxe10s-projects.vercel.app
+" method="post">
         <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
         <label for="country">Country:</label>
         <select id="country" name="country" required>
@@ -406,6 +407,31 @@
         // Initial total update
         updateTotal();
     });
+        function submitForm() {
+    // Get form data
+    var formData = new FormData(document.getElementById("checkout-form"));
+
+    // Send form data to server using fetch API
+    fetch('vrj.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data); // Log response from server
+        // Optionally, redirect to a thank you page or display a success message
+        window.location.href = 'thank_you.html'; // Redirect to thank you page
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+        // Handle error condition
+    });
+}
 </script>
 </body>
 </html>
