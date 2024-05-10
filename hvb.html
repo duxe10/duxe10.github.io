@@ -406,7 +406,7 @@
         // Initial total update
         updateTotal();
     });
-        function submitForm() {
+    function submitForm() {
     // Get form data
     var formData = new FormData(document.getElementById("checkout-form"));
 
@@ -423,12 +423,13 @@
     })
     .then(data => {
         console.log(data); // Log response from server
-        // Optionally, redirect to a thank you page or display a success message
-        window.location.href = 'thank_you.html'; // Redirect to thank you page
+        // Optionally, display a success message
+        alert('Form submitted successfully!');
     })
     .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
         // Handle error condition
+        alert('There was an error submitting the form.');
     });
 }
 </script>
