@@ -133,12 +133,23 @@ body {
     height: 100%; /* Ensure the image fills its container */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
-        .card {
+   .card {
     margin-top: 20px; /* Add margin to create space between the form and the card */
 }
 
-#summary-list {
-    margin-top: 20px; /* Add margin to create space between the form and the summary list */
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 20px auto; /* Center the container horizontally */
+        max-width: 90%; /* Adjust the maximum width for smaller screens */
+    }
+
+    .card {
+        position: relative; /* Remove fixed positioning */
+        top: auto; /* Remove top positioning */
+        right: auto; /* Remove right positioning */
+        width: auto; /* Let the card width adjust based on content */
+        margin-top: 20px; /* Add margin to create space between the form and the card */
+    }
 }
 
 
