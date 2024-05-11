@@ -118,6 +118,30 @@ body {
         margin: 3vw 0;
     }
 }
+.carousel-container {
+    max-width: 90vw; /* Set maximum width for responsiveness */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 1vw; /* Optional: Add border radius */
+}
+
+.carousel {
+    display: flex; /* Display images in a row */
+    transition: transform 0.5s ease; /* Smooth transition between images */
+}
+
+.carousel img {
+    width: 100%; /* Ensure images fill the carousel container */
+    object-fit: cover; /* Prevent image distortion */
+}
+
+/* Media query for smaller viewports */
+@media only screen and (max-width: 480px) {
+    .carousel-container {
+        max-width: 95vw; /* Adjust maximum width for smaller screens */
+        border-radius: 0; /* Optional: Remove border radius */
+    }
+}
 
 
     </style>
