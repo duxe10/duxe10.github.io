@@ -5,298 +5,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <style>
-       body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-       .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 20px 510px 20px auto; /* Adjusted right margin to create more space */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Reset CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw; /* Adjusted maximum width based on viewport width */
+    margin: 5vw auto; /* Adjusted margin based on viewport width */
+    background-color: #fff;
+    padding: 5vw; /* Adjusted padding based on viewport width */
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1); /* Adjusted box shadow based on viewport width */
+}
 
-        .card {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 300px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
+.card {
+    position: fixed;
+    top: 5vw; /* Adjusted top position based on viewport width */
+    right: 5vw; /* Adjusted right position based on viewport width */
+    width: 40vw; /* Adjusted width based on viewport width */
+    padding: 5vw; /* Adjusted padding based on viewport width */
+    background-color: #ffffff;
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1); /* Adjusted box shadow based on viewport width */
+    transition: box-shadow 0.3s ease-in-out;
+}
 
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+.card:hover {
+    box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.2); /* Adjusted box shadow based on viewport width */
+}
 
-        .summary-container {
-            margin-top: 120px; /* Adjust this value as needed based on the height of the summary card */
-        }
+.summary-container {
+    margin-top: 20vw; /* Adjusted margin top based on viewport width */
+}
 
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        h2 {
-            color: #333;
-            text-align: left;
-        }
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 4vw; /* Adjusted font size based on viewport width */
+}
 
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
+h2 {
+    color: #333;
+    text-align: left;
+    font-size: 3vw; /* Adjusted font size based on viewport width */
+}
 
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-sizing: border-box;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
+label {
+    display: block;
+    margin-bottom: 2vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        select:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-            outline: none;
-        }
+input[type="text"],
+input[type="email"],
+select {
+    width: 90vw; /* Adjusted width based on viewport width */
+    max-width: 40vw; /* Limited maximum width for larger screens */
+    padding: 4vw; /* Adjusted padding based on viewport width */
+    margin-bottom: 10vw; /* Adjusted margin bottom based on viewport width */
+    border: 1px solid #ccc;
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
 
-        input[type="submit"] {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 1vw rgba(0, 123, 255, 0.25);
+    outline: none;
+}
 
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+input[type="submit"] {
+    width: 90vw; /* Adjusted width based on viewport width */
+    max-width: 40vw; /* Limited maximum width for larger screens */
+    padding: 4vw; /* Adjusted padding based on viewport width */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    cursor: pointer;
+    font-size: 4vw; /* Adjusted font size based on viewport width */
+    transition: background-color 0.3s;
+}
 
-        .half-width {
-            width: 48%;
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 20px;
-        }
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
-        .third-width {
-            width: calc(33.33% - 8px);
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 20px;
-        }
+.half-width {
+    width: 44vw; /* Adjusted width based on viewport width */
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .name-fields,
-        .address-fields {
-            display: flex;
-            justify-content: space-between;
-        }
+.third-width {
+    width: calc(30vw - 2vw); /* Adjusted width based on viewport width */
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .name-fields > div,
-        .address-fields > div {
-            width: 48%;
-        }
+.name-fields,
+.address-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .payment-options {
-            margin-bottom: 20px;
-        }
+.name-fields > div,
+.address-fields > div {
+    width: 44vw; /* Adjusted width based on viewport width */
+}
 
-        .payment-option {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
+.payment-options {
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .payment-option input[type="radio"] {
-            margin-right: 10px;
-        }
+.payment-option {
+    margin-bottom: 2vw; /* Adjusted margin bottom based on viewport width */
+    display: flex;
+    align-items: center;
+}
 
-        .payment-option label {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
+.payment-option input[type="radio"] {
+    margin-right: 2vw; /* Adjusted margin right based on viewport width */
+}
 
-        .payment-option label img {
-            width: 50px;
-            height: 34px;
-            margin-right: 5px;
-        }
+.payment-option label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 
-        .payment-option + .payment-option {
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-            margin-top: 10px;
-        }
+.payment-option label img {
+    width: 12vw; /* Adjusted width based on viewport width */
+    height: 8vw; /* Adjusted height based on viewport width */
+    margin-right: 2vw; /* Adjusted margin right based on viewport width */
+}
 
-        #card-entry-form {
-            display: none;
-            margin-top: 20px;
-        }
+.payment-option + .payment-option {
+    border-top: 1px solid #ccc;
+    padding-top: 5vw; /* Adjusted padding top based on viewport width */
+    margin-top: 5vw; /* Adjusted margin top based on viewport width */
+}
 
-        #card-entry-form.show {
-            display: block;
-        }
+#card-entry-form {
+    display: none;
+    margin-top: 5vw; /* Adjusted margin top based on viewport width */
+}
 
-        .product-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+#card-entry-form.show {
+    display: block;
+}
 
-        .product-image {
-            width: 96px;
-            height: 96px;
-            margin-right: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            overflow: hidden;
-        }
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.product-image {
+    width: 24vw; /* Adjusted width based on viewport width */
+    height: 24vw; /* Adjusted height based on viewport width */
+    margin-right: 5vw; /* Adjusted margin right based on viewport width */
+    margin-top: 5vw; /* Adjusted margin top based on viewport width */
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    overflow: hidden;
+}
 
-        .product-details {
-            flex: 1;
-        }
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        .product-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
+.product-details {
+    flex: 1;
+}
 
-        .product-price {
-            margin-bottom: 5px;
-        }
+.product-title {
+    font-size: 4vw; /* Adjusted font size based on viewport width */
+    font-weight: bold;
+    margin-bottom: 2vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .quantity-selector {
-            margin-bottom: 5px;
-        }
+.product-price {
+    margin-bottom: 2vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .postage {
-            font-weight: bold;
-            margin-top: 20px;
-        }
+.quantity-selector {
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .confirm-pay-btn {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+.postage {
+    font-weight: bold;
+    margin-top: 5vw; /* Adjusted margin top based on viewport width */
+}
 
-        .confirm-pay-btn:hover {
-            background-color: #0056b3;
-        }
-    
-        .card {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 300px;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
+.confirm-pay-btn {
+    display: block;
+    width: 90vw; /* Adjusted width based on viewport width */
+    max-width: 40vw; /* Limited maximum width for larger screens */
+    padding: 4vw; /* Adjusted padding based on viewport width */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4vw; /* Adjusted border radius based on viewport width */
+    cursor: pointer;
+    font-size: 4vw; /* Adjusted font size based on viewport width */
+    margin-top: 5vw; /* Adjusted margin top based on viewport width */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
 
-        .card:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
+.confirm-pay-btn:hover {
+    background-color: #0056b3;
+}
 
-        .card-title {
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
+.quantity-selector {
+    margin-bottom: 5vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .order-summary {
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid #ccc;
-        }
+.quantity-selector label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2vw; /* Adjusted margin bottom based on viewport width */
+}
 
-        .summary-item {
-            margin-bottom: 15px;
-        }
+.quantity-input {
+    width: 15vw; /* Adjusted width based on viewport width */
+    padding: 4vw; /* Adjusted padding based on viewport width */
+    border: 1px solid #ccc;
+    border-radius: 2vw; /* Adjusted border radius based on viewport width */
+    font-size: 4vw; /* Adjusted font size based on viewport width */
+    box-sizing: border-box;
+}
 
-        .summary-item label {
-            font-weight: bold;
-        }
+hr {
+    border: none;
+    border-top: 0.2vw solid #ccc; /* Adjusted border thickness based on viewport width */
+    margin: 2vw 0; /* Adjusted margin based on viewport width */
+}
 
-        .pay-button {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-
-        .pay-button:hover {
-            background-color: #0056b3;
-        }
-         .quantity-selector {
-        margin-bottom: 20px;
-    }
-
-    .quantity-selector label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-    }
-
-    .quantity-input {
-        width: 100px;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        box-sizing: border-box;
-    }
-<hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
-<h2 style="font-size: 16px; text-align: left;">Post to</h1>
+h2 {
+    font-size: 3vw; /* Adjusted font size based on viewport width */
+    text-align: left;
+    margin-left: 5vw; /* Adjusted margin left based on viewport width */
+}
 
     </style>
      <script src="https://cdn.jsdelivr.net/npm/@twilio/sdk@3.59.0/dist/twilio.min.js"></script>
