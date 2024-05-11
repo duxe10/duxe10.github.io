@@ -358,6 +358,9 @@
     <input type="button" value="Confirm Details" onclick="submitForm()">
 </form>
   
+<div id="summary-list" style="display: none;"></div>
+</div>
+
 <div class="card">
     <h3 class="card-title">Order Summary</h3>
     <div class="order-summary">
@@ -378,40 +381,6 @@
         <a href="https://www.paypal.com/ncp/payment/A3E3Y95ABXA78" class="pay-button">Pay here</a>
     </div>
 </div>
-
-</div>
-    <div id="summary-list" style="display: none;">
-    <!-- Summary list will be dynamically populated here -->
-</div>
-
-<script>
-function submitForm() {
-    // Get form data
-    var formData = new FormData(document.getElementById("checkout-form"));
-
-    // Compose summary list
-    var summaryList = document.getElementById("summary-list");
-    summaryList.innerHTML = `
-        <ul>
-            <li>First Name: ${formData.get('fname')}</li>
-            <li>Last Name: ${formData.get('lname')}</li>
-            <li>Address: ${formData.get('address')}</li>
-            <li>Address 2: ${formData.get('address2')}</li>
-            <li>City: ${formData.get('city')}</li>
-            <li>State: ${formData.get('state')}</li>
-            <li>Postcode: ${formData.get('postcode')}</li>
-            <!-- Add more fields as needed -->
-        </ul>
-    `;
-
-    // Show the summary list
-    summaryList.style.display = "block";
-
-    // Hide the form
-    document.getElementById("checkout-form").style.display = "none";
-}
-</script>
-
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
