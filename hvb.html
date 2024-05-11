@@ -399,7 +399,7 @@
         // Function to calculate and update the total
         function updateTotal() {
             const quantity = parseInt(quantityInput.value);
-            const total = (pricePerItem * quantity) - discount + postage;
+            const total = (pricePerItem * quantity)+ postage;
             totalPriceElement.textContent = `$${total.toFixed(2)}`;
             itemElement.textContent = quantity; // Update item count in summary
         }
