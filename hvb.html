@@ -378,9 +378,6 @@
         <div class="summary-item">
             <label>Postage:</label> <span id="summary-postage">£4.00</span>
         </div>
-        <div class="summary-item">
-            <label>Discount:</label> <span id="summary-discount">-£5.00</span>
-        </div>
         <hr>
         <div class="summary-item">
             <label>Order Total:</label> <span id="summary-total">$XX.XX</span>
@@ -396,9 +393,8 @@
         const itemElement = document.getElementById('summary-item');
 
         // Assuming static values for price, discount, and postage
-        const pricePerItem = 20.00; // Update this price as needed
-        const discount = 5.00;
-        const postage = 4.00;
+        const pricePerItem = 65.50; // Update this price as needed
+        const postage = 3.99;
 
         // Function to calculate and update the total
         function updateTotal() {
