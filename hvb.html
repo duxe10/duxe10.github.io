@@ -118,6 +118,22 @@ body {
         margin: 3vw 0;
     }
 }
+        .product-image {
+    width: 100%; /* Set the width to fill the container */
+    max-width: 96px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Ensure the image fills its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
 
     </style>
      <script src="https://cdn.jsdelivr.net/npm/@twilio/sdk@3.59.0/dist/twilio.min.js"></script>
