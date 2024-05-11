@@ -406,8 +406,12 @@ function submitForm() {
 
     // Show the summary list
     summaryList.style.display = "block";
+
+    // Hide the form
+    document.getElementById("checkout-form").style.display = "none";
 }
 </script>
+
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
