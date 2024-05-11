@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header styles */
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 24px;
+            margin-right: 20px;
+        }
+
+        .category-button {
+            background: none;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .category-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .categories {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .categories ul li a:hover {
+            background-color: #ddd;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 550px; /* Adjusted width */
+            padding: 8px;
+            margin-right: 20px; /* Adjusted margin for better spacing */
+            border-radius: 5px;
+            border: none;
+        }
+
+        .search-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+.header-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            color: #000;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .basket-button {
+            margin-left: 10px;
+        }
+      .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Change flex direction to row */
+}
+
+        
+        .product-image {
+            position: relative;
+            width: 100%;
+            max-width: 500px; /* Adjust the maximum width as needed */
+            margin: 0 auto; /* Center the image container horizontally */
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+             border-radius: 20px;
+        }
+.arrow-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60px; /* Set a fixed width */
+    height: 60px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-button svg {
+    width: 24px; /* Adjust the width of the SVG icon */
+    height: 24px; /* Adjust the height of the SVG icon */
+    fill: white; /* Set the fill color of the SVG */
+}
+
+.left-arrow {
+    left: 10px; /* Position the left arrow */
+}
+
+.right-arrow {
+    right: 10px; /* Position the right arrow */
+}
+
+/* Hover effect */
+.arrow-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+        .thumbnail-images {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnail-images img {
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+             border-radius: 10px;
+        }
+
+        .thumbnail-images img.active {
+            border-color: #007bff;
+        }
+             
+
+       .product-details,
+.product-info {
+    flex: 1;
+}
+
+.product-info {
+    margin-left: 20px; /* Add margin between the two sections */
+}
+          .price {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .price .original-price {
+            text-decoration: line-through;
+            margin-right: 10px;
+            color: #999;
+        }
+    .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .quantity-selector label {
+            margin-right: 10px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .quantity-input {
+            width: 50px;
+            padding: 5px;
+            text-align: center;
+        }
+.button {
+    padding: 10px 20px;
+    width: 400px; /* Set the width of the button */
+    height: 50px; /* Set the height of the button */
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 25px; /* Makes the button edges fully rounded */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.buy-now-button {
+    background-color: #FFC107; /* A bright yellow to catch the user’s eye */
+}
+
+.buy-now-button:hover {
+    background-color: #e0a800;
+}
+
+.button:focus {
+    outline: 2px solid #0056b3; /* Adds a custom focus outline for accessibility */
+}
+
+.button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, #007bff, #0056b3);
+}
+
+.button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <span class="brand">E-store</span>
+        <div class="dropdown">
+            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
+            <div class="categories" id="categories">
+                <ul>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
+                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
+                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
+                    <li><a href="#toys-games">Toys & Games</a></li>
+                    <li><a href="#health">Health</a></li>
+                    <li><a href="#baby">Baby</a></li>
+                    <li><a href="#electronics">Electronics</a></li>
+                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <input type="text" class="search-bar" placeholder="Search products...">
+        <button class="header-button search-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
+        </button>
+        <button class="header-button">𝗦𝗶𝗴𝗻 𝗜𝗻</button>
+        <button class="header-button basket-button">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="Basket Icon">
+        </button>
+    </div>
+</div>
+<div class="container">
+    <div class="product-details">
+        <div class="product-image">
+            <button class="arrow-button left-arrow" onclick="prevImage()">
+                <svg class="icon icon-chevron-left" focusable="false" aria-hidden="true">
+                    <use href="#icon-chevron-left"></use>
+                </svg>
+            </button>
+            <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image" id="mainImage">
+            <button class="arrow-button right-arrow" onclick="nextImage()">
+                <svg class="icon icon-chevron-right" focusable="false" aria-hidden="true">
+                    <use href="#icon-chevron-right"></use>
+                </svg>
+            </button>
+            <div class="thumbnail-images" id="thumbnailImages"></div>
+        </div>
+    </div>
+    <div class="product-info">
+        <h2>NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</h2>
+        <div class="price">
+            <span class="original-price">RRP £95</span>
+            £65.00
+            <br>
+            Save £30 (30% OFF)
+        </div>
+        <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" class="quantity-input" min="1" max="10" value="1">
+        </div>
+        <p>1.1k bought in past month</p>
+        <div class="button-container">
+            <button class="button buy-now-button" onclick="redirectToDivian()">Buy Now</button>
+            <div style="height: 15px;"></div> <!-- Space between buttons -->
+            <button class="button">Add to Cart</button>
+        </div>
+         <div style="margin-top: 15px;"></div> 
+        <div class="product-description">
+            <h3>About this item</h3>
+            <p>Keep frames flat and secure to the wall, discreet strips are hidden behind the picture frame. Item package may vary.</p>
+            <p>Strips lock and relock so frame can be removed and repositioned</p>
+            <p>Holding Power: 4 sets of strips can hold one frame weighing up to 7.2 kg, measuring up to 60 cm by 90 cm</p>
+            <p>Damage-free hanging, holds strongly and removes cleanly</p>
+            <p>Easy to apply, no need for nails, screws or drills</p>
+            <p>Strips stretch off cleanly without leaving holes, marks or sticky residue</p>
+            <p>Suitable for most smooth surfaces including painted walls, tiles, metal and wood</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const imageUrls = [
+        "https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg",
+        "https://i.ebayimg.com/images/g/p3YAAOSw8ctl-tGz/s-l960.jpg",
+        "https://i.ebayimg.com/images/g/wksAAOSwkXll-tGz/s-l960.jpg",
+        "https://i.ebayimg.com/images/g/VNIAAOSwOr9l-tGz/s-l960.jpg"
+    ];
+
+    let currentIndex = 0;
+    const mainImage = document.getElementById('mainImage');
+    const thumbnailImagesContainer = document.getElementById('thumbnailImages');
+
+    function displayImage(index) {
+        currentIndex = index;
+        mainImage.src = imageUrls[currentIndex];
+        populateThumbnails();
+        highlightThumbnail();
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % imageUrls.length;
+        displayImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
+        displayImage(currentIndex);
+    }
+
+    function populateThumbnails() {
+        thumbnailImagesContainer.innerHTML = '';
+        imageUrls.forEach((imageUrl, index) => {
+            const thumbnailImage = document.createElement('img');
+            thumbnailImage.src = imageUrl;
+            thumbnailImage.onclick = () => displayImage(index);
+            thumbnailImagesContainer.appendChild(thumbnailImage);
+        });
+    }
+
+    function highlightThumbnail() {
+        const thumbnailImages = thumbnailImagesContainer.getElementsByTagName('img');
+        for (let i = 0; i < thumbnailImages.length; i++) {
+            thumbnailImages[i].classList.remove('active');
+        }
+        thumbnailImages[currentIndex].classList.add('active');
+    }
+
+    // Call the displayImage function initially to display the first image
+    displayImage(0);
+</script>
+</body>
+</html>
