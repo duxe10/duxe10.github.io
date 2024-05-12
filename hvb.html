@@ -67,46 +67,40 @@
             }
 
           /* Styles for form elements */
+/* Adjust width and height of input fields */
 input[type="text"],
 input[type="email"],
 select,
-input[type="number"] {
-    width: 100%;
-    padding: 15px; /* Increase padding for thicker input fields */
-    font-size: 16px; /* Increase font size for better visibility */
-    border: 2px solid #ccc; /* Add thicker border for input fields */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-    margin-bottom: 20px; /* Add margin to create space between form elements */
-}
-
-/* Styles for quantity input */
-.quantity-input {
-    width: 100%;
-    padding: 15px; /* Increase padding for thicker input fields */
-    font-size: 16px; /* Increase font size for better visibility */
-    border: 2px solid #ccc; /* Add thicker border for input fields */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-    margin-bottom: 20px; /* Add margin to create space between form elements */
-}
-
-/* Styles for confirm details button */
+input[type="submit"],
 input[type="button"] {
-    width: 100%;
-    padding: 20px; /* Increase padding for larger buttons */
-    font-size: 18px; /* Increase font size for better visibility */
-    background-color: #007bff; /* Set background color to blue */
-    color: #fff; /* Set text color to white */
-    border: none; /* Remove border */
-    border-radius: 25px; /* Make button pill-shaped */
-    cursor: pointer; /* Add cursor pointer */
-    transition: background-color 0.3s; /* Add transition effect for smoother hover */
-    height: 60px; /* Increase button height */
+    width: calc(200% - 2vw); /* Double the width */
+    height: calc(200% - 2vw); /* Double the height */
+    padding: 10px; /* Increase padding for better appearance */
+    font-size: 16px; /* Adjust font size as needed */
+    /* Add other styling properties as needed */
 }
 
-input[type="button"]:hover {
-    background-color: #0056b3; /* Change background color on hover */
+/* Style the confirm details button */
+input[type="button"] {
+    width: calc(200% - 2vw); /* Double the width */
+    height: calc(200% - 2vw); /* Double the height */
+    padding: 10px; /* Increase padding for better appearance */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 20px; /* Make the button pill-shaped */
+    cursor: pointer; /* Add cursor pointer */
+    /* Add other styling properties as needed */
+}
+
+/* Style the quantity selectors */
+.quantity-input {
+    width: calc(200% - 2vw); /* Double the width */
+    height: calc(200% - 2vw); /* Double the height */
+    padding: 10px; /* Increase padding for better appearance */
+    font-size: 16px; /* Adjust font size as needed */
+    /* Add other styling properties as needed */
 }
 
             hr {
