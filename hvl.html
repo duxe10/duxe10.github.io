@@ -35,6 +35,7 @@
 .right {
     display: flex;
     align-items: center;
+    margin-bottom: 10px; /* Add margin between top row and search row */
 }
 
 .search-bar {
@@ -76,16 +77,24 @@
         padding: 20px 20px 10px; /* Adjust padding for better spacing */
     }
 
+    .left,
+    .right {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
+        margin-bottom: 20px; /* Add margin between top row and search row */
+    }
+
     .search-bar {
         width: calc(100% - 40px); /* Adjust width to fit within the header */
-        margin-top: 20px; /* Increase margin between search bar and buttons */
+        margin-top: 0; /* Remove margin between search bar and buttons */
     }
 
     .header-button,
     .basket-button {
-        margin: 0 5px; /* Add margin between buttons */
+        margin: 0; /* Remove margin between buttons */
     }
 }
+
 
         
       .container {
