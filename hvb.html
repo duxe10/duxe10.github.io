@@ -122,19 +122,13 @@
             hr {
                 margin: 3vw 0;
             }
-.product-image {
-    max-width: 300px; /* Set the maximum width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
 .product-image img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    object-fit: contain;
+}
+    .product-image {
+    max-width: 300px; /* Adjust this value to your desired maximum width */
+    margin: 0 auto; /* Centers the container horizontally */
 }
         
     </style>
@@ -144,7 +138,7 @@
 <div class="container">
     <h1>Checkout</h1>
     <div class="product-info">
-       <div class="product-image">
+      <div class="product-image">
     <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image">
 </div>
         <div class="product-details">
