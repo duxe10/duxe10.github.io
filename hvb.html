@@ -69,62 +69,75 @@ body {
     }
 
     label,
-    input[type="text"],
-    input[type="email"],
-    select,
-    input[type="submit"] {
-        width: 90%;
-        max-width: 80vw;
-        padding: 5vw;
-        font-size: 4vw;
-    }
-
-    .half-width,
-    .third-width {
-        width: 80%;
-        max-width: 75vw;
-        margin-bottom: 3vw;
-    }
-
-    .name-fields,
-    .address-fields {
-        margin-bottom: 3vw;
-    }
-
-    .payment-option label img {
-        width: 20vw;
-        height: auto;
-    }
-
-    .quantity-input {
-        width: 30vw;
-        padding: 4vw;
-        font-size: 4vw;
-    }
-
-    .confirm-pay-btn {
-        width: 90%;
-        max-width: 80vw;
-        padding: 5vw;
-        font-size: 4vw;
-        margin-top: 5vw;
-    }
-
-    .quantity-selector label {
-        margin-bottom: 3vw;
-    }
-
-    hr {
-        margin: 3vw 0;
-    }
+input[type="text"],
+input[type="email"],
+select,
+input[type="submit"] {
+    width: 90%;
+    max-width: 80vw;
+    padding: 5vw;
+    font-size: 4vw;
+    border: 1px solid #ccc; /* Add border for better visibility */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 3vw;
 }
-        .product-image {
+
+.half-width,
+.third-width {
+    width: 80%;
+    max-width: 75vw;
+    margin-bottom: 3vw;
+}
+
+.name-fields,
+.address-fields {
+    margin-bottom: 3vw;
+}
+
+.quantity-input {
+    width: 30vw;
+    padding: 4vw;
+    font-size: 4vw;
+    border: 1px solid #ccc; /* Add border for better visibility */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 3vw;
+}
+
+.confirm-pay-btn {
+    width: 90%;
+    max-width: 80vw;
+    padding: 5vw;
+    font-size: 4vw;
+    margin-top: 5vw;
+    background-color: #007bff; /* Add background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.confirm-pay-btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
+
+.quantity-selector label {
+    margin-bottom: 3vw;
+}
+
+hr {
+    margin: 3vw 0;
+}
+
+/* Rounded product image */
+.product-image {
     width: 100%; /* Set the width to fill the container */
     max-width: 96px; /* Set a maximum width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px;
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: 50%; /* Make the image appear rounded */
     overflow: hidden;
 }
 
