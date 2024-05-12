@@ -221,33 +221,32 @@ input[type="button"] {
         updateTotal();
     });
 
-    function submitForm() {
-        // Get form data
-        var formData = new FormData(document.getElementById("checkout-form"));
+   function submitForm() {
+    // Get form data
+    var formData = new FormData(document.getElementById("checkout-form"));
 
-        // Send form data to Cloudflare Worker endpoint
-        fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log(data); // Log response from server
-            // Optionally, display a success message
-            alert('Form submitted successfully!');
-        })
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-            // Handle error condition
-            alert('There was an error submitting the form.');
-        });
-    }
-
+    // Send form data to Cloudflare Worker endpoint
+    fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.text();
+    })
+    .then(data => {
+        console.log(data); // Log response from server
+        // Optionally, display a success message
+        alert('Form submitted successfully!');
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+        // Handle error condition
+        alert('There was an error submitting the form.');
+    });
+}
     function submitForm() {
         // Get form data
         var formData = new FormData(document.getElementById("checkout-form"));
