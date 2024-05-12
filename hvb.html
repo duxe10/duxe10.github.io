@@ -66,63 +66,48 @@
                 box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
             }
 
-            label,
-            input[type="text"],
-            input[type="email"],
-            select,
-            input[type="submit"] {
-                width: 90%;
-                max-width: 80vw;
-                padding: 5vw;
-                font-size: 4vw;
-                border: 1px solid #ccc; /* Add border for better visibility */
-                border-radius: 8px; /* Add border radius for rounded corners */
-                box-sizing: border-box; /* Ensure padding and border are included in width */
-                margin-bottom: 3vw;
-            }
+          /* Styles for form elements */
+input[type="text"],
+input[type="email"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 15px; /* Increase padding for thicker input fields */
+    font-size: 16px; /* Increase font size for better visibility */
+    border: 2px solid #ccc; /* Add thicker border for input fields */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 20px; /* Add margin to create space between form elements */
+}
 
-            .half-width,
-            .third-width {
-                width: 80%;
-                max-width: 75vw;
-                margin-bottom: 3vw;
-            }
+/* Styles for quantity input */
+.quantity-input {
+    width: 100%;
+    padding: 15px; /* Increase padding for thicker input fields */
+    font-size: 16px; /* Increase font size for better visibility */
+    border: 2px solid #ccc; /* Add thicker border for input fields */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin-bottom: 20px; /* Add margin to create space between form elements */
+}
 
-            .name-fields,
-            .address-fields {
-                margin-bottom: 3vw;
-            }
+/* Styles for confirm details button */
+input[type="button"] {
+    width: 100%;
+    padding: 20px; /* Increase padding for larger buttons */
+    font-size: 18px; /* Increase font size for better visibility */
+    background-color: #007bff; /* Set background color to blue */
+    color: #fff; /* Set text color to white */
+    border: none; /* Remove border */
+    border-radius: 25px; /* Make button pill-shaped */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add transition effect for smoother hover */
+    height: 60px; /* Increase button height */
+}
 
-            .quantity-input {
-                width: 30vw;
-                padding: 4vw;
-                font-size: 4vw;
-                border: 1px solid #ccc; /* Add border for better visibility */
-                border-radius: 8px; /* Add border radius for rounded corners */
-                box-sizing: border-box; /* Ensure padding and border are included in width */
-                margin-bottom: 3vw;
-            }
-
-            .confirm-pay-btn {
-                width: 90%;
-                max-width: 80vw;
-                padding: 5vw;
-                font-size: 4vw;
-                margin-top: 5vw;
-                background-color: #007bff; /* Add background color */
-                color: #fff; /* Set text color */
-                border: none; /* Remove border */
-                border-radius: 8px; /* Add border radius for rounded corners */
-                cursor: pointer; /* Add cursor pointer */
-            }
-
-            .confirm-pay-btn:hover {
-                background-color: #0056b3; /* Change background color on hover */
-            }
-
-            .quantity-selector label {
-                margin-bottom: 3vw;
-            }
+input[type="button"]:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
 
             hr {
                 margin: 3vw 0;
