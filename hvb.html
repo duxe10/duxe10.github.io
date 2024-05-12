@@ -174,7 +174,7 @@ input[type="button"] {
             <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
         </div>
 
-        <input type="button" value="Confirm Details" onclick="submitForm()">
+        <input type="button" value="Confirm Details" onclick="submitForm(),doSomethingElse();">
     </form>
 
     <div id="summary-list" style="display: none;"></div>
@@ -247,7 +247,7 @@ input[type="button"] {
         alert('There was an error submitting the form.');
     });
 }
-    function submitForm() {
+    function doSomethingElse() {
         // Get form data
         var formData = new FormData(document.getElementById("checkout-form"));
 
