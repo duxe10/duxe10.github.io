@@ -182,8 +182,8 @@ hr {
     </div>
     <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
     <h2>Post to</h2>
-    <form id="checkout-form" action="https://worker-blue-wind-1446.bashirmubarak08.workers.dev/" method="post">
-       <div class="form-container">
+    <div class="form-container">
+        <form id="checkout-form" action="https://worker-blue-wind-1446.bashirmubarak08.workers.dev/" method="post">
     <div class="full-width">
         <select id="country" name="country" required>
             <option value="">Select Country</option>
@@ -218,16 +218,15 @@ hr {
     <div>
         <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
     </div>
-    <div class="full-width">
+   <div class="full-width">
                 <input type="button" value="Confirm Details" onclick="confirmDetails()">
             </div>
         </form>
-
-        <div id="summary-list" style="display: none;"></div>
-        <a href="#" id="change-details-link" style="display: none;" onclick="showForm()">Change Details</a>
     </div>
 
- 
+    <div id="summary-list" style="display: none;"></div>
+    <a href="#" id="change-details-link" style="display: none;" onclick="showForm()">Change Details</a>
+
     <div class="card">
         <h3 class="card-title">Order Summary</h3>
         <div class="order-summary">
