@@ -120,13 +120,18 @@
                 margin: 3vw 0;
             }
 
-            /* Rounded product image */
+           .product-image {
+        max-width: 200px; /* Set the maximum width for the container */
+        max-height: 200px; /* Set the maximum height for the container */
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
     .product-image img {
-                max-width: 100%;
-                max-height: 200px;
-                border-radius: 8px;
-                overflow: hidden;
-            }
+        width: 100%; /* Ensure the image fills its container */
+        height: 100%; /* Ensure the image fills its container */
+        object-fit: contain; /* Maintain aspect ratio and fit within the container */
+    }
 
 
 
