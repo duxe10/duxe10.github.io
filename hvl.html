@@ -23,20 +23,15 @@
     padding: 20px; /* Increase padding for a thicker header */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the start of the header */
+    align-items: center; /* Center items horizontally */
 }
 
 .brand {
     font-size: 24px;
-    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin between brand and buttons */
 }
 
-.left {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Add margin between elements */
-}
-
+.left,
 .right {
     display: flex;
     align-items: center;
@@ -45,9 +40,9 @@
 .search-bar {
     width: calc(100% - 40px); /* Adjust width to fit within the header */
     padding: 8px;
-    margin-bottom: 10px; /* Add margin between search bar and buttons */
     border-radius: 5px;
     border: none;
+    margin-top: 10px; /* Add margin between search bar and buttons */
 }
 
 .search-icon {
@@ -68,7 +63,7 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    margin-right: 10px; /* Add margin between buttons */
+    margin: 0 5px; /* Add margin between buttons */
 }
 
 .basket-button {
@@ -83,12 +78,12 @@
 
     .search-bar {
         width: calc(100% - 40px); /* Adjust width to fit within the header */
-        margin-bottom: 20px; /* Increase margin between search bar and buttons */
+        margin-top: 20px; /* Increase margin between search bar and buttons */
     }
 
     .header-button,
     .basket-button {
-        margin-right: 0; /* Remove margin between buttons */
+        margin: 0 5px; /* Add margin between buttons */
     }
 }
 
