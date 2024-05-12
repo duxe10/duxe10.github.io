@@ -122,13 +122,16 @@
             hr {
                 margin: 3vw 0;
             }
-.product-image img {
-    max-width: 100%;
-    height: auto;
+.product-image {
+    max-width: 400px; /* Adjust this value to your desired maximum width */
+    margin: 0 auto;
 }
-    .product-image {
-    max-width: 300px; /* Adjust this value to your desired maximum width */
-    margin: 0 auto; /* Centers the container horizontally */
+
+.product-image img {
+    width: 100%;
+    max-width: 400px; /* Same value as the parent container */
+    height: auto;
+    display: block; /* This ensures the image is a block-level element */
 }
         
     </style>
