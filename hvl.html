@@ -124,7 +124,7 @@
     margin: 20px auto;
     padding: 20px;
     display: flex;
-    flex-direction: row; /* Change flex direction to row */
+    flex-direction: column; /* Change flex direction to row */
 }
 
         
@@ -315,6 +315,24 @@
 }
     </script>
 <div class="container">
+        <div class="product-details">
+        <div class="product-image">
+            <button class="arrow-button left-arrow" onclick="prevImage()">
+                <svg class="icon icon-chevron-left" focusable="false" aria-hidden="true">
+                    <use href="#icon-chevron-left"></use>
+                </svg>
+            </button>
+            <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image" id="mainImage">
+            <button class="arrow-button right-arrow" onclick="nextImage()">
+                <svg class="icon icon-chevron-right" focusable="false" aria-hidden="true">
+                    <use href="#icon-chevron-right"></use>
+                </svg>
+            </button>
+            <div class="thumbnail-images" id="thumbnailImages"></div>
+        </div>
+    </div>
+</div>
+
     <div class="product-info">
         <h2>NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</h2>
         <div class="price">
@@ -345,23 +363,6 @@
             <p>Suitable for most smooth surfaces including painted walls, tiles, metal and wood</p>
         </div>
     </div>
-    <div class="product-details">
-        <div class="product-image">
-            <button class="arrow-button left-arrow" onclick="prevImage()">
-                <svg class="icon icon-chevron-left" focusable="false" aria-hidden="true">
-                    <use href="#icon-chevron-left"></use>
-                </svg>
-            </button>
-            <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image" id="mainImage">
-            <button class="arrow-button right-arrow" onclick="nextImage()">
-                <svg class="icon icon-chevron-right" focusable="false" aria-hidden="true">
-                    <use href="#icon-chevron-right"></use>
-                </svg>
-            </button>
-            <div class="thumbnail-images" id="thumbnailImages"></div>
-        </div>
-    </div>
-</div>
 
 
 <script>
