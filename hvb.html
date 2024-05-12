@@ -120,21 +120,20 @@
                 margin: 3vw 0;
             }
 
-      .product-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 100%;
-            max-height: 300px; /* Set a maximum height for the container */
-            overflow: hidden;
-            border-radius: 8px;
-        }
+     .product-image {
+    width: 100%;
+    max-width: 400px; /* Set the maximum width for the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden;
+    border-radius: 8px;
+}
 
-        .product-image img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove the default inline behavior */
+}
         
     </style>
     <script src="https://cdn.jsdelivr.net/npm/@twilio/sdk@3.59.0/dist/twilio.min.js"></script>
