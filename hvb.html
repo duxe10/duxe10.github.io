@@ -294,37 +294,6 @@
         // Hide the form
         document.getElementById("checkout-form").style.display = "none";
     }
-   window.addEventListener('DOMContentLoaded', function() {
-    const productImage = document.querySelector('.product-image img');
-    const productImageContainer = productImage.parentElement;
-
-    const resizeImage = () => {
-        const containerWidth = productImageContainer.offsetWidth;
-        const containerHeight = productImageContainer.offsetHeight;
-
-        const imageWidth = productImage.naturalWidth;
-        const imageHeight = productImage.naturalHeight;
-
-        const aspectRatio = imageWidth / imageHeight;
-        const containerAspectRatio = containerWidth / containerHeight;
-
-        if (aspectRatio > containerAspectRatio) {
-            // Image is wider than the container, so set the width to container width
-            productImage.style.width = '100%';
-            productImage.style.height = 'auto';
-        } else {
-            // Image is taller than the container, so set the height to container height
-            productImage.style.width = 'auto';
-            productImage.style.height = '100%';
-        }
-    };
-
-    // Resize the image when the window is resized
-    window.addEventListener('resize', resizeImage);
-
-    // Initial resize when the page loads
-    resizeImage();
-});
 
 </script>
 </body>
