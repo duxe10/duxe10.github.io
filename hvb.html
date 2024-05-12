@@ -218,13 +218,15 @@ hr {
     <div>
         <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
     </div>
-  <div class="full-width">
+    <div class="full-width">
                 <input type="button" value="Confirm Details" onclick="confirmDetails()">
             </div>
         </form>
-   </div>
+
         <div id="summary-list" style="display: none;"></div>
-    <a href="#" id="change-details-link" style="display: none;" onclick="showForm()">Change Details</a>
+        <a href="#" id="change-details-link" style="display: none;" onclick="showForm()">Change Details</a>
+    </div>
+
  
     <div class="card">
         <h3 class="card-title">Order Summary</h3>
@@ -332,7 +334,6 @@ hr {
             // Handle error condition
         });
     }
-
 </script>
 </body>
 </html>
