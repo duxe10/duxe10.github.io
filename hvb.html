@@ -224,6 +224,7 @@ hr {
         </form>
 
         <div id="summary-list" style="display: none;"></div>
+    <a href="#" id="change-details-link" style="display: none;" onclick="showForm()">Change Details</a>
     </div>
     <div class="card">
         <h3 class="card-title">Order Summary</h3>
@@ -286,11 +287,25 @@ hr {
             </ul>
         `;
 
-        // Show the summary list
+        // Show the summary list and "Change Details" link
         summaryList.style.display = "block";
+        document.getElementById("change-details-link").style.display = "block";
+
+        // Hide the form
+        document.getElementById("checkout-form").style.display = "none";
 
         // Submit the form
         submitForm();
+    }
+
+    function showForm() {
+        // Hide the summary list and "Change Details" link
+        document.getElementById("summary-list").style.display = "none";
+        document.getElementById("change-details-link").style.display = "none";
+
+        // Show the form and reset its values
+        document.getElementById("checkout-form").style.display = "block";
+        document.getElementById("checkout-form").reset();
     }
 
     function submitForm() {
