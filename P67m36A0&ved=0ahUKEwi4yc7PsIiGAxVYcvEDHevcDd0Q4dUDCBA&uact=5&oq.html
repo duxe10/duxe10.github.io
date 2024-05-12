@@ -246,6 +246,14 @@ hr {
     </div>
 </div>
 <script>
+    function confirmDetails() {
+    // Check if all fields are filled
+    const formElements = document.querySelectorAll('#checkout-form input:required, #checkout-form select:required');
+    const allFieldsFilled = Array.from(formElements).every(element => element.value.trim());
+
+    if (allFieldsFilled) {
+        var formData = new FormData(document.getElementById("checkout-form"));
+        
     document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
         const totalPriceElement = document.getElementById('summary-total');
@@ -298,7 +306,16 @@ hr {
         // Submit the form
         submitForm();
     }
+// Set detailsConfirmed to true
+        detailsConfirmed = true;
 
+        // Enable the 'Pay Here' button
+        const payButton = document.querySelector('.pay-button');
+        payButton.disabled = false;
+    } else {
+        alert('Please fill in all required fields.');
+    }
+}
     function showForm() {
         // Hide the summary list and "Change Details" link
         document.getElementById("summary-list").style.display = "none";
