@@ -40,7 +40,7 @@
         }
 
         /* Media Queries for Mobile Devices */
-        @media only screen and (min-width: 380px) and (max-width: 480px) and (min-height: 730px) and (max-height: 850px) {
+       @media only screen and (min-width: 380px) and (max-width: 480px) and (min-height: 730px) and (max-height: 850px) {
             /* Adjustments for mobile devices */
             .container {
                 max-width: 90vw;
@@ -48,6 +48,9 @@
                 padding: 3vw;
                 border-radius: 2vw;
             }
+           .product-image {
+        max-width: 200px; /* Adjust the maximum width for smaller screens */
+        margin: 0 auto;
 
             .card {
                 width: 90vw;
@@ -120,19 +123,19 @@
                 margin: 3vw 0;
             }
 
-     .product-image {
-    width: 100%;
-    max-width: 400px; /* Set the maximum width for the container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the container horizontally */
-    overflow: hidden;
+    .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .product-image img {
     width: 100%;
     height: auto;
-    display: block; /* Remove the default inline behavior */
+    object-fit: contain;
 }
         
     </style>
