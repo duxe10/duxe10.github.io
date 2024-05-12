@@ -18,85 +18,81 @@
         }
 /* Header styles */
 .header {
-    background-color: black; /* Revert to black header bar */
-    color: white; /* White text color */
-    padding: 20px; /* Increase padding for a thicker header */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
+  background-color: black; /* Revert to black header bar */
+  color: white; /* White text color */
+  padding: 20px; /* Increase padding for a thicker header */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .brand {
-    font-size: 24px;
-    margin-bottom: 10px; /* Add margin between brand and buttons */
+  font-size: 24px;
+  margin-bottom: 20px;
+    margin-top: 10px;/* Increase margin between brand and search row */
 }
 
-.left,
-.right {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Add margin between top row and search row */
+.left, .right {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 10px; /* Add margin between buttons and search row */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-top: 30px; /* Increase margin between buttons and search row */
 }
 
 .search-bar {
-    width: calc(100% - 40px); /* Adjust width to fit within the header */
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    margin-top: 10px; /* Add margin between search bar and buttons */
+  width: 300px; /* Adjust width to make the search bar thinner */
+  padding: 6px 12px; /* Adjust padding for a thinner search bar */
+  border-radius: 20px; /* Increase border-radius for a more rounded shape */
+  border: none;
 }
 
 .search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+  width: 20px; /* Adjust icon size */
+  height: 20px;
+  margin-right: 8px; /* Adjust icon spacing */
 }
 
 .header-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin: 0 5px; /* Add margin between buttons */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 0 5px; /* Add margin between buttons */
 }
 
 .basket-button {
-    margin-left: auto; /* Push the basket button to the right */
+  margin-left: auto; /* Push the basket button to the right */
 }
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 480px) and (min-width: 350px) and (max-height: 850px) and (min-height: 700px) {
-    .header {
-        padding: 20px 20px 10px; /* Adjust padding for better spacing */
-    }
+  .header {
+    padding: 20px 20px 10px; /* Adjust padding for better spacing */
+  }
 
-    .left,
-    .right {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items horizontally */
-        margin-bottom: 20px; /* Add margin between top row and search row */
-    }
+  .left, .right {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Add margin between buttons and search row */
+  }
 
-    .search-bar {
-        width: calc(100% - 40px); /* Adjust width to fit within the header */
-        margin-top: 0; /* Remove margin between search bar and buttons */
-    }
-
-    .header-button,
-    .basket-button {
-        margin: 0; /* Remove margin between buttons */
-    }
+  .header-button, .basket-button {
+    margin: 5px 0; /* Adjust margin between buttons */
+  }
 }
-
-
-
+ 
         
       .container {
     max-width: 1200px;
