@@ -17,9 +17,10 @@
             font-family: 'Poppins', sans-serif;
         }
 
-       .header {
-    background-color: white; /* Change background color to white */
-    color: black; /* Set text color to black */
+      /* Header styles */
+.header {
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +29,7 @@
 
 .brand {
     font-size: 24px;
-    margin-right: 10px; /* Reduce margin for better spacing */
+    margin-right: 10px;
 }
 
 .left {
@@ -39,7 +40,7 @@
 .category-button {
     background: none;
     border: none;
-    color: black; /* Set text color to black */
+    color: black;
     cursor: pointer;
     font-size: 16px;
     display: flex;
@@ -52,9 +53,9 @@
 }
 
 .search-bar {
-    width: 250px; /* Reduce width for better spacing */
+    width: 250px;
     padding: 8px;
-    margin-right: 10px; /* Adjusted margin for better spacing */
+    margin-right: 10px;
     border-radius: 5px;
     border: none;
 }
@@ -77,11 +78,33 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    margin-left: 15px; /* Add margin between elements */
+    margin-left: 15px;
 }
 
 .basket-button {
-    margin-left: 15px; /* Add margin between elements */
+    margin-left: 15px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) and (min-width: 350px) and (max-height: 850px) and (min-height: 700px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px 10px; /* Adjust padding for better spacing */
+    }
+
+    .left {
+        margin-bottom: 15px; /* Add margin between elements */
+    }
+
+    .search-bar {
+        width: 100%; /* Full width for better display on mobile */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .header-button,
+    .basket-button {
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
 }
 
         
