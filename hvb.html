@@ -119,6 +119,12 @@
             hr {
                 margin: 3vw 0;
             }
+           .image-container {
+    width: 300px; /* Adjust this value to your desired width */
+    height: 300px; /* Adjust this value to your desired height */
+    overflow: hidden; /* This will crop any part of the image that exceeds the container */
+    margin: 0 auto; /* This will center the container horizontally */
+}
 .product-image {
     max-width: 400px;
     margin: 0 auto;
@@ -138,8 +144,8 @@
 <div class="container">
     <h1>Checkout</h1>
     <div class="product-info">
-      <div class="product-image">
-<img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image" width="200">
+    <div class="image-container">
+    <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image">
 </div>
         <div class="product-details">
             <div class="product-title">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
