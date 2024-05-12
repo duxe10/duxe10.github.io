@@ -119,11 +119,10 @@
             hr {
                 margin: 3vw 0;
             }
-           .image-container {
-    width: 300px; /* Adjust this value to your desired width */
-    height: 300px; /* Adjust this value to your desired height */
-    overflow: hidden; /* This will crop any part of the image that exceeds the container */
-    margin: 0 auto; /* This will center the container horizontally */
+           .image-container img {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: contain;
 }
 
         
@@ -134,7 +133,7 @@
 <div class="container">
     <h1>Checkout</h1>
     <div class="product-info">
-    <div class="image-container">
+   <div class="image-container">
     <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image">
 </div>
         <div class="product-details">
