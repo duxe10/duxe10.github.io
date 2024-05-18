@@ -183,7 +183,7 @@ hr {
 
         <div class="product-details">
             <div class="product-title">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
-            <div class="product-price">£65.50</div>
+            <div class="product-price">$82.58</div>
             <div class="quantity-selector">
                 <label for="quantity">Quantity:</label>
                 <div class="quantity-controls">
@@ -223,7 +223,7 @@ hr {
         </select>
     </div>
     <div>
-        <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
+        <input type="text" id="postcode" name="ZIPcode" required placeholder="ZIPcode">
     </div>
    <div class="full-width">
                <input type="button" value="Confirm Details" onclick="confirmDetails(); submitForm();">
@@ -241,11 +241,11 @@ hr {
                 <label>Item:</label> <span id="summary-item">1</span>
             </div>
             <div class="summary-item">
-                <label>Postage:</label> <span id="summary-postage">£4.00</span>
+                <label>Postage:</label> <span id="summary-postage">$5.08</span>
             </div>
             <hr>
             <div class="summary-item">
-                <label>Order Total:</label> <span id="summary-total">$69.50</span>
+                <label>Order Total:</label> <span id="summary-total">$87.66</span>
             </div>
             <!-- Pay button linking to PayPal -->
             <button id="payButton" onclick="window.location.href =' https://www.paypal.com/ncp/payment/XH8D8UYUPAYK4'" class="pay-button" disabled>Pay here</button>
@@ -426,8 +426,8 @@ function updatePayButton(detailsConfirmed) {
         const itemElement = document.getElementById('summary-item');
 
         // Assuming static values for price, discount, and postage
-        const pricePerItem = 65.50; // Update this price as needed
-        const postage = 3.99;
+        const pricePerItem = 82.58; // Update this price as needed
+        const postage = 5.08;
 
         // Function to calculate and update the total
         function updateTotal() {
