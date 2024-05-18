@@ -6,7 +6,7 @@
     <title>Checkout</title>
     <style>
        /* Base CSS */
-/* Reset CSS */
+       /* Reset CSS */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -182,17 +182,19 @@ hr {
 </div>
 
         <div class="product-details">
-            <div class="product-title">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
-            <div class="product-price">$82.58</div>
+            <div class="product-title" style="font-weight: bold;">NUTRIBULLET 600W STARTER KIT SMOOTHIE MAKER TABLE TOP BLENDER</div>
+            <div class="product-price" style="font-weight: bold;">$82.58</div>
             <div class="quantity-selector">
-                <label for="quantity">Quantity:</label>
+                <label for="quantity" style="font-weight: bold;">Quantity:</label>
                 <div class="quantity-controls">
                     <input type="number" id="quantity" name="quantity" class="quantity-input" min="1" max="10" value="1">
                 </div>
             </div>
 
-            <div class="postage">Postage</div>
-            <div>4-6 days</div>
+            <div class="postage" style="font-weight: bold;" >Postage</div>
+            <div style="font-weight: bold;" >4-6 days</div>
+            <div style="font-weight: bold;" >+$5.10 shipping cost</div>
+            <div style="font-weight: bold;">Returns: Accepted within 30 days of customers purchase</div>
         </div>
     </div>
     <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
@@ -238,19 +240,19 @@ hr {
         <h3 class="card-title">Order Summary</h3>
         <div class="order-summary">
             <div class="summary-item">
-                <label>Item:</label> <span id="summary-item">1</span>
+                <label style="font-weight: bold;" >Item:</label> <span id="summary-item">(1)</span>
             </div>
             <div class="summary-item">
-                <label>Postage:</label> <span id="summary-postage">$5.08</span>
+                <label style="font-weight: bold;" >Postage:</label> <span id="summary-postage" style="font-weight: bold;" >$5.10</span>
             </div>
             <hr>
             <div class="summary-item">
-                <label>Order Total:</label> <span id="summary-total">$87.66</span>
+                <label style="font-weight: bold;">Order Total:</label> <span id="summary-total" style="font-weight: bold;">$87.66</span>
             </div>
-            <!-- Pay button linking to PayPal -->
+            </div>
             <button id="payButton" onclick="window.location.href ='https://www.paypal.com/ncp/payment/QAJ5AP5MP4SEN'" class="pay-button" disabled>Pay here</button>
         </div>
-    </div>
+    
 
 <script>
  // Function to confirm details
