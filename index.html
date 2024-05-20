@@ -198,6 +198,10 @@ body {
 .button:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+       .red-text {
+    color: #b30000;
+    font-weight: bold;
+}
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 480px) and (min-width: 350px) and (max-height: 850px) and (min-height: 700px) {
@@ -272,7 +276,10 @@ body {
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" class="quantity-input" min="1" max="10" value="1">
         </div>
-        <p>1.1k bought in past month</p>
+         <div class="last-one red-text">
+            Last One / 10 sold
+        </div>
+
         <div class="button-container">
             <button class="button buy-now-button" onclick="redirectToDivian()">Buy Now</button>
             <div style="height: 15px;"></div> <!-- Space between buttons -->
