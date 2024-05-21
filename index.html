@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
 }
 
 /* Header styles */
@@ -58,41 +61,39 @@ body {
     border-radius: 20px;
 }
 
-.arrow-button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
 
-.arrow-button svg {
-    width: 24px;
-    height: 24px;
-    fill: white;
-}
+    .arrow-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-.left-arrow {
-    left: 10px;
-}
+    .left-arrow {
+        left: 10px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="30" height="30"><polyline points="90,10 50,70 90,130" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
+    }
 
-.right-arrow {
-    right: 10px;
-}
+    .right-arrow {
+        right: 10px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="30" height="30"><polyline points="50,10 90,70 50,130" stroke="white" stroke-width="10" fill="none" stroke-linecap="round"/></svg>');
+    }
 
-.arrow-button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
+    .arrow-button:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
 /* Thumbnail images styles */
 .thumbnail-images {
     display: flex;
@@ -126,7 +127,7 @@ body {
 /* Price styles */
 .price {
     font-size: 24px;
-    color: #333;
+    color: white;
     margin-bottom: 10px;
     font-weight: 600;
 }
