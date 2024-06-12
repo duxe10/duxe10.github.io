@@ -251,7 +251,7 @@
   cursor: pointer;
 }
 
-popup {
+ .popup {
         display: none;
         position: fixed;
         z-index: 1;
@@ -265,15 +265,16 @@ popup {
     .popup-content {
         background-color: #fefefe;
         margin: 15% auto;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid #888;
-        width: 80%;
-        max-width: 800px;
+        width: 90%;
+        max-width: 350px; /* Max width for mobile compatibility */
+        box-sizing: border-box;
     }
     .close {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
     }
     .close:hover, .close:focus {
@@ -284,17 +285,19 @@ popup {
     .feedback-card {
         width: 100%;
         border-collapse: collapse;
-        margin: 20px 0;
+        margin: 10px 0;
     }
     .feedback-card th, .feedback-card td {
         border: 1px solid #ddd;
-        padding: 8px;
+        padding: 6px;
+        font-size: 12px; /* Smaller font size */
     }
     .feedback-card th {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         text-align: left;
         background-color: #f2f2f2;
+        font-size: 14px; /* Slightly larger font for headers */
     }
     .feedback-item {
         display: flex;
@@ -302,18 +305,19 @@ popup {
     }
     .positive-icon {
         width: 12px;
-        height: 12px;
+        height: 12px; /* Smaller icon size */
         background-color: green;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .positive-icon:before {
         content: '+';
         color: white;
         font-weight: bold;
+        font-size: 10px; /* Adjusted font size */
     }
     .feedback-item .stars {
         color: #ff9900;
@@ -324,7 +328,6 @@ popup {
     .verified {
         color: #28a745;
     }
-        
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16495899209"></script>
@@ -609,13 +612,13 @@ populateDots();
 highlightDot();
 handleSwipe();
 displayImage(0);
-    function showPopup() {
-  document.getElementById("popup").style.display = "block";
-}
+function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
 
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
 
 </script>
 </body>
