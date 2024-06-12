@@ -1,359 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-store</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-       /* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High Quality Blender | Best Blender for Smoothies and More</title>
+<meta name="description" content="Discover our top-rated high-quality Nutribullet 600W blender, perfect for smoothies, soups, and more. Shop now for the best deals.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: white;
+        color: black;
+    }
+
+    /* Header styles */
+    .header {
+        background-color: white;
+        color: black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brand {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    /* Container styles */
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Product image styles */
+    .product-image {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        touch-action: pan-y;
+    }
+
+    .carousel-container img {
+        width: 100%;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; /* Adjust this value to move the dot container up */
+    padding-bottom: 10px; /* Add padding to prevent hiding the dot when it expands */
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+.dots-container .dot {
+    width: 8px; /* Smaller dots */
+    height: 8px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: grey;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for the expanding effect */
 }
 
-/* Header styles */
-.header {
+.dots-container .dot.active {
     background-color: black;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0; /* Position header at the top */
-    left: 0; /* Align header to the left */
-    width: 100%;
-    z-index: 1000;
+    transform: scale(1.5); /* Scale up the active dot */
 }
 
-.left {
-    display: flex;
-    align-items: center;
-}
 
-.brand {
-    font-size: 24px;
-    margin-right: 20px;
-}
+    /* Product details and info styles */
+    .product-details,
+    .product-info {
+        flex: 1;
+    }
 
-.category-button {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-}
+    .product-info {
+        margin-left: 20px;
+    }
 
-.category-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
+    /* Price styles */
+    .price1 {
+        font-size: 24px;
+        color: white;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
 
-.categories {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    /* Quantity selector styles */
+    .quantity-selector {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
 
-.categories ul {
-    list-style-type: none;
-    padding: 0;
-}
+    .quantity-selector label {
+        margin-right: 10px;
+        color: #333;
+        font-weight: 600;
+    }
 
-.categories ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 12px 16px;
-    display: block;
-}
+    .quantity-input {
+        width: 50px;
+        padding: 5px;
+        text-align: center;
+    }
 
-.categories ul li a:hover {
-    background-color: #ddd;
-}
+    /* Button styles */
+    .button {
+        padding: 10px 20px;
+        width: 320px;
+        height: 50px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.right {
-    display: flex;
-    align-items: center;
-}
+    .button:hover {
+        background-color: #0056b3;
+    }
 
-.search-bar {
-    width: 250px;
-    padding: 8px;
-    margin-right: 10px; /* Reduced margin */
-    border-radius: 5px;
-    border: none;
-}
+    .buy-now-button {
+        background-color: #FFC107;
+    }
 
-.search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px; /* Reduced margin */
-}
+    .buy-now-button:hover {
+        background-color: #e0a800;
+    }
 
-.button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 5px; /* Reduced margin */
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+    .button:focus {
+        outline: 2px solid #0056b3;
+    }
 
-.button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-}
+    .button {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to right, #007bff, #0056b3);
+    }
 
-.basket-button {
-    margin-left: 5px; /* Reduced margin */
-}
+    .button:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
 
-        /* Content styles */
-        .product-container {
-            padding: 20px 20px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            justify-content: center;
-            max-width: 100%;
+    .red-text {
+        color: #b30000;
+        font-weight: bold;
+    }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 480px) and (min-width: 350px) and (max-height: 850px) and (min-height: 700px) {
+        .header {
+            padding: 20px 20px 10px;
         }
 
-        .card {
-            width: 300px;
-            height: 400px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
+        .left, .right {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
-        .card:hover {
-            transform: scale(1.05);
+        .container {
+            flex-direction: column;
         }
 
-        .card-link {
-            text-decoration: none;
-            color: inherit;
+        .product-info {
+            margin-left: 0;
+            margin-top: 20px;
         }
+    }
 
-        .card-image {
-            width: 100%;
-            height: 200px; /* Adjusted height */
-            object-fit: cover; /* Ensure the image covers the entire container */
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-        }
+    .brand-container {
+        font-family: Arial, sans-serif; /* Fallback font */
+        font-weight: bold;
+        font-size: 24px;
+    }
 
-        .card-content {
-            padding: 20px;
-        }
+    .ebay-logo {
+        font-family: Arial, sans-serif; /* Use Arial for a similar look */
+        letter-spacing: -0.17em;
+        margin-right:3px;/* Adjust this value to fine-tune the letter spacing */
+    }
 
-        .card-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
+    .ebay-logo .e {
+        color: #E53238; /* Red */
+    }
 
-        .card-rating {
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
+    .ebay-logo .b {
+        color: #0064D2; /* Blue */
+    }
 
-        .card-price {
-            font-size: 18px;
-            font-weight: bold;
-        }
+    .ebay-logo .a {
+        color: #F5AF02; /* Yellow */
+    }
 
-        /* Add this CSS to position the heading below the header */
-        h2 {
-            margin-top: 77px;
-             margin-left: 50px;
-       
-            
-        }
-    </style>
+    .ebay-logo .y {
+        color: #86B817; /* Green */
+    }
+.product-info h2,
+.product-info ,.price {
+    font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: 600; /* Font weight */
+    font-size: 24px; /* Font size */
+    color: black; /* Text color */
+    margin-bottom: 10px; /* Margin bottom */
+}
+    .reviews {
+        font-family: 'Poppins', sans-serif; /* Font family */
+    font-weight: 600; /* Font weight */
+    font-size: 20px; /* Font size */
+    color: black; /* Text color */
+    margin-bottom: 10px; /* Margin bottom */
+}
+    .reviews {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+popup {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+    .popup-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 800px;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .feedback-card {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    .feedback-card th, .feedback-card td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    .feedback-card th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #f2f2f2;
+    }
+    .feedback-item {
+        display: flex;
+        align-items: center;
+    }
+    .positive-icon {
+        width: 12px;
+        height: 12px;
+        background-color: green;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    .positive-icon:before {
+        content: '+';
+        color: white;
+        font-weight: bold;
+    }
+    .feedback-item .stars {
+        color: #ff9900;
+    }
+    .feedback-item .purchase {
+        color: #555;
+    }
+    .verified {
+        color: #28a745;
+    }
+        
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16495899209"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16495899209');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482553337"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11482553337');
+</script>
+<script>
+    function redirectToDivian() {
+        window.location.href = "https://divian.co.uk/P67m36A0&ved=0ahUKEwi4yc7PsIiGAxVYcvEDHevcDd0Q4dUDCBA&uact=5&oq.html";
+    }
+</script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": "Nutribullet 600W Starter Kit-Free shipping",
+    "image": "https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg",
+    "description": "The Nutribullet blender is designed for those who want to take their health to the next level with ease and convenience. With powerful nutrient extraction capabilities, it transforms whole foods into nutritious shakes, smoothies, and more.",
+    "sku": "NB-600W-STARTER",
+    "mpn": "NB-101",
+    "brand": {
+        "@type": "Thing",
+        "name": "Nutribullet"
+    },
+    "offers": {
+        "@type": "Offer",
+        "url": "https://www.example.com/nutribullet-600w-starter-kit",
+        "priceCurrency": "USD",
+        "price": "65.99",
+        "priceValidUntil": "2024-12-31",
+        "itemCondition": "http://schema.org/NewCondition",
+        "availability": "http://schema.org/InStock"
+    }
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E980CM910P"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E980CM910P');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482553337"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11482553337');
+</script>
 </head>
 <body>
 <div class="header">
-    <div class="left">
-        <span class="brand">E-store</span>
-        <div class="dropdown">
-            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
-            <div class="categories" id="categories">
-                <ul>
-                    <li><a href="#trending">Trending</a></li>
-                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
-                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
-                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
-                    <li><a href="#toys-games">Toys & Games</a></li>
-                    <li><a href="#health">Health</a></li>
-                    <li><a href="#baby">Baby</a></li>
-                    <li><a href="#electronics">Electronics</a></li>
-                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
-                </ul>
+    <div class="brand-container">
+        <span class="brand">
+            Divian-An
+            <span class="ebay-logo">
+                <span class="e">e</span>
+                <span class="b">b</span>
+                <span class="a">a</span>
+                <span class="y">y</span>
+            </span>
+            proxy
+        </span>
+    </div>
+    <div class="container">
+        <div class="product-details">
+            <div class="product-image">
+                <div class="carousel-container">
+                    <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Nutribullet 600W Starter Kit Smoothie Maker Table Top Blender" id="mainImage">
+                </div>
+                <div class="dots-container" id="dotsContainer"></div>
+            </div>
+            <div class="product-info">
+    <h2>Nutribullet 600W Starter Kit-Free shipping</h2>
+    <div class="price">$54.99</div>
+</div>
+
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" class="quantity-input" min="1" max="1" value="1">
+                </div>
+                <div class="last-one red-text">
+                    Last One / 45 sold
+                </div>
+          <div class="reviews" onclick="showPopup()">View reviews (6)</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+  <table class="feedback-card">
+        <tr>
+            <th>FEEDBACK</th>
+            <th>FROM</th>
+            <th>WHEN</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>Excellent item, fast and easy, recommended 100%</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>n***a <span class="stars">(890★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past year</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>Very good and powerful</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>o***e <span class="stars">(118★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past month</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>Veey fast turnaround from seller. As advertised, securely packaged.</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>s***2 <span class="stars">(85★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past month</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>Ultra fast delivery! Well worth it ^^</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>n***r <span class="stars">(2191★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past month</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>Like 👍</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>j***g <span class="stars">(219★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past 6 months</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="feedback-item">
+                    <div class="positive-icon"></div>
+                    <div>
+                        <div><strong>recd in good condition</strong></div>
+                        <div class="purchase">New NutriBullet NBR-1201 12-Piece High-Speed Blender/Mixer System, Gray<br>(#165139660241)</div>
+                    </div>
+                </div>
+            </td>
+            <td>t***z <span class="stars">(26★)</span><br>US $65.99<br><span class="verified">Verified purchase</span></td>
+            <td>Past year</td>
+        </tr>
+    </table>
+  </div>
+</div>
+                <div class="button-container">
+                    <button class="button buy-now-button" onclick="redirectToDivian()">Buy Now</button>
+                    <div style="height: 15px;"></div> <!-- Space between buttons -->
+                    <button class="button">Add to Cart</button>
+                </div>
+                <div style="margin-top: 15px;"></div>
+         <div class="product-description">
+    <h3>About this item</h3>
+    <p><strong>Condition:</strong> New</p>
+    <p><strong>Quantity:</strong> 1 available 44 sold </p>
+    <p><strong>Item number:</strong> 38567658</p>
+    <p><strong>Brand:</strong> Nutribullet</p>
+    <p><strong>Power Source:</strong> Electric</p>
+</div>
+
             </div>
         </div>
     </div>
-    <div class="right">
-        <input type="text" class="search-bar" placeholder="Search products...">
-        <button class="button search-button">
-            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
-        </button>
-        <button class="button">Sign In</button>
-        <button class="button basket-button">
-            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="Basket Icon">
-        </button>
-    </div>
-</div>
 
-<h2>Shoes</h2>
-<div id="productContainer" class="product-container">
-    <div class="card">
-        <a href="ngg.html?id=1" class="card-link" data-product-id="61">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2061" alt="Product 61" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 1</h3>
-                <p class="card-rating">Rating: 4.5</p>
-                <p class="card-price">$20</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=1" class="card-link" data-product-id="62">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2062" alt="Product 62" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 2</h3>
-                <p class="card-rating">Rating: 4.5</p>
-                <p class="card-price">$20</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=1" class="card-link" data-product-id="63">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2063" alt="Product 63" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 1</h3>
-                <p class="card-rating">Rating: 4.5</p>
-                <p class="card-price">$20</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=1" class="card-link" data-product-id="64">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2064" alt="Product 64" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 2</h3>
-                <p class="card-rating">Rating: 4.5</p>
-                <p class="card-price">$20</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=2" class="card-link" data-product-id="65">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2065" alt="Product 65" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 3</h3>
-                <p class="card-rating">Rating: 4.2</p>
-                <p class="card-price">$25</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=3" class="card-link" data-product-id="66">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2066" alt="Product 66" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 4</h3>
-                <p class="card-rating">Rating: 4.8</p>
-                <p class="card-price">$30</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=4" class="card-link" data-product-id="67">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2067" alt="Product 67" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 5</h3>
-                <p class="card-rating">Rating: 4.6</p>
-                <p class="card-price">$22</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=5" class="card-link" data-product-id="68">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2068" alt="Product 68" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 6</h3>
-                <p class="card-rating">Rating: 4.3</p>
-                <p class="card-price">$28</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=6" class="card-link" data-product-id="69">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2069" alt="Product 69" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 7</h3>
-                <p class="card-rating">Rating: 4.7</p>
-                <p class="card-price">$35</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=7" class="card-link" data-product-id="70">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2070" alt="Product 70" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 8</h3>
-                <p class="card-rating">Rating: 4.2</p>
-                <p class="card-price">$30</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=8" class="card-link" data-product-id="71">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2071" alt="Product 71" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 9</h3>
-                <p class="card-rating">Rating: 4.9</p>
-                <p class="card-price">$40</p>
-            </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="ngg.html?id=9" class="card-link" data-product-id="72">
-            <img src="https://via.placeholder.com/300x200/808080?text=Product%2072" alt="Product 72" class="card-image">
-            <div class="card-content">
-                <h3 class="card-title">Product 10</h3>
-                <p class="card-rating">Rating: 4.6</p>
-                <p class="card-price">$32</p>
-            </div>
-        </a>
-    </div>
-</div>
-
+   
 <script>
-    function toggleCategories() {
-        var categories = document.getElementById("categories");
-        if (categories.style.display === "block") {
-            categories.style.display = "none";
-        } else {
-            categories.style.display = "block";
+const imageUrls = [
+    "https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg",
+    "https://i.ebayimg.com/images/g/p3YAAOSw8ctl-tGz/s-l960.jpg",
+    "https://i.ebayimg.com/images/g/wksAAOSwkXll-tGz/s-l960.jpg",
+    "https://i.ebayimg.com/images/g/VNIAAOSwOr9l-tGz/s-l960.jpg"
+];
+
+let currentIndex = 0;
+const mainImage = document.getElementById('mainImage');
+const dotsContainer = document.getElementById('dotsContainer');
+const carouselContainer = document.querySelector('.carousel-container');
+
+function displayImage(index) {
+    currentIndex = index;
+    mainImage.src = imageUrls[currentIndex];
+    highlightDot();
+}
+
+function populateDots() {
+    dotsContainer.innerHTML = '';
+    imageUrls.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        dot.onclick = () => displayImage(index);
+        dotsContainer.appendChild(dot);
+    });
+}
+
+function highlightDot() {
+    const dots = dotsContainer.getElementsByClassName('dot');
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove('active');
+    }
+    dots[currentIndex].classList.add('active');
+}
+
+function handleSwipe() {
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    carouselContainer.addEventListener('touchstart', function(event) {
+        touchstartX = event.changedTouches[0].screenX;
+    }, false);
+
+    carouselContainer.addEventListener('touchend', function(event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    }, false);
+
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            nextImage();
+        }
+        if (touchendX > touchstartX) {
+            prevImage();
         }
     }
-</script>
+}
 
+function nextImage() {
+    currentIndex = (currentIndex + 1) % imageUrls.length;
+    displayImage(currentIndex);
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + imageUrls.length) % imageUrls.length;
+    displayImage(currentIndex);
+}
+
+// Initialize the carousel
+populateDots();
+highlightDot();
+handleSwipe();
+displayImage(0);
+    function showPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+</script>
 </body>
 </html>
