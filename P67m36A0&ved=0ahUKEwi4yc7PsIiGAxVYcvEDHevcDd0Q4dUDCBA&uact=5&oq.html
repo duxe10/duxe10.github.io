@@ -8,11 +8,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
     /* Base CSS */
-    /* Reset CSS */
     body {
-        background-color: white; /* Set background color to black */
-        color: black; /* Set text color to white */
-        font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+        background-color: white;
+        color: black;
+        font-family: 'Roboto', sans-serif;
     }
 
     .container {
@@ -20,18 +19,27 @@
         flex-direction: column;
         max-width: 90vw;
         margin: 5vw auto;
-        background-color: white; /* Set container background to dark gray */
+        background-color: white;
         padding: 5vw;
         border-radius: 4vw;
         box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1);
     }
 
-    
+    .product-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 2vw;
+        border-radius: 8px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2vw;
+    }
 </style>
     
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQN935PV50">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQN935PV50"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -39,7 +47,8 @@
 
   gtag('config', 'G-MQN935PV50');
 </script>
-    <!-- Google tag (gtag.js) -->
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482553337"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -52,14 +61,15 @@
 <body>
 <div class="container">
     <h1>Checkout</h1>
-  
+    <img src="https://i.ebayimg.com/images/g/TXsAAOSw5Dtl-tGz/s-l960.jpg" alt="Product Image" class="product-image">
+    <div id="paypal-container-JSKXRBCNEEGUG"></div>
+</div>
+
 <script src="https://www.paypal.com/sdk/js?client-id=BAAsdeq9Wp-83zTz5mxo2XoiimQGl84DsMuPm9VJkAZN7GVD6W3tt5iRYLg9McxUD2WO4EMFyLGzMNLWas&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-<div id="paypal-container-JSKXRBCNEEGUG"></div>
 <script>
   paypal.HostedButtons({
     hostedButtonId: "JSKXRBCNEEGUG",
   }).render("#paypal-container-JSKXRBCNEEGUG")
 </script>
-
 </body>
 </html>
