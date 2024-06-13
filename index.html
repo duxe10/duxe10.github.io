@@ -241,15 +241,58 @@
     .ebay-logo .y {
         color: #86B817; /* Green */
     }
-.product-info h2,
-.product-info ,.price {
-    font-family: 'Poppins', sans-serif; /* Font family */
-    font-weight: 600; /* Font weight */
-    font-size: 24px; /* Font size */
-    color: black; /* Text color */
-    margin-bottom: 10px;
-    align:left;/* Margin bottom */
-}
+.product-info {
+            font-family: 'Rubik', sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-info h2 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .rrp {
+            font-size: 20px;
+            color: #999;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+
+        .current-price {
+            font-size: 28px;
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .offer {
+            font-size: 18px;
+            color: #27ae60;
+            margin-top: 10px;
+        }
+
+        .countdown {
+            font-size: 16px;
+            color: #c0392b;
+            margin-top: 5px;
+        }
+
+        /* Timer styles */
+        .timer {
+            font-size: 16px;
+            font-weight: bold;
+            color: #c0392b;
+        }
     .reviews {
         font-family: 'Poppins', sans-serif; /* Font family */
     font-weight: 600; /* Font weight */
@@ -424,10 +467,15 @@
                 </div>
                 <div class="dots-container" id="dotsContainer"></div>
             </div>
-            <div class="product-info">
-    <h2>Nutribullet 600W Starter Kit-Free shipping</h2>
-    <div class="price">$65.99</div>
-</div>
+             <div class="product-info">
+        <h2>Nutribullet 600W Starter Kit - Free Shipping</h2>
+        <div class="price">
+            <span class="rrp">$65.99</span>
+            <span class="current-price">$59.99</span>
+        </div>
+        <div class="offer">10% off - Limited time offer!</div>
+        <div class="countdown">Offer ends in: <span class="timer" id="timer"></span></div>
+    </div>
 
                 <div class="quantity-selector">
                     <label for="quantity">Quantity:</label>
@@ -657,6 +705,53 @@ function showPopup() {
         document.getElementById('popup').style.display = 'none';
     }
 
+        function startCountdown(endTime, display) {
+            function updateTimer() {
+                const now = new Date().getTime();
+                const distance = endTime - now;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    display.textContent = "EXPIRED";
+                    return;
+                }
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                display.textContent = `${hours < 10 ? "0" : ""}${hours}:${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+            }
+
+            updateTimer();
+            const interval = setInterval(updateTimer, 1000);
+        }
+
+        window.onload = function () {
+            const offerDuration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+            let endTime = localStorage.getItem('offerEndTime');
+
+            if (!endTime) {
+                const now = new Date();
+                const startHour = 6;
+                const startMinute = 5;
+                
+                let startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startHour, startMinute, 0, 0);
+
+                // If the current time is past 6:05 AM today, set the end time to 6:05 AM tomorrow
+                if (now.getTime() > startTime.getTime()) {
+                    startTime.setDate(startTime.getDate() + 1);
+                }
+
+                endTime = startTime.getTime();
+                localStorage.setItem('offerEndTime', endTime);
+            } else {
+                endTime = parseInt(endTime, 10);
+            }
+
+            const display = document.querySelector('#timer');
+            startCountdown(endTime, display);
+        };
 </script>
 </body>
 </html>
