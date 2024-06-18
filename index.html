@@ -701,53 +701,39 @@ function showPopup() {
         document.getElementById('popup').style.display = 'none';
     }
 
- function startCountdown(endTime, display) {
-            function updateTimer() {
-                const now = new Date().getTime();
-                const distance = endTime - now;
+function startTimer(duration, display) {
+        var timer = duration, hours, minutes, seconds;
+        setInterval(function () {
+            hours = parseInt((timer / 3600), 10);
+            minutes = parseInt((timer % 3600) / 60, 10);
+            seconds = parseInt(timer % 60, 10);
 
-                if (distance < 0) {
-                    clearInterval(interval);
-                    display.textContent = "EXPIRED";
-                    return;
-                }
+            hours = hours < 10 ? "0" + hours : hours;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
 
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            display.textContent = hours + ":" + minutes + ":" + seconds;
 
-                display.textContent = `${hours < 10 ? "0" : ""}${hours}:${minutes < 10 ? "0" : ""}${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+            if (--timer < 0) {
+                timer = 0;
             }
+        }, 1000);
+    }
 
-            updateTimer();
-            const interval = setInterval(updateTimer, 1000);
+    window.onload = function () {
+        var now = new Date();
+        var target = new Date();
+        target.setHours(20, 50, 0, 0); // Set target to 8:50 PM today
+        
+        if (now > target) {
+            // If it's already past 8:50 PM, set the target to 8:50 PM tomorrow
+            target.setDate(target.getDate() + 1);
         }
-
-        window.onload = function () {
-            const offerDuration = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
-            let endTime = localStorage.getItem('offerEndTime');
-
-            if (!endTime) {
-                const now = new Date();
-                const startHour = 20; // 8 PM
-                const startMinute = 41;
-                
-                let startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startHour, startMinute, 0, 0);
-
-                // If the current time is past 8:41 PM today, set the end time to 8:41 PM tomorrow
-                if (now.getTime() > startTime.getTime()) {
-                    startTime.setDate(startTime.getDate() + 1);
-                }
-
-                endTime = startTime.getTime() + offerDuration;
-                localStorage.setItem('offerEndTime', endTime);
-            } else {
-                endTime = parseInt(endTime, 10);
-            }
-
-            const display = document.querySelector('#timer');
-            startCountdown(endTime, display);
-        };
+        
+        var duration = Math.floor((target - now) / 1000); // Calculate the difference in seconds
+        var display = document.querySelector('#timer');
+        startTimer(duration, display);
+    };
 </script>
 </body>
 </html>
