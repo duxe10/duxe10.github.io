@@ -723,13 +723,9 @@ function startTimer(duration, display) {
     window.onload = function () {
         var now = new Date();
         var target = new Date();
-        target.setHours(20, 50, 0, 0); // Set target to 8:50 PM today
-        
-        if (now > target) {
-            // If it's already past 8:50 PM, set the target to 8:50 PM tomorrow
-            target.setDate(target.getDate() + 1);
-        }
-        
+        target.setDate(target.getDate() + 1); // Set target to tomorrow
+        target.setHours(20, 50, 0, 0); // Set target to 8:50 PM tomorrow
+
         var duration = Math.floor((target - now) / 1000); // Calculate the difference in seconds
         var display = document.querySelector('#timer');
         startTimer(duration, display);
