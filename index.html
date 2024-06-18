@@ -701,7 +701,7 @@ function showPopup() {
         document.getElementById('popup').style.display = 'none';
     }
 
-      function startCountdown(endTime, display) {
+ function startCountdown(endTime, display) {
             function updateTimer() {
                 const now = new Date().getTime();
                 const distance = endTime - now;
@@ -730,11 +730,11 @@ function showPopup() {
             if (!endTime) {
                 const now = new Date();
                 const startHour = 20; // 8 PM
-                const startMinute = 35;
+                const startMinute = 41;
                 
                 let startTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startHour, startMinute, 0, 0);
 
-                // If the current time is past 8:35 PM today, set the end time to 8:35 PM tomorrow
+                // If the current time is past 8:41 PM today, set the end time to 8:41 PM tomorrow
                 if (now.getTime() > startTime.getTime()) {
                     startTime.setDate(startTime.getDate() + 1);
                 }
