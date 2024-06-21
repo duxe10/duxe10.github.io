@@ -1,3 +1,54 @@
- <div class="return-policy">
-       At Divian we stand by every product we sell. We will do everything we can to make you happy with your purchase, but if for some reason you're not completely satisfied within the first 90 days of the delivery of your initial order, we'll refund your money (less shipping & processing).*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .return-policy {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px;
+            text-align: center;
+        }
+        .return-policy h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .return-policy p {
+            font-size: 16px;
+            color: #555;
+        }
+        .return-policy .note {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="return-policy">
+        <h2>Return Policy</h2>
+        <p>
+            At Divian we stand by every product we sell. We will do everything we can to make you happy with your purchase, but if for some reason you're not completely satisfied within the first 90 days of the delivery of your initial order, we'll refund your money (less shipping & processing).*
+        </p>
+        <p class="note">
+            *Terms and conditions apply. Please contact our customer service for more details.
+        </p>
     </div>
+</body>
+</html>
