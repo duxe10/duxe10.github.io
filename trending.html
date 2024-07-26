@@ -151,6 +151,43 @@
         .footer .social-links a:hover {
             color: #007bff;
         }
+        
+.search-container {
+    position: relative;
+    width: 40px;
+    transition: width 0.3s ease;
+    border-radius: 20px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.search-container:focus-within {
+    width: 90px; /* 40px + 50px */
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 30px; /* space for the icon */
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search-input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    color: #fff;
+   
     </style>
 </head>
 <body>
@@ -165,9 +202,15 @@
                
             </ul>
         </nav>
+         <div class="search-container">
+        <input type="text" class="search-input" placeholder="Find your Creator">
+        <i class="search-icon">&#x1F50D;</i>
+    </div>
         <div class="auth-buttons">
             <button>Login</button>
             <button>Sign Up</button>
+            
+    </div>
         </div>
     </header>
     <section class="hero">
