@@ -3,379 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>50 Best Recipes - Premium Access</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-
         .container {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: 20px auto;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .summary-card {
-            max-width: 300px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 20px;
-            right: 20px;
-        }
-
-        .summary-container {
-            margin-top: 120px; /* Adjust this value as needed based on the height of the summary card */
-        }
-
         h1 {
             color: #333;
             text-align: center;
         }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
+        .preview {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
         }
-
-        input[type="text"],
-        input[type="email"],
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        .preview h2 {
+            color: #444;
         }
-
-        input[type="submit"] {
-            width: 100%;
-            padding: 12px;
+        .preview ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .preview li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        .paywall {
+            background-color: #e9f5ff;
+            border: 1px solid #b8daff;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .paywall h2 {
+            color: #004085;
+        }
+        .paywall p {
+            color: #004085;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
             background-color: #007bff;
             color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-
-        .half-width {
-            width: 48%;
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 20px;
-        }
-
-        .third-width {
-            width: calc(33.33% - 8px);
-            display: inline-block;
-            vertical-align: top;
-            margin-bottom: 20px;
-        }
-
-        .name-fields,
-        .address-fields {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .name-fields > div,
-        .address-fields > div {
-            width: 48%;
-        }
-
-        .payment-options {
-            margin-bottom: 20px;
-        }
-
-        .payment-option {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-
-        .payment-option input[type="radio"] {
-            margin-right: 10px;
-        }
-
-        .payment-option label {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-        }
-
-        .payment-option label img {
-            width: 50px;
-            height: 34px;
-            margin-right: 5px;
-        }
-
-        .payment-option + .payment-option {
-            border-top: 1px solid #ccc;
-            padding-top: 10px;
-            margin-top: 10px;
-        }
-
-        #card-entry-form {
-            display: none;
-            margin-top: 20px;
-        }
-
-        #card-entry-form.show {
-            display: block;
-        }
-
-.product-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 165px; /* Increased by 80px */
-}
-
-.product-image {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    object-fit: cover; /* Ensures the image covers the entire container */
-}
-
-.product-details {
-    flex: 1;
-    margin-left: 235px; /* Increased by 215px */
-}
-
-.product-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.product-price {
-    margin-bottom: 5px;
-}
-
-.quantity-selector {
-    margin-bottom: 5px;
-}
-
-.postage {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-
-        .confirm-pay-btn {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 20px;
-        }
-
-        .confirm-pay-btn:hover {
+        .btn:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-<div class="container">
-   <div class="product-info">
-    <div class="product-image">
-        <img src="" alt="Product Image" id="productImage">
-    </div>
-    <div class="product-details">
-        <div class="product-title" id="productTitle"></div>
-        <div class="product-price" id="productPrice"></div>
-        <div class="quantity-selector">
-            <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+    <div class="container">
+        <h1>50 Best Recipes</h1>
+        
+        <div class="preview">
+            <h2>Preview of Our Top Recipes</h2>
+            <ul>
+                <li>1. Classic Margherita Pizza</li>
+                <li>2. Creamy Garlic Parmesan Risotto</li>
+                <li>3. Spicy Thai Basil Chicken</li>
+                <li>4. Ultimate Chocolate Chip Cookies</li>
+                <li>5. Mediterranean Grilled Salmon</li>
+            </ul>
+            <p>... and 45 more mouthwatering recipes!</p>
+        </div>
+        
+        <div class="paywall">
+            <h2>Unlock All 50 Best Recipes</h2>
+            <p>Get instant access to our curated list of the 50 best recipes, complete with detailed instructions, ingredient lists, and chef's tips.</p>
+            <a href="#" class="btn">Subscribe Now - Only $9.99</a>
         </div>
     </div>
-</div>
-
-
-    <form id="checkout-form" action="#" method="post">
-        <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
-        <label for="country">Country:</label>
-        <select id="country" name="country" required style="width: 185px;">
-            <option value="">Select Country</option>
-            <option value="US">United States</option>
-            <option value="UK">United Kingdom</option>
-            <!-- Add more options as needed -->
-        </select>
-        <div class="name-fields">
-            <div>
-                <input type="text" id="fname" name="fname" required placeholder="First Name">
-            </div>
-            <div>
-                <input type="text" id="lname" name="lname" required placeholder="Surname">
-            </div>
-        </div>
-        <div class="address-fields">
-            <div>
-                <input type="text" id="address" name="address" required placeholder="Street Address">
-            </div>
-            <div>
-                <input type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)">
-            </div>
-        </div>
-        <div class="third-width">
-            <input type="text" id="city" name="city" required placeholder="City">
-        </div>
-        <div class="third-width">
-            <select id="state" name="state" required>
-                <option value="">Select State/Province</option>
-                <option value="NY">New York</option>
-                <option value="CA">California</option>
-                <!-- Add more options as needed -->
-            </select>
-        </div>
-        <div class="third-width">
-            <input type="text" id="postcode" name="postcode" required placeholder="Postcode">
-        </div>
-
-        <div class="payment-options">
-            <p>Payment Options:</p>
-            <div class="payment-option">
-                <input type="radio" id="addCard" name="payment" value="Add Card">
-                <label for="addCard">
-                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968397.png" alt="Visa">
-                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968245.png" alt="Amex">
-                    <img src="https://cdn-icons-png.flaticon.com/128/15398/15398050.png" alt="Mastercard"> Add Card
-                </label>
-            </div>
-            <div id="card-entry-form" class="card-entry-form">
-                <label for="cardNumber">Card Number:</label>
-                <input type="text" id="cardNumber" name="cardNumber" required placeholder="Enter your card number" style="width: 48%;">
-                <div class="name-fields">
-                    <div style="width: 48%;">
-                        <label for="expiryDate">Expiry Date:</label>
-                        <input type="text" id="expiryDate" name="expiryDate" required placeholder="MM/YY">
-                    </div>
-                    <div style="width: 48%;">
-                        <label for="securityCode">Security Code:</label>
-                        <input type="text" id="securityCode" name="securityCode" required placeholder="CVV/CVC">
-                    </div>
-                </div>
-                <div class="name-fields">
-                    <div style="width: 48%;">
-                        <label for="cardHolderFirstName">Cardholder First Name:</label>
-                        <input type="text" id="cardHolderFirstName" name="cardHolderFirstName" required placeholder="First Name">
-                    </div>
-                    <div style="width: 48%;">
-                        <label for="cardHolderLastName">Cardholder Last Name:</label>
-                        <input type="text" id="cardHolderLastName" name="cardHolderLastName" required placeholder="Last Name">
-                    </div>
-                </div>
-            </div>
-            <hr style="border: none; border-top: 1px solid #ccc; margin: 10px 0;">
-          
-            <div class="payment-option">
-                <input type="radio" id="paypal" name="payment" value="Paypal">
-                <label for="paypal">
-                    <img src="https://cdn-icons-png.flaticon.com/128/15398/15398063.png" alt="Paypal"> Paypal
-                </label>
-            </div>
-            <div class="payment-option">
-                <input type="radio" id="paypalCredit" name="payment" value="Paypal Credit">
-                <label for="paypalCredit">
-                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB8IYQ-Cco5pIcPfA9GEDzxamjtXjx7AEy62W0EPWmCtB_KvIf" alt="Paypal Credit"> Paypal Credit
-                </label>
-            </div>
-            <div class="payment-option">
-                <input type="radio" id="applePay" name="payment" value="Apple Pay">
-                <label for="applePay">
-                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968144.png" alt="Apple"> Apple Pay
-                </label>
-            </div>
-        </div>
-        <input type="submit" value="Place Order">
-    </form>
-</div>
-<div class="summary-card">
-        <h1>Item (X)</h1>
-        <p>Postage Cost: $XX.XX</p>
-        <hr>
-        <p id="orderTotal">Order Total: $0.00</p>
-        <button class="confirm-pay-btn">Confirm and Pay</button>
-    </div>
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const addCardOption = document.getElementById("addCard");
-    const cardEntryForm = document.getElementById("card-entry-form");
-    const paymentOptions = document.querySelectorAll(".payment-option input[type='radio']");
-
-    addCardOption.addEventListener("change", function () {
-        if (this.checked) {
-            cardEntryForm.style.display = "block";
-        } else {
-            cardEntryForm.style.display = "none";
-        }
-    });
-
-    paymentOptions.forEach(function(option) {
-        option.addEventListener("change", function() {
-            if (option !== addCardOption) {
-                cardEntryForm.style.display = "none";
-            }
-        });
-    });
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
-
-    fetch('https://duxe10.github.io/data.json')
-        .then(response => response.json())
-        .then(data => {
-            const product = data.find(product => product.id === parseInt(productId));
-
-            if (product) {
-                const productImage = document.getElementById('productImage');
-                const productTitle = document.getElementById('productTitle');
-                const productPrice = document.getElementById('productPrice');
-
-                productImage.src = product.image;
-                productTitle.textContent = product.title;
-                productPrice.textContent = `$${product.price}`;
-
-                const quantityInput = document.getElementById('quantity');
-                const orderTotal = document.getElementById('orderTotal');
-
-                const calculateOrderTotal = () => {
-                    const quantity = parseInt(quantityInput.value);
-                    const totalPrice = quantity * parseFloat(product.price.replace('$', ''));
-                    orderTotal.textContent = `Order Total: $${totalPrice.toFixed(2)}`;
-                };
-
-                quantityInput.addEventListener('input', calculateOrderTotal);
-                calculateOrderTotal();
-            } else {
-                console.error('Product not found');
-            }
-        })
-        .catch(error => console.error('Error fetching product data:', error));
-});
-
-
-</script>
 </body>
 </html>
