@@ -1,41 +1,95 @@
 {
-    "name": "Chicken Pot Pie",
-    "prepTime": "10 mins",
-    "cookTime": "45 mins",
-    "additionalTime": "15 mins",
-    "totalTime": "1 hr 10 mins",
-    "servings": "8",
-    "yield": "1 (9-inch) deep-dish pie",
-    "ingredients": [
-        "⅓ cup butter",
-        "⅓ cup chopped onion",
-        "⅓ cup all-purpose flour",
-        "½ teaspoon salt",
-        "¼ teaspoon ground black pepper",
-        "1 ¾ cups chicken broth",
-        "⅔ cup milk",
-        "2 cups chopped cooked chicken",
-        "1 (14.5 ounce) can peas and carrots",
-        "½ (15 ounce) can whole new potatoes, drained",
-        "1 (14.1 ounce) package double-crust pie pastry, thawed"
-    ],
-    "directions": [
-        "Preheat the oven to 425 degrees F (220 degrees C).",
-        "Melt butter in a large skillet over medium heat. Cook and stir onion, flour, salt, and pepper in hot butter until onion is translucent, about 5 minutes.",
-        "Pour in broth and milk; bring to a boil and cook until slightly thickened, about 1 minute. Remove the skillet from heat and stir in chicken, peas and carrots, and potatoes.",
-        "Press 1 pie pastry into the bottom of a 9-inch, deep-dish pie pan. Pour chicken mixture into pie pastry. Top with remaining pastry and press edges together to seal. Cut several slits in top pastry. Place pie on a baking sheet.",
-        "Bake in the preheated oven until crust is golden brown, about 30 minutes. Let pie cool and filling thicken at room temperature for 15 to 20 minutes before cutting."
-    ],
-    "image": "path_to_your_image.jpg",
-    "nutritionFacts": [
-        "Calories: 320",
-        "Total Fat: 20g",
-        "Saturated Fat: 10g",
-        "Cholesterol: 50mg",
-        "Sodium: 750mg",
-        "Total Carbohydrates: 25g",
-        "Dietary Fiber: 3g",
-        "Sugars: 3g",
-        "Protein: 15g"
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Spaghetti Carbonara",
+            "prepTime": "10 mins",
+            "cookTime": "20 mins",
+            "additionalTime": "0 mins",
+            "totalTime": "30 mins",
+            "servings": 4,
+            "yield": "4 servings",
+            "ingredients": [
+                "200g spaghetti",
+                "100g pancetta",
+                "2 large eggs",
+                "50g pecorino cheese",
+                "50g parmesan",
+                "Freshly ground black pepper",
+                "Salt",
+                "2 cloves garlic",
+                "50g unsalted butter"
+            ],
+            "directions": [
+                "Step 1: Put a large saucepan of water on to boil.",
+                "Step 2: Finely chop the pancetta, having first removed any rind.",
+                "Step 3: Finely grate both cheeses and mix them together.",
+                "Step 4: Beat the eggs in a medium bowl, season with a little freshly grated black pepper and set everything aside.",
+                "Step 5: Add 1 tsp salt to the boiling water, add the spaghetti and when the water comes back to the boil, cook at a constant simmer, covered, for 10 minutes or until al dente.",
+                "Step 6: Squash the garlic with the blade of a knife, just to bruise it.",
+                "Step 7: While the spaghetti is cooking, fry the pancetta with the garlic. Drop the butter into a large frying pan or wok and, as soon as the butter has melted, tip in the pancetta and garlic.",
+                "Step 8: Leave to cook on a medium heat for about 5 minutes, stirring often, until the pancetta is golden and crisp. The garlic has now imparted its flavour, so take it out with a slotted spoon and discard.",
+                "Step 9: Keep the heat under the pancetta on low. When the pasta is ready, lift it from the water with a pasta fork or tongs and put it in the frying pan with the pancetta. Don’t worry if a little water drops in the pan (you want this to happen) and don’t throw away the pasta water yet.",
+                "Step 10: Mix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later.",
+                "Step 11: Take the pan of spaghetti and pancetta off the heat. Quickly pour in the eggs and cheese. Using the tongs or a long fork, lift up the spaghetti so it mixes easily with the egg mixture, which thickens but doesn’t scramble, and everything is coated.",
+                "Step 12: Add extra pasta cooking water to keep it saucy (several tablespoons should do it). You don’t want it wet, just moist. Season with a little salt, if needed.",
+                "Step 13: Use a long-pronged fork to twist the pasta on to the serving plate or bowl. Serve immediately with a little sprinkling of the remaining cheese and a grating of black pepper."
+            ],
+            "nutritionFacts": {
+                "calories": "450",
+                "totalFat": "20g",
+                "saturatedFat": "10g",
+                "cholesterol": "125mg",
+                "sodium": "850mg",
+                "totalCarbohydrates": "45g",
+                "dietaryFiber": "2g",
+                "sugars": "2g",
+                "protein": "20g"
+            },
+            "image": "https://via.placeholder.com/512"
+        },
+        {
+            "id": 2,
+            "title": "Chicken Alfredo",
+            "prepTime": "15 mins",
+            "cookTime": "25 mins",
+            "additionalTime": "0 mins",
+            "totalTime": "40 mins",
+            "servings": 4,
+            "yield": "4 servings",
+            "ingredients": [
+                "200g fettuccine",
+                "2 chicken breasts, cut into strips",
+                "2 tbsp olive oil",
+                "2 cloves garlic, minced",
+                "1 cup heavy cream",
+                "1 cup grated Parmesan cheese",
+                "Salt and pepper to taste",
+                "1 tbsp chopped parsley (optional)"
+            ],
+            "directions": [
+                "Step 1: Cook the fettuccine according to package instructions. Drain and set aside.",
+                "Step 2: In a large skillet, heat olive oil over medium-high heat.",
+                "Step 3: Add the chicken strips and cook until browned and cooked through, about 5-7 minutes.",
+                "Step 4: Add the minced garlic to the skillet and cook for an additional 1 minute until fragrant.",
+                "Step 5: Reduce the heat to medium and pour in the heavy cream. Bring to a simmer.",
+                "Step 6: Gradually stir in the grated Parmesan cheese until the sauce is smooth and thickened.",
+                "Step 7: Season the sauce with salt and pepper to taste.",
+                "Step 8: Add the cooked fettuccine to the skillet and toss to coat with the Alfredo sauce.",
+                "Step 9: Garnish with chopped parsley, if desired, and serve immediately."
+            ],
+            "nutritionFacts": {
+                "calories": "600",
+                "totalFat": "35g",
+                "saturatedFat": "20g",
+                "cholesterol": "150mg",
+                "sodium": "750mg",
+                "totalCarbohydrates": "45g",
+                "dietaryFiber": "2g",
+                "sugars": "3g",
+                "protein": "25g"
+            },
+            "image": "https://via.placeholder.com/512"
+        }
     ]
 }
