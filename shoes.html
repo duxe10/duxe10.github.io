@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,17 +14,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
-            max-width: 500px;
+            max-width: 800px;
             width: 100%;
             background-color: #fff;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
             overflow: hidden;
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
             box-sizing: border-box;
             position: relative;
         }
@@ -47,15 +46,15 @@
             background-color: #555;
         }
         .title {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
-            margin-bottom: 20px;
-            color: #27ae60;
+            margin-bottom: 10px;
+            color: #333;
         }
         .subheader {
-            font-size: 16px;
+            font-size: 18px;
             color: #666;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .plan {
             background-color: #f9f9f9;
@@ -63,15 +62,18 @@
             border: 1px solid #eee;
             border-radius: 8px;
             margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .plan-title {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
             color: #333;
         }
         .plan-price {
-            font-size: 24px;
+            font-size: 26px;
             color: #27ae60;
             margin-bottom: 20px;
         }
@@ -99,12 +101,20 @@
             color: #777;
             margin-top: 20px;
             text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .footer ul {
             list-style: none;
             padding: 0;
         }
         .footer ul li {
+            margin-bottom: 10px;
+        }
+        .footer-title {
+            font-size: 16px;
+            font-weight: bold;
             margin-bottom: 10px;
         }
     </style>
@@ -123,7 +133,7 @@
             <a href="https://example.com/buy" class="buy-now">Buy Now</a> <!-- Replace this with your actual purchase link -->
         </div>
         <div class="footer">
-            Included with your Digital 499 Recipe List:
+            <div class="footer-title">Included with your Digital 499 Recipe List:</div>
             <ul>
                 <li>Nearly 500 recipes that are good for weight loss</li>
                 <li>Some recipes containing high protein count</li>
