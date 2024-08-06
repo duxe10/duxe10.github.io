@@ -75,76 +75,68 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     function getQueryParam(param) {
-        let urlParams = new URLSearchParams(window.location.search);
+        const urlParams = new URLSearchParams(window.location.search);
         return urlParams.get(param);
     }
 
-    let recipeId = getQueryParam('id');
+    const recipeId = getQueryParam('id');
+    if (!recipeId) {
+        displayError('No recipe ID provided');
+        return;
+    }
 
-    fetch('https://cors-anywhere.herokuapp.com/https://divian.co.uk/recipes.json')  // Using proxy server
+    fetch('https://divian.co.uk/recipes.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
             }
-            return response.text();  // Get response as text first
+            return response.json();
         })
-        .then(text => {
-            try {
-                let data = JSON.parse(text);  // Manually parse JSON
-                let recipe = data.find(r => r.id == recipeId);
-
-                if (recipe) {
-                    document.getElementById('recipe-header').innerText = recipe.title;
-
-                    let details = `
-                        <p><strong>Prep Time:</strong> ${recipe.prepTime}</p>
-                        <p><strong>Cook Time:</strong> ${recipe.cookTime}</p>
-                        <p><strong>Additional Time:</strong> ${recipe.additionalTime}</p>
-                        <p><strong>Total Time:</strong> ${recipe.totalTime}</p>
-                        <p><strong>Servings:</strong> ${recipe.servings}</p>
-                        <p><strong>Yield:</strong> ${recipe.yield}</p>
-                        <a href="#nutrition-facts">Jump to Nutrition Facts</a>
-                    `;
-                    document.getElementById('recipe-details').innerHTML = details;
-
-                    let ingredientsList = '';
-                    recipe.ingredients.forEach(ingredient => {
-                        ingredientsList += `<li>${ingredient}</li>`;
-                    });
-                    document.getElementById('ingredients-list').innerHTML = ingredientsList;
-
-                    let directionsList = '';
-                    recipe.directions.forEach((direction, index) => {
-                        directionsList += `<li>Step ${index + 1}: ${direction}</li>`;
-                    });
-                    document.getElementById('directions-list').innerHTML = directionsList;
-
-                    document.getElementById('recipe-image').src = recipe.image;
-
-                    let nutritionList = '';
-                    for (const [key, value] of Object.entries(recipe.nutritionFacts)) {
-                        nutritionList += `<li><strong>${key}:</strong> ${value}</li>`;
-                    }
-                    document.getElementById('nutrition-list').innerHTML = nutritionList;
-                } else {
-                    document.getElementById('recipe-header').innerText = 'Recipe Not Found';
-                    document.getElementById('recipe-details').innerHTML = '';
-                    document.getElementById('ingredients-list').innerHTML = '';
-                    document.getElementById('directions-list').innerHTML = '';
-                    document.getElementById('recipe-image').src = '';
-                    document.getElementById('nutrition-list').innerHTML = '';
-                }
-            } catch (error) {
-                console.error('Error parsing JSON:', error);
-                document.getElementById('recipe-header').innerText = 'Error loading recipe';
+        .then(data => {
+            const recipe = data.find(r => r.id == recipeId);
+            if (recipe) {
+                displayRecipe(recipe);
+            } else {
+                displayError('Recipe not found');
             }
         })
         .catch(error => {
-            console.error('Error fetching data:', error);
-            document.getElementById('recipe-header').innerText = 'Error loading recipe';
+            console.error('Error:', error);
+            displayError('Error loading recipe');
         });
-});
 
+    function displayRecipe(recipe) {
+        document.getElementById('recipe-header').textContent = recipe.title;
+        
+        document.getElementById('recipe-details').innerHTML = `
+            <p><strong>Prep Time:</strong> ${recipe.prepTime}</p>
+            <p><strong>Cook Time:</strong> ${recipe.cookTime}</p>
+            <p><strong>Additional Time:</strong> ${recipe.additionalTime}</p>
+            <p><strong>Total Time:</strong> ${recipe.totalTime}</p>
+            <p><strong>Servings:</strong> ${recipe.servings}</p>
+            <p><strong>Yield:</strong> ${recipe.yield}</p>
+            <a href="#nutrition-facts">Jump to Nutrition Facts</a>
+        `;
+
+        document.getElementById('ingredients-list').innerHTML = recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('');
+        
+        document.getElementById('directions-list').innerHTML = recipe.directions.map((direction, index) => `<li>Step ${index + 1}: ${direction}</li>`).join('');
+        
+        document.getElementById('recipe-image').src = recipe.image;
+        
+        document.getElementById('nutrition-list').innerHTML = Object.entries(recipe.nutritionFacts)
+            .map(([key, value]) => `<li><strong>${key}:</strong> ${value}</li>`)
+            .join('');
+    }
+
+    function displayError(message) {
+        document.getElementById('recipe-header').textContent = message;
+        ['recipe-details', 'ingredients-list', 'directions-list', 'nutrition-list'].forEach(id => {
+            document.getElementById(id).innerHTML = '';
+        });
+        document.getElementById('recipe-image').src = '';
+    }
+});
     </script>
 </body>
 </html>
