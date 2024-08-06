@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+ok i would like there to be a function, that asks the page before what the id of the recipe thingy has been clicked, that way it knows which recipe data to fetch
