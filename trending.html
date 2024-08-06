@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get the recipe ID from the URL
     let recipeId = getQueryParam('id');
 
-    fetch('https://divian.co.uk/recipes.json', { mode: 'no-cors' })  // Updated URL here
+    fetch('https://divian.co.uk/recipe.json', { mode: 'no-cors' })  // Updated URL here
         .then(response => response.json())
         .then(data => {
             // Find the recipe with the matching ID
