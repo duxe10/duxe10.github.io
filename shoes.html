@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,12 +7,11 @@
     <title>Subscribe for Premium Recipes</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .container { max-width: 600px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
         h1 { text-align: center; color: #333; }
-        .plans { display: flex; justify-content: space-around; margin: 20px 0; }
-        .plan { flex: 1; padding: 20px; border: 1px solid #ddd; border-radius: 8px; margin: 0 10px; text-align: center; background: #f9f9f9; }
+        .plan { padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center; background: #f9f9f9; }
         .plan h2 { color: #007bff; }
-        .plan p { font-size: 16px; margin: 10px 0; }
+        .plan p { font-size: 18px; margin: 10px 0; }
         .plan .price { font-size: 24px; font-weight: bold; color: #333; }
         .button { display: block; width: 100%; padding: 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; margin-top: 20px; }
         .button:hover { background-color: #0056b3; }
@@ -21,31 +21,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Subscribe to Get Access to Premium Recipes</h1>
+        <h1>Subscribe for Premium Recipes</h1>
         
-        <div class="plans">
-            <div class="plan">
-                <h2>Basic Plan</h2>
-                <p class="price">$5 / Month</p>
-                <p>Access to basic recipes and cooking tips.</p>
-                <button id="basic-plan" class="button">Subscribe Now</button>
-            </div>
-            <div class="plan">
-                <h2>Standard Plan</h2>
-                <p class="price">$15 / 3 Months</p>
-                <p>Includes all Basic Plan features plus exclusive recipes and meal plans.</p>
-                <button id="standard-plan" class="button">Subscribe Now</button>
-            </div>
-            <div class="plan">
-                <h2>Premium Plan</h2>
-                <p class="price">$50 / Year</p>
-                <p>All Standard Plan features plus personalized cooking advice and more.</p>
-                <button id="premium-plan" class="button">Subscribe Now</button>
-            </div>
+        <div class="plan">
+            <h2>One-Time Payment Plan</h2>
+            <p class="price">$29.99</p>
+            <p>Access all premium recipes and cooking tips with a single payment.</p>
+            <button id="subscribe" class="button">Subscribe Now</button>
         </div>
 
         <div class="description">
-            <p>By subscribing, you get access to exclusive recipes and cooking tips that are not available anywhere else. Choose the plan that best fits your needs and enjoy premium content today!</p>
+            <p>With a one-time payment, you get lifetime access to all premium recipes, cooking tips, and more! Enjoy exclusive content and features that are not available anywhere else.</p>
         </div>
     </div>
 
@@ -53,39 +39,11 @@
     <script>
         const stripe = Stripe('your-publishable-key'); // Replace with your Stripe publishable key
 
-        document.getElementById('basic-plan').addEventListener('click', async () => {
+        document.getElementById('subscribe').addEventListener('click', async () => {
             const response = await fetch('/create-checkout-session', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ plan: 'basic' })
-            });
-            const sessionId = await response.json();
-            const { error } = await stripe.redirectToCheckout({ sessionId: sessionId.id });
-
-            if (error) {
-                console.error('Error:', error);
-            }
-        });
-
-        document.getElementById('standard-plan').addEventListener('click', async () => {
-            const response = await fetch('/create-checkout-session', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ plan: 'standard' })
-            });
-            const sessionId = await response.json();
-            const { error } = await stripe.redirectToCheckout({ sessionId: sessionId.id });
-
-            if (error) {
-                console.error('Error:', error);
-            }
-        });
-
-        document.getElementById('premium-plan').addEventListener('click', async () => {
-            const response = await fetch('/create-checkout-session', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ plan: 'premium' })
+                body: JSON.stringify({ plan: 'one-time' }) // Plan identifier
             });
             const sessionId = await response.json();
             const { error } = await stripe.redirectToCheckout({ sessionId: sessionId.id });
