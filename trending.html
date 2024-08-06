@@ -71,61 +71,61 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Function to get the query parameter by name
-            function getQueryParam(param) {
-                let urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param);
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to get the query parameter by name
+    function getQueryParam(param) {
+        let urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Get the recipe ID from the URL
+    let recipeId = getQueryParam('id');
+
+    fetch('https://divian.co.uk/recipes.json')  // Updated URL here
+        .then(response => response.json())
+        .then(data => {
+            // Find the recipe with the matching ID
+            let recipe = data.recipes.find(r => r.id == recipeId);
+
+            if (recipe) {
+                document.getElementById('recipe-header').innerText = recipe.title;
+
+                let details = `
+                    <p><strong>Prep Time:</strong> ${recipe.prepTime}</p>
+                    <p><strong>Cook Time:</strong> ${recipe.cookTime}</p>
+                    <p><strong>Additional Time:</strong> ${recipe.additionalTime}</p>
+                    <p><strong>Total Time:</strong> ${recipe.totalTime}</p>
+                    <p><strong>Servings:</strong> ${recipe.servings}</p>
+                    <p><strong>Yield:</strong> ${recipe.yield}</p>
+                    <a href="#nutrition-facts">Jump to Nutrition Facts</a>
+                `;
+                document.getElementById('recipe-details').innerHTML = details;
+
+                let ingredientsList = '';
+                recipe.ingredients.forEach(ingredient => {
+                    ingredientsList += `<li>${ingredient}</li>`;
+                });
+                document.getElementById('ingredients-list').innerHTML = ingredientsList;
+
+                let directionsList = '';
+                recipe.directions.forEach((direction, index) => {
+                    directionsList += `<li>Step ${index + 1}: ${direction}</li>`;
+                });
+                document.getElementById('directions-list').innerHTML = directionsList;
+
+                document.getElementById('recipe-image').src = recipe.image;
+
+                let nutritionList = '';
+                for (const [key, value] of Object.entries(recipe.nutritionFacts)) {
+                    nutritionList += `<li><strong>${key}:</strong> ${value}</li>`;
+                }
+                document.getElementById('nutrition-list').innerHTML = nutritionList;
+            } else {
+                document.getElementById('recipe-header').innerText = 'Recipe Not Found';
             }
-
-            // Get the recipe ID from the URL
-            let recipeId = getQueryParam('id');
-
-            fetch('recipes.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Find the recipe with the matching ID
-                    let recipe = data.recipes.find(r => r.id == recipeId);
-
-                    if (recipe) {
-                        document.getElementById('recipe-header').innerText = recipe.title;
-
-                        let details = `
-                            <p><strong>Prep Time:</strong> ${recipe.prepTime}</p>
-                            <p><strong>Cook Time:</strong> ${recipe.cookTime}</p>
-                            <p><strong>Additional Time:</strong> ${recipe.additionalTime}</p>
-                            <p><strong>Total Time:</strong> ${recipe.totalTime}</p>
-                            <p><strong>Servings:</strong> ${recipe.servings}</p>
-                            <p><strong>Yield:</strong> ${recipe.yield}</p>
-                            <a href="#nutrition-facts">Jump to Nutrition Facts</a>
-                        `;
-                        document.getElementById('recipe-details').innerHTML = details;
-
-                        let ingredientsList = '';
-                        recipe.ingredients.forEach(ingredient => {
-                            ingredientsList += `<li>${ingredient}</li>`;
-                        });
-                        document.getElementById('ingredients-list').innerHTML = ingredientsList;
-
-                        let directionsList = '';
-                        recipe.directions.forEach((direction, index) => {
-                            directionsList += `<li>Step ${index + 1}: ${direction}</li>`;
-                        });
-                        document.getElementById('directions-list').innerHTML = directionsList;
-
-                        document.getElementById('recipe-image').src = recipe.image;
-
-                        let nutritionList = '';
-                        for (const [key, value] of Object.entries(recipe.nutritionFacts)) {
-                            nutritionList += `<li><strong>${key}:</strong> ${value}</li>`;
-                        }
-                        document.getElementById('nutrition-list').innerHTML = nutritionList;
-                    } else {
-                        document.getElementById('recipe-header').innerText = 'Recipe Not Found';
-                    }
-                })
-                .catch(error => console.error('Error loading recipe:', error));
-        });
+        })
+        .catch(error => console.error('Error loading recipe:', error));
+});
     </script>
 </body>
 </html>
