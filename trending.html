@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.json())
         .then(data => {
             // Find the recipe with the matching ID
-            let recipe = data.recipes.find(r => r.id == recipeId);
+            let recipe = data.find(r => r.id == recipeId);
 
             if (recipe) {
                 document.getElementById('recipe-header').innerText = recipe.title;
@@ -122,10 +122,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('nutrition-list').innerHTML = nutritionList;
             } else {
                 document.getElementById('recipe-header').innerText = 'Recipe Not Found';
+                document.getElementById('recipe-details').innerHTML = '';
+                document.getElementById('ingredients-list').innerHTML = '';
+                document.getElementById('directions-list').innerHTML = '';
+                document.getElementById('recipe-image').src = '';
+                document.getElementById('nutrition-list').innerHTML = '';
             }
         })
         .catch(error => console.error('Error loading recipe:', error));
 });
+
     </script>
 </body>
 </html>
