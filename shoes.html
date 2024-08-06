@@ -1,57 +1,100 @@
 
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe for Premium Recipes</title>
+    <title>BIG CHEF COOKING's 499 RECIPE LIST</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
-        .container { max-width: 600px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { text-align: center; color: #333; }
-        .plan { padding: 20px; border: 1px solid #ddd; border-radius: 8px; text-align: center; background: #f9f9f9; }
-        .plan h2 { color: #007bff; }
-        .plan p { font-size: 18px; margin: 10px 0; }
-        .plan .price { font-size: 24px; font-weight: bold; color: #333; }
-        .button { display: block; width: 100%; padding: 15px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; margin-top: 20px; }
-        .button:hover { background-color: #0056b3; }
-        .description { margin-top: 20px; }
-        .description p { font-size: 18px; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subheader {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .plan {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border: 1px solid #c8e6c9;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        .plan-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .plan-price {
+            font-size: 22px;
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+        .plan-details {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .buy-now {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #388e3c;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .buy-now:hover {
+            background-color: #2e7d32;
+        }
+        .footer {
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Subscribe for Premium Recipes</h1>
-        
+        <img src="https://example.com/logo.png" alt="BIG CHEF COOKING Logo" class="logo"> <!-- Replace this with your actual logo link -->
+        <div class="header">BIG CHEF COOKING's 499 RECIPE LIST</div>
+        <div class="subheader">Save over 40% on nearly 500 recipes that are good for weight loss, with some containing high protein count and all being healthy for you.</div>
         <div class="plan">
-            <h2>One-Time Payment Plan</h2>
-            <p class="price">$29.99</p>
-            <p>Access all premium recipes and cooking tips with a single payment.</p>
-            <button id="subscribe" class="button">Subscribe Now</button>
+            <div class="plan-title">Digital 499 Recipe List</div>
+            <div class="plan-price">One-time Payment of $4.99</div>
+            <div class="plan-details">
+                Enjoy access to 499 healthy recipes specifically curated for weight loss and high protein content.
+            </div>
+            <a href="https://example.com/buy" class="buy-now">Buy Now</a> <!-- Replace this with your actual purchase link -->
         </div>
-
-        <div class="description">
-            <p>With a one-time payment, you get lifetime access to all premium recipes, cooking tips, and more! Enjoy exclusive content and features that are not available anywhere else.</p>
+        <div class="footer">
+            Included with your Digital 499 Recipe List:
+            <ul>
+                <li>Nearly 500 recipes that are good for weight loss</li>
+                <li>Some recipes containing high protein count</li>
+                <li>All recipes being healthy for you</li>
+            </ul>
         </div>
     </div>
-
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        const stripe = Stripe('your-publishable-key'); // Replace with your Stripe publishable key
-
-        document.getElementById('subscribe').addEventListener('click', async () => {
-            const response = await fetch('/create-checkout-session', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ plan: 'one-time' }) // Plan identifier
-            });
-            const sessionId = await response.json();
-            const { error } = await stripe.redirectToCheckout({ sessionId: sessionId.id });
-
-            if (error) {
-                console.error('Error:', error);
-            }
-        });
-    </script>
 </body>
 </html>
