@@ -93,7 +93,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            const recipe = data.find(r => r.id == recipeId);
+            // Adjust based on actual data structure
+            const recipe = data.recipes.find(r => r.id == recipeId); // Assuming recipes is an array in the data
             if (recipe) {
                 displayRecipe(recipe);
             } else {
@@ -137,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('recipe-image').src = '';
     }
 });
+
     </script>
 </body>
 </html>
