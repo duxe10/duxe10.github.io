@@ -164,13 +164,17 @@
                     <span class="step-number">3.</span> REVIEW
                 </div>
             </div>
-            <form id="email-form">
+            <form id="account-form">
                 <div class="form-group">
                     <label for="email">What is your email?</label>
                     <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit">Submit Email</button>
+                    <label for="password">Create a password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Account Details</button>
                 </div>
             </form>
             <div class="alternate-login">
@@ -192,13 +196,20 @@
                     <span class="step-number">3.</span> REVIEW
                 </div>
             </div>
-            <form id="password-form">
+            <form id="payment-form">
                 <div class="form-group">
-                    <label for="password">Create your password</label>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <label>Choose a payment method:</label>
+                    <div>
+                        <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                        <label for="credit-card">Credit or Debit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="paypal" name="payment-method" value="paypal" required>
+                        <label for="paypal">PayPal</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit">Create Account</button>
+                    <button type="submit">Continue to Review</button>
                 </div>
             </form>
         </div>
@@ -219,27 +230,29 @@
                 <p>You've Selected:</p>
                 <p><strong>One-Time Payment</strong></p>
                 <p>Access 499 recipes forever</p>
-                <p>$4.99 once</p>
+                <p>£20 once</p>
                 <a href="#" class="change-subscription">CHANGE SUBSCRIPTION TYPE</a>
             </div>
             <div class="form-group">
-                <button type="submit">Subscribe now</button>
+                <button type="submit">Subscribe Now</button>
             </div>
         </div>
     </div>
     <script>
-        document.getElementById('email-form').addEventListener('submit', function(e) {
+        document.getElementById('account-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
             localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
             document.getElementById('step1').classList.remove('active');
             document.getElementById('step2').classList.add('active');
         });
 
-        document.getElementById('password-form').addEventListener('submit', function(e) {
+        document.getElementById('payment-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            const password = document.getElementById('password').value;
-            localStorage.setItem('password', password);
+            const paymentMethod = document.querySelector('input[name="payment-method"]:checked').value;
+            localStorage.setItem('paymentMethod', paymentMethod);
             document.getElementById('step2').classList.remove('active');
             document.getElementById('step3').classList.add('active');
         });
