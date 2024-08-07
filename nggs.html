@@ -3,363 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>The Big Chef Cooking Recipe List - Checkout</title>
     <style>
-/* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 60px; /* Add padding-top to create space between header and content */
-}
-
-/* Header styles */
-.header {
-    background-color: black;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    height:67px;
-    top: 0; /* Position header at the very top */
-}
-
-.left {
-    display: flex;
-    align-items: center;
-}
-
-.brand {
-    font-size: 24px;
-    margin-right: 20px;
-}
-
-.category-button {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-}
-
-.category-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
-.categories {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.categories ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.categories ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 12px 16px;
-    display: block;
-}
-
-.categories ul li a:hover {
-    background-color: #ddd;
-}
-
-.right {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar {
-    width: 250px;
-    padding: 8px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-.search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.button {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.button:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #000;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-}
-
-.basket-button {
-    margin-left: 10px;
-}
-
-.container {
-    max-width: 1200px;
-    margin-top: 20px; /* Add margin-top to create space between header and content */
-    margin-bottom: 20px; /* Add margin-bottom for better spacing */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-
-        .product-details {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .product-image {
-            flex: 1;
-            margin-right: 20px;
-            max-width: 600px;
-            overflow: hidden;
-        }
-
-        .product-image .main-image {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .thumbnail-images {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            overflow-x: auto;
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* Internet Explorer 10+ */
+            align-items: center;
+            min-height: 100vh;
         }
 
-        .thumbnail-images::-webkit-scrollbar {
-            display: none; /* Safari and Chrome */
-        }
-
-        .thumbnail-images img {
-            width: 80px;
-            height: 80px;
-            margin-right: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .thumbnail-images img:hover {
-            transform: scale(1.1);
-        }
-
-        .product-info {
-            flex: 1;
-        }
-
-        .product-info h2 {
-            margin-top: 0;
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .product-info .rating {
-            color: #FFD700; /* Gold color */
-            margin-bottom: 10px;
-        }
-
-        .price {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .price .original-price {
-            text-decoration: line-through;
-            margin-right: 10px;
-            color: #999;
-        }
-
-        .button-container {
+        .checkout-container {
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
-        }
-
-      .button {
-    background-color: black; /* Change background color to black */
-    color: #fff;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-        .button:hover {
-            background-color: grey;
-        }
-
-        .buy-now-button {
-            background-color: #28a745; /* Green color */
-        }
-
-        .buy-now-button:hover {
-            background-color: #218838; /* Darker green on hover */
-        }
-
-        .product-description {
-            margin-top: 30px;
-            line-height: 1.6;
-        }
-
-        .product-description h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .product-description p {
-            color: #555;
-        }
-
-        .quantity-selector {
-            display: flex;
             align-items: center;
+        }
+
+        .banner {
+            width: 100%;
+        }
+
+        .banner img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .content {
+            padding: 20px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
-        .quantity-selector label {
-            margin-right: 10px;
-            color: #333;
+        .steps {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
 
-        .quantity-input {
-            width: 50px;
-            padding: 5px;
+        .step {
+            font-size: 16px;
+            margin: 0 10px;
+            color: #888;
+        }
+
+        .step.active {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .step-number {
+            margin-right: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 15px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #333;
+        }
+
+        .alternate-login {
             text-align: center;
+            margin: 20px 0;
+        }
+
+        .alternate-login button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .google-login {
+            background-color: #4285F4;
+            color: #fff;
+        }
+
+        .facebook-login {
+            background-color: #3B5998;
+            color: #fff;
+        }
+
+        .subscription-details {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .subscription-details p {
+            margin: 5px 0;
+        }
+
+        .change-subscription {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .change-subscription:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-    <div class="left">
-        <span class="brand">E-store</span>
-        <div class="dropdown">
-            <button class="category-button" onclick="toggleCategories()"> <img src="https://static.vecteezy.com/system/resources/thumbnails/000/582/228/small/icon0-vector-292-01.jpg" alt="Category Icon" class="category-icon"> Categories </button>
-            <div class="categories" id="categories">
-                <ul>
-                    <li><a href="#trending">Trending</a></li>
-                    <li><a href="#home-kitchen">Home & Kitchen</a></li>
-                    <li><a href="#beauty-personal-care">Beauty & Personal Care</a></li>
-                    <li><a href="#clothing-shoes-jewelry">Clothing, Shoes & Jewelry</a></li>
-                    <li><a href="#toys-games">Toys & Games</a></li>
-                    <li><a href="#health">Health</a></li>
-                    <li><a href="#baby">Baby</a></li>
-                    <li><a href="#electronics">Electronics</a></li>
-                    <li><a href="#sports-outdoors">Sports & Outdoors</a></li>
-                </ul>
-            </div>
+    <div class="checkout-container">
+        <div class="banner">
+            <img src="https://yt3.googleusercontent.com/Df87uGqAWOAsYa1JKsgYKKXjU7fA40FbHdoUfQjGrM8Qow067vZcabpPSa8WKyocAuEfm84C=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Banner Image">
         </div>
-    </div>
-    <div class="right">
-        <input type="text" class="search-bar" placeholder="Search products...">
-        <button class="button search-button">
-            <img src="https://img.icons8.com/material-outlined/24/ffffff/search--v1.png" alt="Search Icon" class="search-icon">
-        </button>
-        <button class="button">Sign In</button>
-        <button class="button basket-button">
-            <img src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="Basket Icon">
-        </button>
-    </div>
-</div>
-<div class="container">
-        <div class="product-details">
-            <div class="product-image">
-                <img src="" alt="Product Image" class="main-image" id="mainImage">
-                <div class="thumbnail-images"></div>
-            </div>
-            <div class="product-info">
-                <h2 id="productName"></h2>
-                <div class="rating" id="productRating"></div>
-                <div class="price" id="productPrice"></div>
-                <div class="quantity-selector">
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" class="quantity-input" min="1" max="15" value="1">
+        <div class="content">
+            <h1>Get exclusive recipes with The Big Chef Cooking Recipe List</h1>
+            <div class="steps">
+                <div class="step active">
+                    <span class="step-number">1.</span> ACCOUNT
                 </div>
-                <div class="button-container">
-                <button class="button buy-now-button">Buy Now</button>
-                    <button class="button">Add to Cart</button>
-                </div> 
-                <div class="product-description" id="productDescription"></div>
+                <div class="step">
+                    <span class="step-number">2.</span> PAYMENT
+                </div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="email">What is your email?</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Email</button>
+                </div>
+            </form>
+            <div class="alternate-login">
+                <p>or</p>
+                <button class="google-login">Continue with Google</button>
+                <button class="facebook-login">Continue with Facebook</button>
+            </div>
+            <div class="subscription-details">
+                <p>You've Selected:</p>
+                <p><strong>One-Time Payment</strong></p>
+                <p>Access 499 recipes forever</p>
+                <p>£20 once</p>
+                <a href="#" class="change-subscription">CHANGE SUBSCRIPTION TYPE</a>
             </div>
         </div>
     </div>
-
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Extract the product ID from the URL query parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id');
-
-    // Fetch the product details based on the product ID
-    fetch('https://duxe10.github.io/data.json')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); // Check the fetched data
-        const product = data.find(item => item.id === parseInt(productId, 10));
-        console.log(product); // Check the found product
-
-        if (product) {
-            // Populate the product details on the page
-            document.getElementById('productName').textContent = product.title;
-            document.getElementById('mainImage').src = product.image;
-            document.getElementById('productRating').textContent = '⭐'.repeat(Math.round(product.rating));
-            document.getElementById('productPrice').textContent = product.price;
-            document.getElementById('productDescription').innerHTML = product.description;
-        } else {
-            console.error('Product not found');
-        }
-    })
-    .catch(error => console.error('Error fetching product details:', error));
-});
-
-document.querySelector('.buy-now-button').addEventListener('click', function() {
-  // Get the product ID from the current URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get('id');
-
-  // Redirect to the checkout page with the product ID
-  window.location.href = `https://duxe10.github.io/ukf.html?id=${productId}`;
-});
-</script>
 </body>
 </html>
