@@ -32,6 +32,14 @@
 
         .content {
             padding: 20px;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .content.active {
+            display: block;
+            opacity: 1;
         }
 
         h1 {
@@ -136,10 +144,6 @@
         .change-subscription:hover {
             text-decoration: underline;
         }
-
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -147,72 +151,97 @@
         <div class="banner">
             <img src="https://yt3.googleusercontent.com/Df87uGqAWOAsYa1JKsgYKKXjU7fA40FbHdoUfQjGrM8Qow067vZcabpPSa8WKyocAuEfm84C=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj" alt="Banner Image">
         </div>
-        <div class="content">
+        <div id="step1" class="content active">
             <h1>Get exclusive recipes with The Big Chef Cooking Recipe List</h1>
             <div class="steps">
-                <div class="step active" id="step-1-label">
+                <div class="step active">
                     <span class="step-number">1.</span> ACCOUNT
                 </div>
-                <div class="step" id="step-2-label">
-                    <span class="step-number">2.</span> PASSWORD
+                <div class="step">
+                    <span class="step-number">2.</span> PAYMENT
                 </div>
-                <div class="step" id="step-3-label">
-                    <span class="step-number">3.</span> PAYMENT
+                <div class="step">
+                    <span class="step-number">3.</span> REVIEW
                 </div>
             </div>
-            <form id="checkout-form">
-                <div id="step-1" class="step-content">
-                    <div class="form-group">
-                        <label for="email">What is your email?</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" onclick="goToStep(2)">Submit Email</button>
-                    </div>
-                    <div class="alternate-login">
-                        <p>or</p>
-                        <button type="button" class="google-login">Continue with Google</button>
-                        <button type="button" class="facebook-login">Continue with Facebook</button>
-                    </div>
+            <form id="email-form">
+                <div class="form-group">
+                    <label for="email">What is your email?</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                 </div>
-                <div id="step-2" class="step-content hidden">
-                    <div class="form-group">
-                        <label for="password">Create a password</label>
-                        <input type="password" id="password" name="password" placeholder="Password" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" onclick="goToStep(3)">Submit Password</button>
-                    </div>
-                </div>
-                <div id="step-3" class="step-content hidden">
-                    <div class="form-group">
-                        <label for="credit-card">Credit Card Number</label>
-                        <input type="text" id="credit-card" name="credit-card" placeholder="Credit Card Number" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Complete Purchase</button>
-                    </div>
+                <div class="form-group">
+                    <button type="submit">Submit Email</button>
                 </div>
             </form>
+            <div class="alternate-login">
+                <p>or</p>
+                <button class="google-login">Continue with Google</button>
+                <button class="facebook-login">Continue with Facebook</button>
+            </div>
+        </div>
+        <div id="step2" class="content">
+            <h1>Checkout</h1>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1.</span> ACCOUNT
+                </div>
+                <div class="step active">
+                    <span class="step-number">2.</span> PAYMENT
+                </div>
+                <div class="step">
+                    <span class="step-number">3.</span> REVIEW
+                </div>
+            </div>
+            <form id="password-form">
+                <div class="form-group">
+                    <label for="password">Create your password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div id="step3" class="content">
+            <h1>Checkout</h1>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1.</span> ACCOUNT
+                </div>
+                <div class="step">
+                    <span class="step-number">2.</span> PAYMENT
+                </div>
+                <div class="step active">
+                    <span class="step-number">3.</span> REVIEW
+                </div>
+            </div>
             <div class="subscription-details">
                 <p>You've Selected:</p>
                 <p><strong>One-Time Payment</strong></p>
                 <p>Access 499 recipes forever</p>
-                <p>$4.99 once</>
+                <p>$4.99 once</p>
+                <a href="#" class="change-subscription">CHANGE SUBSCRIPTION TYPE</a>
+            </div>
+            <div class="form-group">
+                <button type="submit">Subscribe now</button>
             </div>
         </div>
     </div>
     <script>
-        function goToStep(step) {
-            document.querySelectorAll('.step-content').forEach(content => content.classList.add('hidden'));
-            document.getElementById(`step-${step}`).classList.remove('hidden');
-            document.querySelectorAll('.step').forEach(label => label.classList.remove('active'));
-            document.getElementById(`step-${step}-label`).classList.add('active');
-        }
+        document.getElementById('email-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            localStorage.setItem('email', email);
+            document.getElementById('step1').classList.remove('active');
+            document.getElementById('step2').classList.add('active');
+        });
 
-        document.getElementById('checkout-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Purchase Complete!');
+        document.getElementById('password-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            localStorage.setItem('password', password);
+            document.getElementById('step2').classList.remove('active');
+            document.getElementById('step3').classList.add('active');
         });
     </script>
 </body>
