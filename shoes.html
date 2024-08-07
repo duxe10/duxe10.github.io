@@ -1,168 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIG CHEF COOKING's 499 RECIPE LIST</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <title>The Big Chef Cooking Recipe List</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f3f4f6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        .container {
-            max-width: 900px;
-            width: 95%;
-            padding: 30px;
-            box-sizing: border-box;
-            text-align: center;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
+.paywall-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
 
-        .login-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            font-size: 14px;
-            color: #fff;
-            background-color: #e74c3c;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-        .login-button:hover {
-            background-color: #c0392b;
-            transform: scale(1.05);
-        }
+.content-container {
+    padding: 20px;
+}
 
-        .title {
-            font-size: 36px;
-            font-weight: 700;
-            margin: 20px 0;
-            color: #2c3e50;
-            animation: fadeIn 1s ease-in-out;
-        }
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
 
-        .subheader {
-            font-size: 22px;
-            color: #e74c3c;
-            margin-bottom: 30px;
-            font-weight: 500;
-            animation: fadeIn 1s ease-in-out 0.5s;
-        }
+p {
+    color: #555;
+}
 
-        .plan {
-            background-color: #f9f9f9;
-            padding: 30px;
-            border-radius: 10px;
-            margin-top: 30px;
-            animation: fadeInUp 1s ease-in-out 1s;
-        }
+.plan {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: left;
+}
 
-        .plan-title {
-            font-size: 26px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #2c3e50;
-        }
+.plan input {
+    margin-right: 10px;
+}
 
-        .plan-price {
-            font-size: 32px;
-            color: #e74c3c;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
+.plan-price {
+    font-weight: bold;
+    font-size: 18px;
+}
 
-        .plan-details {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        .banner {    
-            margin-top: 40px;
+.plan-description {
+    display: block;
+    font-size: 12px;
+    color: #888;
+}
 
-        .buy-now {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #e74c3c;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+.subscribe-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+}
 
-        .buy-now:hover {
-            background-color: #c0392b;
-            transform: scale(1.05);
-        }
+.subscribe-button:hover {
+    background-color: #333;
+}
 
-        .header-image {
-            width: 100%;
-            max-width: 800px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-        }
+.full-access {
+    font-size: 14px;
+    color: #555;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+.full-access a {
+    color: #000;
+    text-decoration: none;
+}
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
+.full-access a:hover {
+    text-decoration: underline;
+}
+
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <a href="https://example.com/login" class="login-button">Login</a>
-        <div class = "banner">
-        <img src="https://yt3.googleusercontent.com/Df87uGqAWOAsYa1JKsgYKKXjU7fA40FbHdoUfQjGrM8Qow067vZcabpPSa8WKyocAuEfm84C=w1138-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
-            alt="BIG CHEF COOKING" class="header-image">
+    <div class="paywall-container">
+        <div class="image-container">
+            <img src="recipe-image.jpg" alt="Recipe Image">
+        </div>
+        <div class="content-container">
+            <h1>Get exclusive recipes with The Big Chef Cooking Recipe List</h1>
+            <p>Access all your favorite recipes and save big when you subscribe.</p>
+            <div class="plan">
+                <input type="radio" id="plan-onetime" name="plan" checked>
+                <label for="plan-onetime">
+                    <span class="plan-price">£20</span> one-time payment
+                    <span class="plan-description">Access all recipes forever</span>
+                </label>
             </div>
-        <div class="title">BIG CHEF COOKING's 499 RECIPE LIST</div>
-        <div class="subheader">Unlock a World of Culinary Delights - 499 Mouthwatering Recipes for Just $4.99!</div>
-        <div class="plan">
-            <div class="plan-title">Digital 499 Recipe List</div>
-            <div class="plan-price">Limited Time Offer: $4.99</div>
-            <div class="plan-details">
-                Gain instant access to 499 healthy, delicious recipes curated for weight loss and high protein content.
-                Transform your cooking and eating habits today!
-            </div>
-            <a href="https://example.com/buy" class="buy-now">Get Your Recipes Now</a>
+            <button class="subscribe-button">Subscribe now</button>
+            <p class="full-access">Want full access to all of The Big Chef recipes? <a href="#">Learn more.</a></p>
         </div>
     </div>
 </body>
-
 </html>
