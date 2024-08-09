@@ -12382,4 +12382,1223 @@
             "Pour into a bowl and top with granola and fresh berries."
         ],
         "notes": "This berry smoothie bowl is a refreshing and healthy breakfast option."
+    },
+     {
+        "id": 441,
+        "title": "Grilled Portobello Mushrooms with Balsamic Glaze",
+        "category": "Main Course",
+        "ingredients": [
+            "4 large portobello mushrooms",
+            "1/4 cup balsamic vinegar",
+            "2 tbsp olive oil",
+            "2 cloves garlic, minced",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat grill to medium-high heat.",
+            "In a small saucepan, heat balsamic vinegar until reduced by half. Set aside.",
+            "Brush mushrooms with olive oil and sprinkle with minced garlic, salt, and pepper.",
+            "Grill mushrooms for 5-7 minutes per side, until tender.",
+            "Drizzle with balsamic glaze before serving."
+        ],
+        "notes": "These grilled portobello mushrooms are flavorful and make a great vegetarian main course."
+    },
+    {
+        "id": 442,
+        "title": "Spicy Roasted Cauliflower",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 head cauliflower, cut into florets",
+            "2 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp cayenne pepper",
+            "1/2 tsp garlic powder",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 425°F (220°C).",
+            "Toss cauliflower florets with olive oil, smoked paprika, cayenne pepper, garlic powder, salt, and pepper.",
+            "Spread on a baking sheet and roast for 25-30 minutes, until golden and crispy."
+        ],
+        "notes": "This spicy roasted cauliflower is a crunchy and flavorful side dish."
+    },
+    {
+        "id": 443,
+        "title": "Chickpea and Sweet Potato Curry",
+        "category": "Main Course",
+        "ingredients": [
+            "1 can chickpeas, drained and rinsed",
+            "2 large sweet potatoes, peeled and cubed",
+            "1 can coconut milk",
+            "2 tbsp curry powder",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a large pot over medium heat.",
+            "Add chopped onion and minced garlic, and sauté until softened.",
+            "Add sweet potatoes and curry powder, and cook for 2-3 minutes.",
+            "Stir in coconut milk and chickpeas. Bring to a boil, then reduce heat and simmer for 20-25 minutes, until sweet potatoes are tender.",
+            "Season with salt and pepper."
+        ],
+        "notes": "This chickpea and sweet potato curry is creamy and packed with flavor."
+    },
+    {
+        "id": 444,
+        "title": "Avocado and Black Bean Quesadillas",
+        "category": "Main Course",
+        "ingredients": [
+            "1 can black beans, drained and rinsed",
+            "2 ripe avocados, sliced",
+            "1 cup shredded cheese",
+            "4 whole wheat tortillas",
+            "1/2 cup salsa",
+            "1 tbsp olive oil"
+        ],
+        "instructions": [
+            "Heat olive oil in a skillet over medium heat.",
+            "Place a tortilla in the skillet and sprinkle with cheese.",
+            "Layer black beans, avocado slices, and salsa on half of the tortilla.",
+            "Fold tortilla in half and cook until golden and cheese is melted, about 3 minutes per side.",
+            "Repeat with remaining tortillas."
+        ],
+        "notes": "These avocado and black bean quesadillas are easy to make and perfect for a quick meal."
+    },
+    {
+        "id": 445,
+        "title": "Herbed Chicken and Vegetable Skewers",
+        "category": "Main Course",
+        "ingredients": [
+            "1 lb chicken breast, cut into cubes",
+            "1 bell pepper, cut into chunks",
+            "1 zucchini, sliced",
+            "1 red onion, cut into chunks",
+            "2 tbsp olive oil",
+            "2 tbsp fresh rosemary, chopped",
+            "1 tbsp fresh thyme, chopped",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat grill to medium-high heat.",
+            "In a bowl, toss chicken cubes, bell pepper, zucchini, and red onion with olive oil, rosemary, thyme, salt, and pepper.",
+            "Thread ingredients onto skewers.",
+            "Grill skewers for 10-12 minutes, turning occasionally, until chicken is cooked through and vegetables are tender."
+        ],
+        "notes": "These herbed chicken and vegetable skewers are perfect for summer grilling."
+    },
+    {
+        "id": 446,
+        "title": "Sweet Potato and Kale Hash",
+        "category": "Side Dish",
+        "ingredients": [
+            "2 large sweet potatoes, peeled and diced",
+            "2 cups kale, chopped",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a large skillet over medium heat.",
+            "Add onion and garlic, and sauté until softened.",
+            "Add sweet potatoes and cook for 10-15 minutes, until they start to soften.",
+            "Stir in kale and cook for an additional 5-7 minutes, until kale is wilted and sweet potatoes are tender.",
+            "Season with salt and pepper."
+        ],
+        "notes": "This sweet potato and kale hash is a hearty and nutritious side dish."
+    },
+    {
+        "id": 447,
+        "title": "Coconut Mango Chia Pudding",
+        "category": "Dessert",
+        "ingredients": [
+            "1/2 cup chia seeds",
+            "1 cup coconut milk",
+            "1/2 cup mango puree",
+            "2 tbsp honey",
+            "1/2 tsp vanilla extract"
+        ],
+        "instructions": [
+            "In a bowl, whisk together chia seeds, coconut milk, mango puree, honey, and vanilla extract.",
+            "Cover and refrigerate for at least 4 hours or overnight.",
+            "Stir before serving and top with fresh mango chunks."
+        ],
+        "notes": "This coconut mango chia pudding is a tropical and satisfying dessert."
+    },
+    {
+        "id": 448,
+        "title": "Balsamic Roasted Brussels Sprouts",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 lb Brussels sprouts, trimmed and halved",
+            "2 tbsp olive oil",
+            "2 tbsp balsamic vinegar",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Toss Brussels sprouts with olive oil, balsamic vinegar, salt, and pepper.",
+            "Spread on a baking sheet and roast for 20-25 minutes, until crispy and caramelized."
+        ],
+        "notes": "These balsamic roasted Brussels sprouts are a flavorful and healthy side dish."
+    },
+    {
+        "id": 449,
+        "title": "Lentil and Vegetable Stuffed Peppers",
+        "category": "Main Course",
+        "ingredients": [
+            "4 large bell peppers",
+            "1 cup cooked lentils",
+            "1 cup cooked rice",
+            "1 cup diced tomatoes",
+            "1/2 cup shredded cheese",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "1 tsp dried oregano",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Cut tops off bell peppers and remove seeds.",
+            "In a skillet, heat olive oil and sauté onion and garlic until softened.",
+            "Add cooked lentils, rice, diced tomatoes, dried oregano, salt, and pepper. Stir to combine.",
+            "Stuff bell peppers with the mixture and place in a baking dish.",
+            "Top with shredded cheese and bake for 30-35 minutes, until peppers are tender."
+        ],
+        "notes": "These lentil and vegetable stuffed peppers are a nutritious and satisfying meal."
+    },
+    {
+        "id": 450,
+        "title": "Cucumber and Avocado Gazpacho",
+        "category": "Soup",
+        "ingredients": [
+            "2 cups cucumber, peeled and chopped",
+            "1 ripe avocado",
+            "1/2 cup Greek yogurt",
+            "2 tbsp lemon juice",
+            "1/4 cup fresh basil leaves",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a blender, combine cucumber, avocado, Greek yogurt, lemon juice, and basil leaves.",
+            "Blend until smooth.",
+            "Season with salt and pepper and chill in the refrigerator for at least 1 hour before serving."
+        ],
+        "notes": "This cucumber and avocado gazpacho is a refreshing and creamy cold soup."
+    },
+    {
+        "id": 451,
+        "title": "Spiced Apple and Walnut Muffins",
+        "category": "Breakfast",
+        "ingredients": [
+            "1 1/2 cups whole wheat flour",
+            "1/2 cup rolled oats",
+            "1/2 cup chopped walnuts",
+            "1/2 cup diced apples",
+            "1/4 cup honey",
+            "1/4 cup olive oil",
+            "2 eggs",
+            "1 tsp baking powder",
+            "1/2 tsp cinnamon",
+            "1/4 tsp nutmeg",
+            "1/2 cup milk"
+        ],
+        "instructions": [
+            "Preheat oven to 350°F (175°C) and line a muffin tin with paper liners.",
+            "In a large bowl, mix flour, oats, baking powder, cinnamon, and nutmeg.",
+            "In another bowl, whisk together eggs, honey, olive oil, and milk.",
+            "Combine wet and dry ingredients and fold in apples and walnuts.",
+            "Spoon batter into muffin tin and bake for 20-25 minutes, until a toothpick comes out clean."
+        ],
+        "notes": "These spiced apple and walnut muffins are perfect for a hearty breakfast or snack."
+    },
+    {
+        "id": 452,
+        "title": "Peach and Basil Smoothie",
+        "category": "Breakfast",
+        "ingredients": [
+            "1 cup frozen peaches",
+            "1 banana",
+            "1/2 cup Greek yogurt",
+            "1/4 cup almond milk",
+            "1 tbsp honey",
+            "1 tbsp fresh basil leaves"
+        ],
+        "instructions": [
+            "In a blender, combine frozen peaches, banana, Greek yogurt, almond milk, honey, and basil leaves.",
+            "Blend until smooth.",
+            "Serve immediately."
+        ],
+        "notes": "This peach and basil smoothie is a refreshing and unique breakfast option."
+    },
+    {
+        "id": 453,
+        "title": "Roasted Beet and Goat Cheese Salad",
+        "category": "Salad",
+        "ingredients": [
+            "2 large beets, roasted and sliced",
+            "2 cups mixed greens",
+            "1/4 cup crumbled goat cheese",
+            "1/4 cup toasted walnuts",
+            "2 tbsp balsamic vinaigrette"
+        ],
+        "instructions": [
+            "Arrange mixed greens on a plate.",
+            "Top with roasted beet slices, crumbled goat cheese, and toasted walnuts.",
+            "Drizzle with balsamic vinaigrette before serving."
+        ],
+        "notes": "This roasted beet and goat cheese salad is both flavorful and elegant."
+    },
+    {
+        "id": 454,
+        "title": "Garlic Parmesan Roasted Potatoes",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 lb baby potatoes, halved",
+            "2 tbsp olive oil",
+            "3 cloves garlic, minced",
+            "1/4 cup grated Parmesan cheese",
+            "1 tbsp chopped fresh parsley",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Toss potatoes with olive oil, minced garlic, salt, and pepper.",
+            "Spread on a baking sheet and roast for 25-30 minutes, until tender.",
+            "Sprinkle with Parmesan cheese and chopped parsley before serving."
+        ],
+        "notes": "These garlic Parmesan roasted potatoes are a savory and satisfying side dish."
+    },
+    {
+        "id": 455,
+        "title": "Mango and Black Bean Salsa",
+        "category": "Appetizer",
+        "ingredients": [
+            "1 cup diced mango",
+            "1 cup black beans, drained and rinsed",
+            "1/2 cup diced red onion",
+            "1/2 cup diced bell pepper",
+            "2 tbsp chopped fresh cilantro",
+            "1 tbsp lime juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, combine diced mango, black beans, red onion, bell pepper, and cilantro.",
+            "Drizzle with lime juice and season with salt and pepper.",
+            "Toss to combine and serve with tortilla chips or as a topping for grilled meats."
+        ],
+        "notes": "This mango and black bean salsa is a vibrant and refreshing appetizer."
+    },
+    {
+        "id": 456,
+        "title": "Pesto Stuffed Chicken Breasts",
+        "category": "Main Course",
+        "ingredients": [
+            "4 boneless, skinless chicken breasts",
+            "1/2 cup pesto sauce",
+            "1/2 cup shredded mozzarella cheese",
+            "Salt and pepper to taste",
+            "2 tbsp olive oil"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Cut a pocket into each chicken breast and stuff with pesto sauce and shredded mozzarella cheese.",
+            "Season with salt and pepper.",
+            "Heat olive oil in a skillet over medium-high heat.",
+            "Sear chicken breasts for 2-3 minutes per side, then transfer to a baking dish and bake for 20-25 minutes, until cooked through."
+        ],
+        "notes": "These pesto stuffed chicken breasts are flavorful and easy to prepare."
+    },
+    {
+        "id": 457,
+        "title": "Sweet Potato and Spinach Frittata",
+        "category": "Breakfast",
+        "ingredients": [
+            "1 large sweet potato, peeled and diced",
+            "2 cups fresh spinach",
+            "6 eggs",
+            "1/4 cup milk",
+            "1/2 cup shredded cheese",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Heat olive oil in a skillet over medium heat.",
+            "Add diced sweet potato and cook until tender.",
+            "Stir in spinach and cook until wilted.",
+            "In a bowl, whisk together eggs, milk, salt, and pepper.",
+            "Pour egg mixture over sweet potato and spinach, and sprinkle with shredded cheese.",
+            "Transfer skillet to the oven and bake for 20-25 minutes, until eggs are set."
+        ],
+        "notes": "This sweet potato and spinach frittata is a hearty and nutritious breakfast option."
+    },
+    {
+        "id": 458,
+        "title": "Lemon Herb Quinoa",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 cup quinoa",
+            "2 cups vegetable broth",
+            "1 tbsp olive oil",
+            "1 lemon, juiced",
+            "2 tbsp chopped fresh parsley",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Rinse quinoa under cold water.",
+            "In a pot, bring vegetable broth to a boil.",
+            "Add quinoa, reduce heat to low, and simmer for 15 minutes, until quinoa is cooked and liquid is absorbed.",
+            "Fluff with a fork and stir in olive oil, lemon juice, parsley, salt, and pepper."
+        ],
+        "notes": "This lemon herb quinoa is a light and flavorful side dish."
+    },
+    {
+        "id": 459,
+        "title": "Coconut Lime Chicken Skewers",
+        "category": "Main Course",
+        "ingredients": [
+            "1 lb chicken breast, cut into cubes",
+            "1/2 cup coconut milk",
+            "2 tbsp lime juice",
+            "2 tbsp soy sauce",
+            "1 tbsp honey",
+            "2 cloves garlic, minced",
+            "1 tbsp grated ginger",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, mix coconut milk, lime juice, soy sauce, honey, garlic, and ginger.",
+            "Marinate chicken cubes in the mixture for at least 1 hour.",
+            "Thread chicken onto skewers and grill over medium-high heat for 10-12 minutes, until cooked through."
+        ],
+        "notes": "These coconut lime chicken skewers are tropical and flavorful, perfect for grilling."
+    },
+    {
+        "id": 460,
+        "title": "Spicy Sriracha Edamame",
+        "category": "Snack",
+        "ingredients": [
+            "2 cups edamame, frozen",
+            "2 tbsp olive oil",
+            "1 tbsp Sriracha sauce",
+            "1 tbsp soy sauce",
+            "1 clove garlic, minced",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Cook edamame according to package instructions and drain.",
+            "Heat olive oil in a skillet over medium heat.",
+            "Add garlic and cook for 1 minute.",
+            "Stir in edamame, Sriracha sauce, and soy sauce.",
+            "Cook for an additional 2-3 minutes, until heated through."
+        ],
+        "notes": "This spicy Sriracha edamame is a quick and tasty snack."
+    },
+    {
+        "id": 461,
+        "title": "Roasted Garlic and Tomato Soup",
+        "category": "Soup",
+        "ingredients": [
+            "1 head garlic",
+            "1 lb tomatoes, chopped",
+            "1 onion, chopped",
+            "2 tbsp olive oil",
+            "2 cups vegetable broth",
+            "1 tsp dried basil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Wrap garlic head in foil and roast for 30-35 minutes, until soft.",
+            "In a pot, heat olive oil and sauté onion until translucent.",
+            "Add chopped tomatoes and vegetable broth. Bring to a boil, then reduce heat and simmer for 15 minutes.",
+            "Squeeze roasted garlic out of its skin and add to the soup.",
+            "Blend soup until smooth and season with dried basil, salt, and pepper."
+        ],
+        "notes": "This roasted garlic and tomato soup is rich and flavorful."
+    },
+    {
+        "id": 462,
+        "title": "Honey Mustard Brussels Sprouts",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 lb Brussels sprouts, trimmed and halved",
+            "2 tbsp olive oil",
+            "2 tbsp honey",
+            "1 tbsp Dijon mustard",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, mix olive oil, honey, and Dijon mustard.",
+            "Toss Brussels sprouts with the mixture and season with salt and pepper.",
+            "Spread on a baking sheet and roast for 20-25 minutes, until crispy."
+        ],
+        "notes": "These honey mustard Brussels sprouts are a sweet and tangy side dish."
+    },
+    {
+        "id": 463,
+        "title": "Avocado and Tomato Quinoa Salad",
+        "category": "Salad",
+        "ingredients": [
+            "1 cup cooked quinoa",
+            "1 ripe avocado, diced",
+            "1 cup cherry tomatoes, halved",
+            "1/4 cup red onion, diced",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, combine cooked quinoa, avocado, cherry tomatoes, and red onion.",
+            "Drizzle with olive oil and lemon juice, and season with salt and pepper.",
+            "Toss to combine."
+        ],
+        "notes": "This avocado and tomato quinoa salad is light and refreshing."
+    },
+    {
+        "id": 464,
+        "title": "Zucchini and Corn Fritters",
+        "category": "Main Course",
+        "ingredients": [
+            "2 cups grated zucchini",
+            "1 cup corn kernels",
+            "1/2 cup flour",
+            "1/4 cup chopped fresh parsley",
+            "2 eggs",
+            "1/4 cup grated Parmesan cheese",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, mix grated zucchini, corn kernels, flour, parsley, eggs, and Parmesan cheese.",
+            "Heat olive oil in a skillet over medium heat.",
+            "Spoon mixture into skillet and flatten with a spatula.",
+            "Cook for 3-4 minutes per side, until golden brown and crispy."
+        ],
+        "notes": "These zucchini and corn fritters are a tasty and versatile dish."
+    },
+    {
+        "id": 465,
+        "title": "Lemon Basil Pesto Pasta",
+        "category": "Main Course",
+        "ingredients": [
+            "8 oz pasta",
+            "1 cup fresh basil leaves",
+            "1/4 cup pine nuts",
+            "1/4 cup Parmesan cheese",
+            "1/4 cup olive oil",
+            "1 tbsp lemon juice",
+            "2 cloves garlic",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Cook pasta according to package instructions and drain.",
+            "In a food processor, combine basil, pine nuts, Parmesan cheese, olive oil, lemon juice, and garlic.",
+            "Blend until smooth, and season with salt and pepper.",
+            "Toss pasta with pesto sauce."
+        ],
+        "notes": "This lemon basil pesto pasta is fresh and flavorful."
+    },
+    {
+        "id": 466,
+        "title": "Sweet Potato and Black Bean Enchiladas",
+        "category": "Main Course",
+        "ingredients": [
+            "2 large sweet potatoes, peeled and diced",
+            "1 can black beans, drained and rinsed",
+            "1 cup enchilada sauce",
+            "1 cup shredded cheese",
+            "8 small corn tortillas",
+            "2 tbsp olive oil",
+            "1 tsp cumin",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Heat olive oil in a skillet and cook sweet potatoes until tender.",
+            "Stir in black beans, cumin, salt, and pepper.",
+            "In a baking dish, spread a thin layer of enchilada sauce.",
+            "Fill tortillas with sweet potato mixture, roll up, and place seam-side down in the dish.",
+            "Top with remaining enchilada sauce and shredded cheese.",
+            "Bake for 25-30 minutes, until cheese is melted and bubbly."
+        ],
+        "notes": "These sweet potato and black bean enchiladas are hearty and satisfying."
+    },
+    {
+        "id": 467,
+        "title": "Baked Eggplant Parmesan",
+        "category": "Main Course",
+        "ingredients": [
+            "1 large eggplant, sliced",
+            "1 cup marinara sauce",
+            "1 cup shredded mozzarella cheese",
+            "1/4 cup grated Parmesan cheese",
+            "1/2 cup breadcrumbs",
+            "2 tbsp olive oil",
+            "1 tsp dried oregano",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Brush eggplant slices with olive oil and season with salt and pepper.",
+            "Place on a baking sheet and bake for 20 minutes, turning halfway through.",
+            "Spread marinara sauce over eggplant slices and top with mozzarella and Parmesan cheese.",
+            "Sprinkle with breadcrumbs and bake for an additional 15-20 minutes, until cheese is melted and bubbly."
+        ],
+        "notes": "This baked eggplant Parmesan is a lighter version of the classic dish."
+    },
+    {
+        "id": 468,
+        "title": "Tomato Basil Bruschetta",
+        "category": "Appetizer",
+        "ingredients": [
+            "4 slices whole grain baguette",
+            "1 cup diced tomatoes",
+            "1/4 cup chopped fresh basil",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Place baguette slices on a baking sheet and toast for 5 minutes.",
+            "In a bowl, mix diced tomatoes, basil, garlic, olive oil, salt, and pepper.",
+            "Top toasted baguette slices with tomato mixture."
+        ],
+        "notes": "This tomato basil bruschetta is a simple and fresh appetizer."
+    },
+    {
+        "id": 469,
+        "title": "Spiced Carrot and Lentil Soup",
+        "category": "Soup",
+        "ingredients": [
+            "2 cups carrots, diced",
+            "1 cup lentils",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tsp cumin",
+            "1 tsp coriander",
+            "2 cups vegetable broth",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a pot and sauté onion and garlic until softened.",
+            "Add carrots, lentils, cumin, and coriander. Stir for 2 minutes.",
+            "Add vegetable broth and bring to a boil. Reduce heat and simmer for 25 minutes.",
+            "Blend until smooth and season with salt and pepper."
+        ],
+        "notes": "This spiced carrot and lentil soup is hearty and warming."
+    },
+    {
+        "id": 470,
+        "title": "Crispy Chickpea Salad",
+        "category": "Salad",
+        "ingredients": [
+            "1 can chickpeas, drained and rinsed",
+            "1 tbsp olive oil",
+            "1 tsp smoked paprika",
+            "1/2 tsp garlic powder",
+            "2 cups mixed greens",
+            "1/2 cup cherry tomatoes, halved",
+            "1/4 cup diced cucumber",
+            "2 tbsp balsamic vinaigrette"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Toss chickpeas with olive oil, smoked paprika, and garlic powder.",
+            "Spread on a baking sheet and roast for 20-25 minutes, until crispy.",
+            "In a bowl, combine mixed greens, cherry tomatoes, and cucumber.",
+            "Top with crispy chickpeas and drizzle with balsamic vinaigrette."
+        ],
+        "notes": "This crispy chickpea salad is crunchy and satisfying."
+    },
+    {
+        "id": 471,
+        "title": "Quinoa and Roasted Vegetable Bowl",
+        "category": "Main Course",
+        "ingredients": [
+            "1 cup quinoa",
+            "2 cups vegetable broth",
+            "2 cups mixed roasted vegetables (e.g., bell peppers, zucchini, carrots)",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Rinse quinoa under cold water.",
+            "In a pot, bring vegetable broth to a boil.",
+            "Add quinoa, reduce heat to low, and simmer for 15 minutes, until quinoa is cooked and liquid is absorbed.",
+            "Toss roasted vegetables with olive oil, lemon juice, salt, and pepper.",
+            "Serve quinoa topped with roasted vegetables."
+        ],
+        "notes": "This quinoa and roasted vegetable bowl is nutritious and customizable."
+    },
+    {
+        "id": 472,
+        "title": "Mediterranean Chickpea Salad",
+        "category": "Salad",
+        "ingredients": [
+            "1 can chickpeas, drained and rinsed",
+            "1/2 cup diced cucumber",
+            "1/2 cup cherry tomatoes, halved",
+            "1/4 cup red onion, diced",
+            "1/4 cup crumbled feta cheese",
+            "2 tbsp chopped fresh parsley",
+            "2 tbsp lemon juice",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, combine chickpeas, cucumber, cherry tomatoes, red onion, feta cheese, and parsley.",
+            "Drizzle with lemon juice and olive oil, and season with salt and pepper.",
+            "Toss to combine."
+        ],
+        "notes": "This Mediterranean chickpea salad is fresh and tangy."
+    },
+    {
+        "id": 473,
+        "title": "Creamy Avocado Pasta",
+        "category": "Main Course",
+        "ingredients": [
+            "8 oz pasta",
+            "1 ripe avocado",
+            "1/4 cup Greek yogurt",
+            "2 cloves garlic",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Cook pasta according to package instructions and drain.",
+            "In a food processor, combine avocado, Greek yogurt, garlic, olive oil, lemon juice, salt, and pepper.",
+            "Blend until smooth.",
+            "Toss pasta with avocado sauce."
+        ],
+        "notes": "This creamy avocado pasta is a rich and healthy alternative to traditional Alfredo."
+    },
+    {
+        "id": 474,
+        "title": "Roasted Vegetable and Hummus Wrap",
+        "category": "Main Course",
+        "ingredients": [
+            "1 cup roasted vegetables (e.g., bell peppers, zucchini, eggplant)",
+            "1/2 cup hummus",
+            "4 large whole wheat tortillas",
+            "1 cup fresh spinach",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Spread hummus over each tortilla.",
+            "Top with roasted vegetables and fresh spinach.",
+            "Roll up tortillas and slice in half."
+        ],
+        "notes": "These roasted vegetable and hummus wraps are quick and satisfying."
+    },
+    {
+        "id": 475,
+        "title": "Berry Chia Seed Jam",
+        "category": "Dessert",
+        "ingredients": [
+            "2 cups mixed berries",
+            "1/4 cup honey",
+            "2 tbsp chia seeds",
+            "1 tbsp lemon juice"
+        ],
+        "instructions": [
+            "In a saucepan, combine mixed berries and honey. Cook over medium heat until berries break down.",
+            "Stir in chia seeds and lemon juice, and cook for an additional 5 minutes.",
+            "Let cool and store in a jar."
+        ],
+        "notes": "This berry chia seed jam is a healthy and delicious spread."
+    },
+    {
+        "id": 476,
+        "title": "Ginger Lemongrass Chicken Skewers",
+        "category": "Main Course",
+        "ingredients": [
+            "1 lb chicken breast, cut into cubes",
+            "2 tbsp lemongrass paste",
+            "1 tbsp grated ginger",
+            "2 tbsp soy sauce",
+            "1 tbsp honey",
+            "1 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, combine lemongrass paste, ginger, soy sauce, honey, and olive oil.",
+            "Marinate chicken cubes in the mixture for at least 1 hour.",
+            "Thread chicken onto skewers and grill over medium heat for 10-12 minutes, until cooked through."
+        ],
+        "notes": "These ginger lemongrass chicken skewers are fragrant and flavorful."
+    },
+    {
+        "id": 477,
+        "title": "Balsamic Roasted Brussels Sprouts and Pears",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 lb Brussels sprouts, halved",
+            "2 ripe pears, sliced",
+            "2 tbsp balsamic vinegar",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, toss Brussels sprouts and pear slices with olive oil, balsamic vinegar, salt, and pepper.",
+            "Spread on a baking sheet and roast for 20-25 minutes, until Brussels sprouts are crispy and pears are tender."
+        ],
+        "notes": "This balsamic roasted Brussels sprouts and pears dish is a sweet and tangy side."
+    },
+    {
+        "id": 478,
+        "title": "Stuffed Acorn Squash",
+        "category": "Main Course",
+        "ingredients": [
+            "2 acorn squashes, halved and seeded",
+            "1 cup cooked quinoa",
+            "1/2 cup chopped walnuts",
+            "1/2 cup dried cranberries",
+            "1/2 cup feta cheese",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Brush acorn squash halves with olive oil and season with salt and pepper.",
+            "Roast squash for 30-35 minutes, until tender.",
+            "In a bowl, mix quinoa, walnuts, cranberries, and feta cheese.",
+            "Stuff each squash half with the mixture and bake for an additional 10 minutes."
+        ],
+        "notes": "These stuffed acorn squashes are perfect for a hearty, seasonal meal."
+    },
+    {
+        "id": 479,
+        "title": "Zucchini and Goat Cheese Frittata",
+        "category": "Breakfast",
+        "ingredients": [
+            "2 cups sliced zucchini",
+            "1/2 cup crumbled goat cheese",
+            "6 eggs",
+            "1/4 cup milk",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Heat olive oil in a skillet over medium heat and cook zucchini until tender.",
+            "In a bowl, whisk together eggs, milk, salt, and pepper.",
+            "Stir in crumbled goat cheese and cooked zucchini.",
+            "Pour mixture into an oven-safe skillet and bake for 20-25 minutes, until eggs are set."
+        ],
+        "notes": "This zucchini and goat cheese frittata is light and flavorful."
+    },
+    {
+        "id": 480,
+        "title": "Sweet Potato and Kale Hash",
+        "category": "Breakfast",
+        "ingredients": [
+            "2 large sweet potatoes, peeled and diced",
+            "2 cups chopped kale",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a skillet over medium heat.",
+            "Add sweet potatoes and cook until tender, about 10 minutes.",
+            "Add onion and garlic and cook until translucent.",
+            "Stir in kale and cook until wilted.",
+            "Season with salt and pepper and serve."
+        ],
+        "notes": "This sweet potato and kale hash is a nutritious and filling breakfast option."
+    },
+    {
+        "id": 481,
+        "title": "Almond-Crusted Salmon",
+        "category": "Main Course",
+        "ingredients": [
+            "4 salmon fillets",
+            "1/2 cup ground almonds",
+            "2 tbsp Dijon mustard",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Brush salmon fillets with Dijon mustard and season with salt and pepper.",
+            "Press ground almonds onto the top of each fillet.",
+            "Place on a baking sheet and bake for 15-20 minutes, until salmon is cooked through."
+        ],
+        "notes": "This almond-crusted salmon is a crunchy and flavorful way to enjoy fish."
+    },
+    {
+        "id": 482,
+        "title": "Spicy Sweet Potato and Black Bean Tacos",
+        "category": "Main Course",
+        "ingredients": [
+            "2 large sweet potatoes, peeled and diced",
+            "1 can black beans, drained and rinsed",
+            "1 tbsp olive oil",
+            "1 tsp chili powder",
+            "1/2 tsp cumin",
+            "8 small corn tortillas",
+            "1 avocado, sliced",
+            "Fresh cilantro for garnish"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Toss sweet potatoes with olive oil, chili powder, and cumin.",
+            "Spread on a baking sheet and roast for 25-30 minutes, until tender.",
+            "Warm tortillas in a skillet or oven.",
+            "Fill tortillas with roasted sweet potatoes, black beans, and avocado slices.",
+            "Garnish with fresh cilantro."
+        ],
+        "notes": "These spicy sweet potato and black bean tacos are vibrant and satisfying."
+    },
+    {
+        "id": 483,
+        "title": "Coconut Curry Cauliflower",
+        "category": "Side Dish",
+        "ingredients": [
+            "1 head cauliflower, cut into florets",
+            "1 can coconut milk",
+            "2 tbsp red curry paste",
+            "1 tbsp soy sauce",
+            "1 tbsp olive oil",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, mix coconut milk, red curry paste, soy sauce, and olive oil.",
+            "Toss cauliflower florets in the mixture and spread on a baking sheet.",
+            "Roast for 20-25 minutes, until cauliflower is tender and slightly caramelized."
+        ],
+        "notes": "This coconut curry cauliflower is creamy and full of flavor."
+    },
+    {
+        "id": 484,
+        "title": "Pear and Walnut Salad",
+        "category": "Salad",
+        "ingredients": [
+            "2 ripe pears, sliced",
+            "2 cups mixed greens",
+            "1/4 cup chopped walnuts",
+            "1/4 cup crumbled blue cheese",
+            "2 tbsp balsamic vinaigrette"
+        ],
+        "instructions": [
+            "Arrange mixed greens on a plate.",
+            "Top with pear slices, chopped walnuts, and crumbled blue cheese.",
+            "Drizzle with balsamic vinaigrette before serving."
+        ],
+        "notes": "This pear and walnut salad is a delicious mix of sweet and savory."
+    },
+    {
+        "id": 485,
+        "title": "Lemon Garlic Shrimp",
+        "category": "Main Course",
+        "ingredients": [
+            "1 lb shrimp, peeled and deveined",
+            "3 cloves garlic, minced",
+            "2 tbsp lemon juice",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste",
+            "1 tbsp chopped fresh parsley"
+        ],
+        "instructions": [
+            "Heat olive oil in a skillet over medium heat.",
+            "Add garlic and cook for 1 minute.",
+            "Add shrimp and cook until pink and opaque, about 3-4 minutes.",
+            "Stir in lemon juice and season with salt and pepper.",
+            "Garnish with fresh parsley before serving."
+        ],
+        "notes": "These lemon garlic shrimp are quick and full of fresh flavors."
+    },
+    {
+        "id": 486,
+        "title": "Chia Seed Breakfast Pudding",
+        "category": "Breakfast",
+        "ingredients": [
+            "1/4 cup chia seeds",
+            "1 cup almond milk",
+            "1 tbsp honey",
+            "1/2 tsp vanilla extract",
+            "Fresh berries for topping"
+        ],
+        "instructions": [
+            "In a bowl, mix chia seeds, almond milk, honey, and vanilla extract.",
+            "Refrigerate for at least 4 hours or overnight.",
+            "Stir well and top with fresh berries before serving."
+        ],
+        "notes": "This chia seed breakfast pudding is a simple and nutritious start to the day."
+    },
+    {
+        "id": 487,
+        "title": "Roasted Red Pepper and Lentil Soup",
+        "category": "Soup",
+        "ingredients": [
+            "2 red bell peppers, roasted and chopped",
+            "1 cup red lentils",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "4 cups vegetable broth",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a pot and sauté onion and garlic until softened.",
+            "Add roasted bell peppers, lentils, and vegetable broth.",
+            "Bring to a boil, then reduce heat and simmer for 25 minutes.",
+            "Blend until smooth and season with salt and pepper."
+        ],
+        "notes": "This roasted red pepper and lentil soup is hearty and flavorful."
+    },
+    {
+        "id": 488,
+        "title": "Greek Yogurt and Cucumber Dip",
+        "category": "Appetizer",
+        "ingredients": [
+            "1 cup Greek yogurt",
+            "1/2 cup grated cucumber",
+            "2 cloves garlic, minced",
+            "1 tbsp lemon juice",
+            "2 tbsp fresh dill, chopped",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a bowl, combine Greek yogurt, grated cucumber, garlic, lemon juice, and dill.",
+            "Season with salt and pepper.",
+            "Serve with pita chips or fresh vegetables."
+        ],
+        "notes": "This Greek yogurt and cucumber dip is refreshing and creamy."
+    },
+    {
+        "id": 489,
+        "title": "Coconut and Almond Energy Balls",
+        "category": "Snack",
+        "ingredients": [
+            "1 cup dates, pitted",
+            "1/2 cup almonds",
+            "1/2 cup shredded coconut",
+            "2 tbsp cocoa powder",
+            "1 tbsp honey"
+        ],
+        "instructions": [
+            "In a food processor, blend dates, almonds, coconut, cocoa powder, and honey until well combined.",
+            "Roll mixture into small balls.",
+            "Refrigerate for 30 minutes before serving."
+        ],
+        "notes": "These coconut and almond energy balls are a quick and healthy snack."
+    },
+    {
+        "id": 490,
+        "title": "Spicy Roasted Chickpeas",
+        "category": "Snack",
+        "ingredients": [
+            "1 can chickpeas, drained and rinsed",
+            "1 tbsp olive oil",
+            "1 tsp paprika",
+            "1/2 tsp cayenne pepper",
+            "Salt to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Toss chickpeas with olive oil, paprika, cayenne pepper, and salt.",
+            "Spread on a baking sheet and roast for 20-25 minutes, until crispy."
+        ],
+        "notes": "These spicy roasted chickpeas are crunchy and flavorful."
+    },
+    {
+        "id": 491,
+        "title": "Butternut Squash and Sage Risotto",
+        "category": "Main Course",
+        "ingredients": [
+            "1 cup Arborio rice",
+            "2 cups butternut squash, diced",
+            "1 onion, chopped",
+            "4 cups vegetable broth",
+            "1/2 cup grated Parmesan cheese",
+            "2 tbsp olive oil",
+            "1 tbsp fresh sage, chopped",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a pot and sauté onion until translucent.",
+            "Add butternut squash and cook for 5 minutes.",
+            "Stir in Arborio rice and cook for 2 minutes.",
+            "Gradually add vegetable broth, stirring constantly, until rice is creamy and cooked through.",
+            "Stir in Parmesan cheese and fresh sage.",
+            "Season with salt and pepper before serving."
+        ],
+        "notes": "This butternut squash and sage risotto is rich and comforting."
+    },
+    {
+        "id": 492,
+        "title": "Stuffed Portobello Mushrooms",
+        "category": "Main Course",
+        "ingredients": [
+            "4 large portobello mushrooms, stems removed",
+            "1/2 cup cooked quinoa",
+            "1/4 cup sun-dried tomatoes, chopped",
+            "1/4 cup crumbled feta cheese",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Brush mushroom caps with olive oil and season with salt and pepper.",
+            "In a bowl, mix cooked quinoa, sun-dried tomatoes, and feta cheese.",
+            "Stuff each mushroom cap with the mixture and bake for 20-25 minutes."
+        ],
+        "notes": "These stuffed portobello mushrooms are savory and satisfying."
+    },
+    {
+        "id": 493,
+        "title": "Lemon Herb Baked Cod",
+        "category": "Main Course",
+        "ingredients": [
+            "4 cod fillets",
+            "2 tbsp olive oil",
+            "2 tbsp lemon juice",
+            "1 tbsp fresh parsley, chopped",
+            "1 tsp dried thyme",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "Place cod fillets on a baking sheet.",
+            "Drizzle with olive oil and lemon juice, and season with parsley, thyme, salt, and pepper.",
+            "Bake for 12-15 minutes, until cod is flaky and cooked through."
+        ],
+        "notes": "This lemon herb baked cod is light and full of fresh flavors."
+    },
+    {
+        "id": 494,
+        "title": "Roasted Beet and Orange Salad",
+        "category": "Salad",
+        "ingredients": [
+            "2 medium beets, roasted and sliced",
+            "2 oranges, peeled and segmented",
+            "2 cups mixed greens",
+            "1/4 cup crumbled goat cheese",
+            "2 tbsp balsamic vinaigrette"
+        ],
+        "instructions": [
+            "Arrange mixed greens on a plate.",
+            "Top with roasted beet slices, orange segments, and crumbled goat cheese.",
+            "Drizzle with balsamic vinaigrette before serving."
+        ],
+        "notes": "This roasted beet and orange salad is a colorful and tangy dish."
+    },
+    {
+        "id": 495,
+        "title": "Spaghetti Squash with Avocado Sauce",
+        "category": "Main Course",
+        "ingredients": [
+            "1 large spaghetti squash",
+            "2 ripe avocados",
+            "2 cloves garlic",
+            "1/4 cup fresh basil leaves",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 375°F (190°C).",
+            "Cut spaghetti squash in half and remove seeds.",
+            "Place cut side down on a baking sheet and roast for 40-45 minutes, until tender.",
+            "In a blender, combine avocados, garlic, basil, olive oil, lemon juice, salt, and pepper.",
+            "Blend until smooth.",
+            "Scrape spaghetti squash into strands and toss with avocado sauce."
+        ],
+        "notes": "This spaghetti squash with avocado sauce is a creamy and healthy alternative to pasta."
+    },
+    {
+        "id": 496,
+        "title": "Pumpkin and Black Bean Chili",
+        "category": "Main Course",
+        "ingredients": [
+            "1 can pumpkin puree",
+            "1 can black beans, drained and rinsed",
+            "1 cup diced tomatoes",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 tbsp chili powder",
+            "2 cups vegetable broth",
+            "2 tbsp olive oil",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat olive oil in a pot and sauté onion and garlic until softened.",
+            "Add pumpkin puree, black beans, diced tomatoes, chili powder, and vegetable broth.",
+            "Bring to a boil, then reduce heat and simmer for 20-25 minutes.",
+            "Season with salt and pepper before serving."
+        ],
+        "notes": "This pumpkin and black bean chili is hearty and perfect for fall."
+    },
+    {
+        "id": 497,
+        "title": "Roasted Garlic and Herb Hummus",
+        "category": "Appetizer",
+        "ingredients": [
+            "1 can chickpeas, drained and rinsed",
+            "4 cloves garlic, roasted",
+            "1/4 cup tahini",
+            "2 tbsp olive oil",
+            "1/4 cup lemon juice",
+            "1/4 cup fresh parsley, chopped",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "In a food processor, combine chickpeas, roasted garlic, tahini, olive oil, lemon juice, and parsley.",
+            "Blend until smooth.",
+            "Season with salt and pepper."
+        ],
+        "notes": "This roasted garlic and herb hummus is creamy and full of flavor."
+    },
+    {
+        "id": 498,
+        "title": "Pineapple and Spinach Smoothie",
+        "category": "Drink",
+        "ingredients": [
+            "1 cup fresh spinach",
+            "1 cup pineapple chunks",
+            "1 banana",
+            "1 cup coconut water",
+            "1/2 cup Greek yogurt"
+        ],
+        "instructions": [
+            "In a blender, combine spinach, pineapple, banana, coconut water, and Greek yogurt.",
+            "Blend until smooth."
+        ],
+        "notes": "This pineapple and spinach smoothie is refreshing and packed with nutrients."
+    },
+    {
+        "id": 499,
+        "title": "Baked Apple Cinnamon Oatmeal",
+        "category": "Breakfast",
+        "ingredients": [
+            "2 cups rolled oats",
+            "1 cup diced apples",
+            "1/4 cup maple syrup",
+            "1 tsp ground cinnamon",
+            "2 cups almond milk",
+            "1/4 cup chopped walnuts"
+        ],
+        "instructions": [
+            "Preheat oven to 350°F (175°C).",
+            "In a bowl, mix oats, diced apples, maple syrup, cinnamon, and almond milk.",
+            "Pour mixture into a baking dish and top with chopped walnuts.",
+            "Bake for 30-35 minutes, until oatmeal is set."
+        ],
+        "notes": "This baked apple cinnamon oatmeal is a warm and comforting breakfast."
     }
+  ]
