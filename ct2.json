@@ -1,0 +1,730 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Greek Yogurt and Berry Parfait",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 cup Greek yogurt",
+        "1/2 cup mixed berries (blueberries, strawberries, raspberries)",
+        "1 tablespoon honey",
+        "1 tablespoon granola"
+      ],
+      "directions": [
+        "Layer Greek yogurt, mixed berries, and granola in a glass.",
+        "Drizzle with honey and serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "12g",
+        "Carbs": "20g",
+        "Fat": "3g",
+        "Fiber": "4g",
+        "Sugar": "15g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Cottage Cheese and Pineapple Bowl",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1/2 cup cottage cheese",
+        "1/2 cup pineapple chunks",
+        "1 tablespoon chia seeds"
+      ],
+      "directions": [
+        "Mix cottage cheese with pineapple chunks.",
+        "Sprinkle chia seeds on top and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "15g",
+        "Carbs": "20g",
+        "Fat": "5g",
+        "Fiber": "4g",
+        "Sugar": "12g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Edamame with Sea Salt",
+      "prepTime": "5 mins",
+      "cookTime": "5 mins",
+      "totalTime": "10 mins",
+      "servings": 2,
+      "ingredients": [
+        "2 cups edamame (in pods)",
+        "1 tablespoon sea salt"
+      ],
+      "directions": [
+        "Steam edamame for 5 minutes.",
+        "Sprinkle with sea salt and serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "11g",
+        "Carbs": "10g",
+        "Fat": "5g",
+        "Fiber": "4g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Spicy Roasted Chickpeas",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can chickpeas, drained and rinsed",
+        "1 tablespoon olive oil",
+        "1 teaspoon smoked paprika",
+        "1/2 teaspoon cayenne pepper",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss chickpeas with olive oil, paprika, cayenne pepper, and salt.",
+        "Spread on a baking sheet and roast for 30 minutes, shaking the pan occasionally."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "7g",
+        "Carbs": "20g",
+        "Fat": "5g",
+        "Fiber": "6g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Turkey and Avocado Roll-Ups",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "8 slices turkey breast",
+        "1 avocado, sliced",
+        "1/4 cup hummus",
+        "1 cup spinach leaves"
+      ],
+      "directions": [
+        "Spread hummus on each turkey slice.",
+        "Place avocado slices and spinach leaves on top.",
+        "Roll up and secure with toothpicks if needed."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "10g",
+        "Carbs": "5g",
+        "Fat": "7g",
+        "Fiber": "4g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Baked Sweet Potato Chips",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 large sweet potatoes, thinly sliced",
+        "1 tablespoon olive oil",
+        "1/2 teaspoon paprika",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 425°F (220°C).",
+        "Toss sweet potato slices with olive oil, paprika, and salt.",
+        "Spread on a baking sheet in a single layer and bake for 20 minutes, flipping halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "2g",
+        "Carbs": "30g",
+        "Fat": "5g",
+        "Fiber": "4g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Chia Seed Pudding",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "additionalTime": "2 hours",
+      "totalTime": "2 hours 10 mins",
+      "servings": 2,
+      "ingredients": [
+        "1/4 cup chia seeds",
+        "1 cup almond milk",
+        "1 tablespoon honey or maple syrup",
+        "1/2 teaspoon vanilla extract"
+      ],
+      "directions": [
+        "Mix chia seeds, almond milk, honey, and vanilla extract in a bowl.",
+        "Refrigerate for at least 2 hours or overnight until thickened."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "5g",
+        "Carbs": "20g",
+        "Fat": "10g",
+        "Fiber": "10g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Hummus and Veggie Sticks",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup hummus",
+        "1 cucumber, sliced",
+        "2 carrots, peeled and cut into sticks",
+        "1 bell pepper, sliced"
+      ],
+      "directions": [
+        "Serve hummus with sliced vegetables for dipping."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "6g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Spicy Roasted Almonds",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup almonds",
+        "1 tablespoon olive oil",
+        "1/2 teaspoon cayenne pepper",
+        "1/2 teaspoon smoked paprika",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 350°F (175°C).",
+        "Toss almonds with olive oil, cayenne pepper, paprika, and salt.",
+        "Spread on a baking sheet and roast for 10 minutes, stirring once."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "6g",
+        "Carbs": "7g",
+        "Fat": "15g",
+        "Fiber": "4g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Turkey Meatballs",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground turkey",
+        "1/4 cup chopped parsley",
+        "1/4 cup grated Parmesan cheese",
+        "1 egg",
+        "1/4 cup breadcrumbs",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Mix all ingredients in a bowl and shape into meatballs.",
+        "Place on a baking sheet and bake for 20 minutes or until cooked through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "20g",
+        "Carbs": "5g",
+        "Fat": "6g",
+        "Fiber": "1g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Stuffed Mushrooms",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "12 large mushrooms",
+        "1/2 cup chopped spinach",
+        "1/4 cup grated Parmesan cheese",
+        "2 tablespoons olive oil",
+        "1 clove garlic, minced"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Remove stems from mushrooms and chop finely.",
+        "Sauté mushroom stems and garlic in olive oil until tender.",
+        "Mix with spinach and Parmesan cheese.",
+        "Stuff mixture into mushroom caps and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "100",
+        "Protein": "5g",
+        "Carbs": "7g",
+        "Fat": "6g",
+        "Fiber": "2g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Zucchini Noodles with Pesto",
+      "prepTime": "10 mins",
+      "cookTime": "5 mins",
+      "totalTime": "15 mins",
+      "servings": 2,
+      "ingredients": [
+        "2 zucchinis, spiralized",
+        "1/4 cup pesto sauce",
+        "1 tablespoon olive oil",
+        "1 tablespoon Parmesan cheese"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add zucchini noodles and cook for 5 minutes.",
+        "Toss with pesto sauce and Parmesan cheese before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "4g",
+        "Carbs": "10g",
+        "Fat": "8g",
+        "Fiber": "3g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Baked Salmon Bites",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound salmon fillets, cut into bite-sized pieces",
+        "2 tablespoons olive oil",
+        "1 teaspoon garlic powder",
+        "1 teaspoon paprika",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss salmon pieces with olive oil, garlic powder, paprika, salt, and pepper.",
+        "Spread on a baking sheet and bake for 15 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "22g",
+        "Carbs": "0g",
+        "Fat": "12g",
+        "Fiber": "0g",
+        "Sugar": "0g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Cucumber and Hummus Sandwiches",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "8 slices whole grain bread",
+        "1/2 cup hummus",
+        "1 cucumber, thinly sliced",
+        "1 tablespoon chopped fresh dill"
+      ],
+      "directions": [
+        "Spread hummus on each slice of bread.",
+        "Top with cucumber slices and a sprinkle of dill.",
+        "Assemble sandwiches and cut into halves."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "6g",
+        "Carbs": "22g",
+        "Fat": "6g",
+        "Fiber": "4g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Egg White Muffins",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 6,
+      "ingredients": [
+        "6 egg whites",
+        "1/2 cup chopped spinach",
+        "1/4 cup diced bell peppers",
+        "1/4 cup shredded low-fat cheese",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 350°F (175°C).",
+        "Whisk egg whites and pour into a muffin tin.",
+        "Add spinach, bell peppers, and cheese.",
+        "Season with salt and pepper and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "90",
+        "Protein": "10g",
+        "Carbs": "5g",
+        "Fat": "2g",
+        "Fiber": "1g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Roasted Chickpeas",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can chickpeas, drained and rinsed",
+        "1 tablespoon olive oil",
+        "1 teaspoon cumin",
+        "1/2 teaspoon garlic powder",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss chickpeas with olive oil, cumin, garlic powder, and salt.",
+        "Spread on a baking sheet and roast for 30 minutes, stirring halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "8g",
+        "Carbs": "20g",
+        "Fat": "8g",
+        "Fiber": "6g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Baked Tofu Bites",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon sesame seeds",
+        "1/2 teaspoon garlic powder"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss tofu with soy sauce, olive oil, sesame seeds, and garlic powder.",
+        "Spread on a baking sheet and bake for 25 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "160",
+        "Protein": "14g",
+        "Carbs": "8g",
+        "Fat": "10g",
+        "Fiber": "2g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Avocado and Tuna Salad",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 can tuna, drained",
+        "1 avocado, diced",
+        "1 tablespoon olive oil",
+        "1 tablespoon lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Combine tuna and avocado in a bowl.",
+        "Drizzle with olive oil and lemon juice.",
+        "Season with salt and pepper, and mix well."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "20g",
+        "Carbs": "12g",
+        "Fat": "15g",
+        "Fiber": "6g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Quinoa and Black Bean Salad",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup quinoa",
+        "1 can black beans, drained",
+        "1/2 cup diced red bell pepper",
+        "1/4 cup chopped cilantro",
+        "2 tablespoons lime juice",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Cook quinoa according to package instructions and let cool.",
+        "Combine quinoa, black beans, bell pepper, and cilantro in a bowl.",
+        "Drizzle with lime juice and season with salt."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "9g",
+        "Carbs": "30g",
+        "Fat": "4g",
+        "Fiber": "6g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Egg Salad Lettuce Wraps",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 hard-boiled eggs, chopped",
+        "1/4 cup Greek yogurt",
+        "1 tablespoon Dijon mustard",
+        "Salt and pepper to taste",
+        "Lettuce leaves for wrapping"
+      ],
+      "directions": [
+        "Mix eggs, Greek yogurt, and Dijon mustard in a bowl.",
+        "Season with salt and pepper.",
+        "Serve in lettuce leaves as wraps."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "12g",
+        "Carbs": "3g",
+        "Fat": "10g",
+        "Fiber": "1g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Chicken and Veggie Skewers",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, cubed",
+        "1 red bell pepper, cut into chunks",
+        "1 green bell pepper, cut into chunks",
+        "1 zucchini, sliced",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried oregano",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Thread chicken and vegetables onto skewers.",
+        "Brush with olive oil and season with oregano, salt, and pepper.",
+        "Grill for 15 minutes, turning occasionally."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "25g",
+        "Carbs": "10g",
+        "Fat": "8g",
+        "Fiber": "3g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Lentil Soup",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup lentils",
+        "1 onion, diced",
+        "2 carrots, diced",
+        "2 celery stalks, diced",
+        "1 can diced tomatoes",
+        "4 cups vegetable broth",
+        "1 teaspoon cumin",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Sauté onion, carrots, and celery in a pot until softened.",
+        "Add lentils, tomatoes, broth, cumin, salt, and pepper.",
+        "Bring to a boil, then reduce heat and simmer for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "12g",
+        "Carbs": "30g",
+        "Fat": "2g",
+        "Fiber": "10g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Chicken Lettuce Cups",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground chicken",
+        "1/2 cup diced bell peppers",
+        "1/4 cup diced onions",
+        "2 tablespoons soy sauce",
+        "1 tablespoon hoisin sauce",
+        "1 tablespoon olive oil",
+        "Lettuce leaves for serving"
+      ],
+      "directions": [
+        "Heat olive oil in a pan and cook ground chicken until browned.",
+        "Add bell peppers, onions, soy sauce, and hoisin sauce.",
+        "Cook until vegetables are tender.",
+        "Serve in lettuce leaves."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "20g",
+        "Carbs": "10g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Almond-Crusted Chicken Tenders",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken tenders",
+        "1 cup almond flour",
+        "1/2 cup grated Parmesan cheese",
+        "1 egg, beaten",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Dip chicken tenders in beaten egg, then coat with almond flour and Parmesan cheese.",
+        "Place on a baking sheet and bake for 15 minutes, turning halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "28g",
+        "Carbs": "8g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Stuffed Bell Peppers",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 bell peppers, tops removed and seeds discarded",
+        "1 cup cooked quinoa",
+        "1 can black beans, drained",
+        "1 cup corn kernels",
+        "1/2 cup diced tomatoes",
+        "1/4 cup chopped cilantro",
+        "1 teaspoon cumin",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Mix quinoa, black beans, corn, tomatoes, cilantro, cumin, salt, and pepper.",
+        "Stuff bell peppers with the mixture and place in a baking dish.",
+        "Cover with foil and bake for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "10g",
+        "Carbs": "30g",
+        "Fat": "5g",
+        "Fiber": "7g",
+        "Sugar": "7g"
+      }
+    }
+  ]
+}
