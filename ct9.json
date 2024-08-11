@@ -1,0 +1,839 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Grilled Chicken Breast with Steamed Vegetables",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 boneless, skinless chicken breasts",
+        "2 cups broccoli florets",
+        "2 cups sliced carrots",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Season the chicken breasts with salt and pepper.",
+        "Grill the chicken over medium heat for 6-7 minutes per side until fully cooked.",
+        "While the chicken is grilling, steam the broccoli and carrots until tender.",
+        "Serve the grilled chicken with steamed vegetables."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "40g",
+        "Carbs": "10g",
+        "Fat": "7g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Baked Salmon with Asparagus and Lemon",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "1 bunch asparagus, trimmed",
+        "2 tablespoons olive oil",
+        "1 lemon, sliced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Place salmon fillets on a baking sheet lined with parchment paper.",
+        "Arrange asparagus around the salmon and drizzle with olive oil.",
+        "Season with salt and pepper and place lemon slices on top of the salmon.",
+        "Bake for 15-20 minutes until the salmon is fully cooked.",
+        "Serve with the roasted asparagus."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "35g",
+        "Carbs": "5g",
+        "Fat": "15g",
+        "Fiber": "3g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Turkey and Quinoa Stuffed Peppers",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 large bell peppers, tops cut off and seeds removed",
+        "1 pound ground turkey",
+        "1 cup cooked quinoa",
+        "1 cup tomato sauce",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "In a large pan, heat olive oil and sauté the onion and garlic until soft.",
+        "Add the ground turkey and cook until browned.",
+        "Stir in the cooked quinoa and tomato sauce, and season with salt and pepper.",
+        "Stuff the bell peppers with the turkey and quinoa mixture.",
+        "Place the stuffed peppers in a baking dish and bake for 25-30 minutes.",
+        "Serve hot."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "30g",
+        "Carbs": "25g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Grilled Tofu with Stir-Fried Vegetables",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, drained and pressed",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "2 cups mixed vegetables (broccoli, bell peppers, snap peas)",
+        "1 tablespoon sesame oil",
+        "1 tablespoon minced ginger",
+        "1 tablespoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Slice the tofu into thick slabs and marinate in soy sauce for 10 minutes.",
+        "Heat a grill or grill pan over medium heat and grill the tofu for 4-5 minutes per side until grill marks appear.",
+        "In a large pan, heat sesame oil and sauté the ginger and garlic until fragrant.",
+        "Add the mixed vegetables and stir-fry until tender-crisp.",
+        "Serve the grilled tofu with the stir-fried vegetables."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "14g",
+        "Carbs": "10g",
+        "Fat": "15g",
+        "Fiber": "4g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Lemon-Garlic Shrimp with Zucchini Noodles",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound large shrimp, peeled and deveined",
+        "3 zucchini, spiralized into noodles",
+        "2 tablespoons olive oil",
+        "4 cloves garlic, minced",
+        "Juice of 1 lemon",
+        "1/4 teaspoon red pepper flakes",
+        "Salt and pepper to taste",
+        "Fresh parsley, chopped (optional)"
+      ],
+      "directions": [
+        "In a large pan, heat olive oil and sauté the garlic until fragrant.",
+        "Add the shrimp, lemon juice, red pepper flakes, salt, and pepper.",
+        "Cook the shrimp until pink and opaque, about 3-4 minutes.",
+        "Toss in the zucchini noodles and cook for another 2-3 minutes until tender.",
+        "Garnish with fresh parsley and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "190",
+        "Protein": "24g",
+        "Carbs": "8g",
+        "Fat": "7g",
+        "Fiber": "2g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Grilled Steak with Roasted Brussels Sprouts",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 steaks (sirloin, ribeye, or your choice)",
+        "1 pound Brussels sprouts, halved",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Toss the Brussels sprouts with olive oil, salt, and pepper.",
+        "Spread them on a baking sheet and roast for 20-25 minutes until crispy and golden.",
+        "Meanwhile, season the steaks with salt and pepper and grill to desired doneness (about 4-6 minutes per side).",
+        "Serve the grilled steak with roasted Brussels sprouts."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "400",
+        "Protein": "35g",
+        "Carbs": "10g",
+        "Fat": "25g",
+        "Fiber": "4g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Baked Cod with Roasted Butternut Squash",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 cod fillets",
+        "1 small butternut squash, peeled and cubed",
+        "2 tablespoons olive oil",
+        "1 teaspoon paprika",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Toss the butternut squash with olive oil, paprika, salt, and pepper.",
+        "Spread the squash on a baking sheet and roast for 15 minutes.",
+        "Place the cod fillets on the same baking sheet and season with salt and pepper.",
+        "Bake for an additional 10 minutes until the cod is cooked through.",
+        "Serve the baked cod with roasted butternut squash."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "260",
+        "Protein": "32g",
+        "Carbs": "18g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Chicken Stir-Fry with Snow Peas",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, sliced into thin strips",
+        "2 cups snow peas",
+        "1 bell pepper, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 tablespoon minced garlic",
+        "1 tablespoon minced ginger",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a large pan over medium-high heat.",
+        "Add the garlic and ginger and sauté until fragrant.",
+        "Add the chicken strips and cook until no longer pink.",
+        "Stir in the bell pepper and snow peas, and add soy sauce.",
+        "Cook for another 3-4 minutes until vegetables are tender-crisp.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "36g",
+        "Carbs": "15g",
+        "Fat": "10g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Spaghetti Squash with Turkey Marinara",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 medium spaghetti squash",
+        "1 pound ground turkey",
+        "2 cups marinara sauce",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Cut the spaghetti squash in half lengthwise and remove seeds.",
+        "Place cut side down on a baking sheet and bake for 30 minutes.",
+        "In a pan, heat olive oil and sauté the onion and garlic until soft.",
+        "Add the ground turkey and cook until browned.",
+        "Stir in marinara sauce and season with salt and pepper.",
+        "Use a fork to scrape the squash into spaghetti-like strands.",
+        "Top with turkey marinara sauce and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "28g",
+        "Carbs": "18g",
+        "Fat": "7g",
+        "Fiber": "5g",
+        "Sugar": "7g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Greek Chicken Salad",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups cooked chicken breast, cubed",
+        "2 cups mixed greens",
+        "1 cup cherry tomatoes, halved",
+        "1/2 cucumber, sliced",
+        "1/4 cup red onion, thinly sliced",
+        "1/4 cup feta cheese, crumbled",
+        "2 tablespoons olive oil",
+        "1 tablespoon lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large bowl, combine the mixed greens, cherry tomatoes, cucumber, red onion, and feta cheese.",
+        "In a small bowl, whisk together olive oil and lemon juice.",
+        "Add the cubed chicken to the salad and toss with the dressing.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "14g",
+        "Fiber": "3g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Stuffed Portobello Mushrooms",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 large portobello mushrooms, stems removed",
+        "1 cup cooked quinoa",
+        "1/2 cup diced tomatoes",
+        "1/2 cup spinach, chopped",
+        "1/4 cup grated Parmesan cheese",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "In a bowl, mix cooked quinoa, diced tomatoes, spinach, Parmesan cheese, and garlic.",
+        "Season with salt and pepper.",
+        "Stuff the portobello mushrooms with the mixture and place them on a baking sheet.",
+        "Drizzle with olive oil and bake for 20 minutes.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "10g",
+        "Carbs": "25g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Lentil and Vegetable Stew",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup dried lentils",
+        "1 cup diced tomatoes",
+        "2 cups vegetable broth",
+        "1 cup chopped carrots",
+        "1 cup chopped celery",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "1 teaspoon dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large pot, heat olive oil and sauté the onion and garlic until soft.",
+        "Add carrots, celery, and dried lentils and cook for 5 minutes.",
+        "Stir in diced tomatoes, vegetable broth, and thyme.",
+        "Bring to a boil, then reduce heat and simmer for 30 minutes until lentils are tender.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "15g",
+        "Carbs": "45g",
+        "Fat": "7g",
+        "Fiber": "12g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Cauliflower Fried Rice",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 head cauliflower, grated into rice-sized pieces",
+        "1 cup frozen peas and carrots",
+        "2 eggs, beaten",
+        "2 tablespoons soy sauce",
+        "1 tablespoon sesame oil",
+        "2 cloves garlic, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat sesame oil in a large pan over medium heat.",
+        "Add garlic and sauté until fragrant.",
+        "Add frozen peas and carrots and cook until tender.",
+        "Push vegetables to one side of the pan and pour beaten eggs into the empty side, scrambling until cooked.",
+        "Add cauliflower rice and soy sauce, and stir everything together.",
+        "Cook for another 5 minutes until the cauliflower is tender.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "10g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Spicy Chicken and Sweet Potato Skillet",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, cubed",
+        "2 medium sweet potatoes, peeled and cubed",
+        "1 tablespoon olive oil",
+        "1 teaspoon paprika",
+        "1/2 teaspoon cayenne pepper",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a large skillet over medium-high heat.",
+        "Add sweet potatoes and cook until they start to soften, about 10 minutes.",
+        "Add the cubed chicken, paprika, cayenne pepper, salt, and pepper.",
+        "Cook until the chicken is fully cooked and sweet potatoes are tender, about 10 more minutes.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "30g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Zucchini and Chicken Meatballs",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground chicken",
+        "1 cup grated zucchini, squeezed dry",
+        "1/4 cup grated Parmesan cheese",
+        "1 egg",
+        "2 cloves garlic, minced",
+        "1 tablespoon chopped fresh basil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "In a large bowl, mix ground chicken, zucchini, Parmesan cheese, egg, garlic, basil, salt, and pepper.",
+        "Form into meatballs and place on a baking sheet.",
+        "Bake for 20 minutes or until fully cooked.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "25g",
+        "Carbs": "5g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Black Bean and Corn Tacos",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can black beans, drained and rinsed",
+        "1 cup corn kernels",
+        "1 tablespoon olive oil",
+        "1 teaspoon chili powder",
+        "1/2 teaspoon cumin",
+        "4 small corn tortillas",
+        "1/2 cup diced avocado",
+        "1/4 cup chopped cilantro"
+      ],
+      "directions": [
+        "In a pan, heat olive oil and cook black beans and corn with chili powder and cumin for 5-7 minutes.",
+        "Warm corn tortillas in a separate pan or microwave.",
+        "Fill tortillas with black bean and corn mixture.",
+        "Top with diced avocado and chopped cilantro.",
+        "Serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "12g",
+        "Carbs": "35g",
+        "Fat": "8g",
+        "Fiber": "8g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Chicken and Spinach Stuffed Sweet Potatoes",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 medium sweet potatoes",
+        "2 cups cooked chicken breast, shredded",
+        "1 cup spinach, chopped",
+        "1/2 cup Greek yogurt",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Prick sweet potatoes with a fork and bake for 30 minutes until tender.",
+        "In a bowl, mix shredded chicken, spinach, Greek yogurt, olive oil, salt, and pepper.",
+        "Once sweet potatoes are cooked, cut them open and fluff the insides with a fork.",
+        "Top with the chicken and spinach mixture.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "25g",
+        "Carbs": "35g",
+        "Fat": "8g",
+        "Fiber": "6g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Eggplant and Chickpea Curry",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 eggplant, diced",
+        "1 can chickpeas, drained and rinsed",
+        "1 cup diced tomatoes",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon curry powder",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large pan, heat olive oil and sauté the onion and garlic until soft.",
+        "Add diced eggplant and cook for 5 minutes.",
+        "Stir in chickpeas, diced tomatoes, and curry powder.",
+        "Simmer for 15 minutes until eggplant is tender.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "12g",
+        "Carbs": "40g",
+        "Fat": "8g",
+        "Fiber": "10g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Pork Tenderloin with Roasted Vegetables",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound pork tenderloin",
+        "2 cups mixed vegetables (potatoes, carrots, bell peppers)",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried rosemary",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Season the pork tenderloin with salt, pepper, and rosemary.",
+        "Toss mixed vegetables with olive oil, salt, and pepper.",
+        "Place the pork tenderloin on a baking sheet and surround with vegetables.",
+        "Roast for 25 minutes or until the pork reaches an internal temperature of 145°F (63°C).",
+        "Let the pork rest for 5 minutes before slicing."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "350",
+        "Protein": "30g",
+        "Carbs": "20g",
+        "Fat": "15g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Chili Lime Chicken with Avocado Salsa",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breasts",
+        "1 tablespoon chili powder",
+        "1 tablespoon lime juice",
+        "1 avocado, diced",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup red onion, diced",
+        "2 tablespoons chopped cilantro"
+      ],
+      "directions": [
+        "Season chicken breasts with chili powder and lime juice.",
+        "Grill or pan-cook chicken for 5-7 minutes per side until fully cooked.",
+        "In a bowl, combine avocado, cherry tomatoes, red onion, and cilantro to make the salsa.",
+        "Serve the chicken topped with avocado salsa."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "35g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Tofu Stir-Fry with Broccoli and Bell Peppers",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "2 cups broccoli florets",
+        "1 bell pepper, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 tablespoon sesame seeds",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a large pan over medium-high heat.",
+        "Add cubed tofu and cook until golden brown on all sides.",
+        "Add broccoli and bell pepper and stir-fry for 5-7 minutes until vegetables are tender.",
+        "Stir in soy sauce and sesame seeds.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "15g",
+        "Carbs": "20g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Salmon and Spinach Salad",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "4 cups fresh spinach",
+        "1/2 red onion, thinly sliced",
+        "1/4 cup crumbled feta cheese",
+        "2 tablespoons olive oil",
+        "1 tablespoon balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Season salmon fillets with salt and pepper.",
+        "Cook salmon in a pan with a little olive oil until cooked through, about 4-5 minutes per side.",
+        "In a large bowl, combine spinach, red onion, and feta cheese.",
+        "Drizzle with olive oil and balsamic vinegar.",
+        "Top the salad with cooked salmon fillets and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "30g",
+        "Carbs": "10g",
+        "Fat": "18g",
+        "Fiber": "3g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Sweet Potato and Black Bean Salad",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 medium sweet potatoes, peeled and cubed",
+        "1 can black beans, drained and rinsed",
+        "1/4 cup red onion, diced",
+        "1/4 cup chopped cilantro",
+        "2 tablespoons olive oil",
+        "1 tablespoon lime juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Toss sweet potato cubes with olive oil, salt, and pepper.",
+        "Spread on a baking sheet and roast for 20 minutes or until tender.",
+        "In a large bowl, combine roasted sweet potatoes, black beans, red onion, and cilantro.",
+        "Drizzle with lime juice and season with salt and pepper.",
+        "Serve warm or at room temperature."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "10g",
+        "Carbs": "45g",
+        "Fat": "10g",
+        "Fiber": "10g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Chicken and Vegetable Soup",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, diced",
+        "4 cups chicken broth",
+        "1 cup chopped carrots",
+        "1 cup chopped celery",
+        "1 cup diced potatoes",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "1 teaspoon dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large pot, heat olive oil and sauté the onion and garlic until soft.",
+        "Add carrots, celery, and potatoes and cook for 5 minutes.",
+        "Stir in chicken broth, diced chicken, and thyme.",
+        "Bring to a boil, then reduce heat and simmer for 25 minutes or until vegetables and chicken are cooked through.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "25g",
+        "Carbs": "20g",
+        "Fat": "7g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Roasted Brussels Sprouts with Bacon",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound Brussels sprouts, trimmed and halved",
+        "4 slices bacon, chopped",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Toss Brussels sprouts with olive oil, salt, and pepper.",
+        "Spread on a baking sheet and top with chopped bacon.",
+        "Roast for 20 minutes or until Brussels sprouts are tender and bacon is crispy.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "270",
+        "Protein": "10g",
+        "Carbs": "20g",
+        "Fat": "18g",
+        "Fiber": "7g",
+        "Sugar": "5g"
+      }
+    }
+  ]
+}
