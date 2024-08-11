@@ -1,0 +1,803 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Turkey and Veggie Stir-Fry",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground turkey",
+        "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon garlic powder",
+        "1 teaspoon ginger powder",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add ground turkey and cook until browned.",
+        "Add mixed vegetables and cook until tender.",
+        "Stir in soy sauce, garlic powder, and ginger powder.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "30g",
+        "Carbs": "20g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Chicken and Quinoa Salad",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups cooked quinoa",
+        "2 cups cooked chicken breast, cubed",
+        "1 cup cherry tomatoes, halved",
+        "1/2 cucumber, diced",
+        "1/4 cup red onion, finely chopped",
+        "2 tablespoons lemon juice",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large bowl, combine quinoa, chicken, cherry tomatoes, cucumber, and red onion.",
+        "In a small bowl, whisk together lemon juice and olive oil.",
+        "Pour dressing over the salad and toss to combine.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "25g",
+        "Carbs": "35g",
+        "Fat": "10g",
+        "Fiber": "6g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Salmon with Asparagus",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "1 bunch asparagus, trimmed",
+        "2 tablespoons olive oil",
+        "1 lemon, sliced",
+        "1 teaspoon dried thyme",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 400°F (200°C).",
+        "Place salmon fillets and asparagus on a baking sheet.",
+        "Drizzle with olive oil and season with salt, pepper, and thyme.",
+        "Top salmon with lemon slices.",
+        "Bake for 15 minutes or until salmon is cooked through and asparagus is tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "350",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "20g",
+        "Fiber": "4g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Greek Yogurt Chicken Salad",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups cooked chicken breast, shredded",
+        "1 cup Greek yogurt",
+        "1/4 cup diced celery",
+        "1/4 cup diced apple",
+        "1 tablespoon lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine chicken, Greek yogurt, celery, apple, and lemon juice.",
+        "Mix well and season with salt and pepper.",
+        "Serve chilled or at room temperature."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "10g",
+        "Fiber": "2g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Baked Tofu with Vegetables",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "2 cups mixed vegetables (broccoli, bell peppers, carrots)",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon garlic powder",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss tofu and vegetables with olive oil, soy sauce, garlic powder, salt, and pepper.",
+        "Spread on a baking sheet and bake for 25 minutes, or until tofu is golden and vegetables are tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "15g",
+        "Carbs": "25g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Stuffed Bell Peppers",
+      "prepTime": "20 mins",
+      "cookTime": "25 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 bell peppers, tops cut off and seeds removed",
+        "1 pound ground turkey",
+        "1 cup cooked brown rice",
+        "1 cup diced tomatoes",
+        "1/2 cup chopped onions",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "In a pan, heat olive oil and cook onions until soft.",
+        "Add ground turkey and cook until browned.",
+        "Mix in cooked rice and diced tomatoes.",
+        "Stuff each bell pepper with the mixture and place in a baking dish.",
+        "Bake for 25 minutes or until peppers are tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "25g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "6g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Egg White and Spinach Omelette",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 2,
+      "ingredients": [
+        "6 egg whites",
+        "1 cup spinach, chopped",
+        "1/4 cup diced tomatoes",
+        "1/4 cup feta cheese",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat a non-stick pan over medium heat.",
+        "Add spinach and cook until wilted.",
+        "Pour in egg whites and cook until slightly set.",
+        "Add tomatoes and feta cheese.",
+        "Fold omelette and cook for another 1-2 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "20g",
+        "Carbs": "10g",
+        "Fat": "5g",
+        "Fiber": "2g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Chicken and Avocado Lettuce Wraps",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound cooked chicken breast, shredded",
+        "1 avocado, diced",
+        "1 cup shredded lettuce",
+        "1/4 cup diced red onion",
+        "1 tablespoon lime juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine chicken, avocado, lettuce, red onion, and lime juice.",
+        "Mix well and season with salt and pepper.",
+        "Serve as wraps using large lettuce leaves."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Quinoa and Black Bean Bowl",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cooked quinoa",
+        "1 can black beans, drained and rinsed",
+        "1 cup corn kernels",
+        "1/2 cup diced red bell pepper",
+        "1/4 cup chopped cilantro",
+        "2 tablespoons lime juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large bowl, combine quinoa, black beans, corn, red bell pepper, and cilantro.",
+        "Drizzle with lime juice and season with salt and pepper.",
+        "Toss to combine and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "15g",
+        "Carbs": "50g",
+        "Fat": "8g",
+        "Fiber": "10g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Lentil Soup",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup dried lentils",
+        "4 cups vegetable broth",
+        "1 cup chopped carrots",
+        "1 cup chopped celery",
+        "1 onion, chopped",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "1 teaspoon cumin",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a pot, heat olive oil and cook onions and garlic until softened.",
+        "Add carrots, celery, and cumin, and cook for 5 minutes.",
+        "Add lentils and vegetable broth.",
+        "Bring to a boil, then reduce heat and simmer for 25 minutes, or until lentils are tender.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "230",
+        "Protein": "15g",
+        "Carbs": "40g",
+        "Fat": "4g",
+        "Fiber": "12g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Chicken and Vegetable Skewers",
+      "prepTime": "20 mins",
+      "cookTime": "15 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, cubed",
+        "1 cup cherry tomatoes",
+        "1 bell pepper, cut into chunks",
+        "1 zucchini, sliced",
+        "2 tablespoons olive oil",
+        "1 teaspoon dried oregano",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Thread chicken and vegetables onto skewers.",
+        "Brush with olive oil and season with oregano, salt, and pepper.",
+        "Grill for 15 minutes, turning occasionally, until chicken is cooked through and vegetables are tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Tuna and White Bean Salad",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can tuna, drained",
+        "1 can white beans, drained and rinsed",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup diced red onion",
+        "2 tablespoons olive oil",
+        "1 tablespoon balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine tuna, white beans, cherry tomatoes, and red onion.",
+        "Drizzle with olive oil and balsamic vinegar.",
+        "Season with salt and pepper and toss to combine."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "25g",
+        "Carbs": "20g",
+        "Fat": "12g",
+        "Fiber": "6g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Cottage Cheese and Fruit Bowl",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 cup cottage cheese",
+        "1/2 cup diced pineapple",
+        "1/2 cup blueberries",
+        "1 tablespoon honey",
+        "1 tablespoon chia seeds"
+      ],
+      "directions": [
+        "In a bowl, combine cottage cheese, pineapple, and blueberries.",
+        "Drizzle with honey and sprinkle with chia seeds.",
+        "Serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "20g",
+        "Carbs": "25g",
+        "Fat": "5g",
+        "Fiber": "5g",
+        "Sugar": "15g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Shrimp and Broccoli Stir-Fry",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound shrimp, peeled and deveined",
+        "2 cups broccoli florets",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon ginger, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add shrimp and cook until pink and opaque.",
+        "Add broccoli and cook for 5 minutes until tender.",
+        "Stir in soy sauce and ginger.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "25g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "5g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Zucchini Noodles with Pesto Chicken",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 medium zucchinis, spiralized",
+        "2 cups cooked chicken breast, sliced",
+        "1/4 cup pesto sauce",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add zucchini noodles and cook for 2-3 minutes until slightly tender.",
+        "Add chicken and pesto sauce and cook until heated through.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Stuffed Portobello Mushrooms",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 large portobello mushrooms",
+        "1 cup cooked quinoa",
+        "1/2 cup diced tomatoes",
+        "1/4 cup chopped basil",
+        "1/4 cup grated Parmesan cheese",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat the oven to 375°F (190°C).",
+        "Remove stems from mushrooms and scoop out gills.",
+        "Mix quinoa, tomatoes, basil, and Parmesan cheese.",
+        "Stuff the mixture into mushrooms and place on a baking sheet.",
+        "Drizzle with olive oil and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "230",
+        "Protein": "15g",
+        "Carbs": "25g",
+        "Fat": "10g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Egg White Frittata with Veggies",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "6 egg whites",
+        "1 cup diced bell peppers",
+        "1 cup spinach",
+        "1/2 cup diced onion",
+        "1/4 cup grated cheese (optional)",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "In a bowl, whisk egg whites and season with salt and pepper.",
+        "Add bell peppers, spinach, and onion to the bowl.",
+        "Pour mixture into a greased oven-safe pan.",
+        "Bake for 20 minutes or until set and slightly golden."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "20g",
+        "Carbs": "10g",
+        "Fat": "5g",
+        "Fiber": "2g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Beef and Cabbage Stir-Fry",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound lean beef strips",
+        "2 cups shredded cabbage",
+        "1 bell pepper, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon ginger, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add beef strips and cook until browned.",
+        "Add cabbage and bell pepper and stir-fry for 5 minutes.",
+        "Stir in soy sauce and ginger.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Tofu and Vegetable Curry",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "2 cups mixed vegetables (bell peppers, carrots, peas)",
+        "1 can light coconut milk",
+        "2 tablespoons curry powder",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add tofu and cook until golden brown.",
+        "Add vegetables and curry powder and cook for 5 minutes.",
+        "Stir in coconut milk and simmer for 10 minutes.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "15g",
+        "Carbs": "25g",
+        "Fat": "15g",
+        "Fiber": "6g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Chicken and Cauliflower Rice",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, diced",
+        "2 cups cauliflower rice",
+        "1 cup chopped bell peppers",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon garlic powder",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add chicken and cook until browned.",
+        "Add bell peppers and cook for 5 minutes.",
+        "Stir in cauliflower rice and soy sauce.",
+        "Season with garlic powder, salt, and pepper and cook until cauliflower is tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Pork and Green Bean Stir-Fry",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound pork tenderloin, sliced",
+        "2 cups green beans",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add pork and cook until browned.",
+        "Add green beans and cook for 5 minutes.",
+        "Stir in soy sauce and garlic.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "15g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Chicken and Avocado Salad",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups cooked chicken breast, shredded",
+        "1 avocado, diced",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup red onion, diced",
+        "2 tablespoons lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine chicken, avocado, cherry tomatoes, and red onion.",
+        "Drizzle with lemon juice and season with salt and pepper.",
+        "Mix well and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Beef and Spinach Stir-Fry",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound lean beef strips",
+        "2 cups spinach",
+        "1 bell pepper, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add beef strips and cook until browned.",
+        "Add bell pepper and spinach and cook until spinach is wilted.",
+        "Stir in soy sauce and garlic.",
+        "Season with salt and pepper to taste and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "10g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Salmon and Spinach Salad",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "4 cups spinach",
+        "1/4 cup crumbled feta cheese",
+        "1/4 cup red onion, sliced",
+        "2 tablespoons olive oil",
+        "1 tablespoon balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Season salmon fillets with salt and pepper.",
+        "Cook salmon in a pan with olive oil until cooked through, about 5 minutes per side.",
+        "In a large bowl, combine spinach, feta cheese, and red onion.",
+        "Drizzle with olive oil and balsamic vinegar.",
+        "Top salad with cooked salmon and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "30g",
+        "Carbs": "12g",
+        "Fat": "18g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Vegetable and Bean Chili",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup chopped onion",
+        "1 cup chopped bell pepper",
+        "1 cup chopped tomatoes",
+        "1 can kidney beans, drained and rinsed",
+        "1 can black beans, drained and rinsed",
+        "2 cups vegetable broth",
+        "1 tablespoon chili powder",
+        "1 teaspoon cumin",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a pot, heat oil and cook onion until softened.",
+        "Add bell pepper and tomatoes and cook for 5 minutes.",
+        "Add beans, vegetable broth, chili powder, and cumin.",
+        "Bring to a boil, then reduce heat and simmer for 25 minutes.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "15g",
+        "Carbs": "45g",
+        "Fat": "6g",
+        "Fiber": "12g",
+        "Sugar": "8g"
+      }
+    }
+  ]
+}
