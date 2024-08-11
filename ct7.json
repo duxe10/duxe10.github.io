@@ -1,0 +1,795 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Chicken and Broccoli Stir-Fry",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, diced",
+        "2 cups broccoli florets",
+        "1 cup bell peppers, sliced",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium heat.",
+        "Add chicken and cook until browned.",
+        "Add broccoli and bell peppers.",
+        "Stir in soy sauce and garlic, cook for 5-7 minutes.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "30g",
+        "Carbs": "15g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Lemon Herb Grilled Chicken",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 chicken breasts",
+        "2 tablespoons olive oil",
+        "1 tablespoon lemon juice",
+        "1 teaspoon dried oregano",
+        "1 teaspoon dried basil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Mix olive oil, lemon juice, oregano, basil, salt, and pepper.",
+        "Rub mixture onto chicken breasts.",
+        "Grill for 6-8 minutes per side until cooked through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "270",
+        "Protein": "30g",
+        "Carbs": "2g",
+        "Fat": "15g",
+        "Fiber": "0g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Greek Yogurt Chicken Salad",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups cooked chicken breast, shredded",
+        "1 cup Greek yogurt",
+        "1/2 cup diced celery",
+        "1/4 cup diced red onion",
+        "1 tablespoon lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, mix Greek yogurt, lemon juice, salt, and pepper.",
+        "Add chicken, celery, and red onion.",
+        "Stir to combine and serve chilled."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "30g",
+        "Carbs": "10g",
+        "Fat": "7g",
+        "Fiber": "2g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Stuffed Bell Peppers",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 large bell peppers",
+        "1 pound ground turkey",
+        "1 cup cooked quinoa",
+        "1/2 cup diced tomatoes",
+        "1/4 cup chopped onions",
+        "1 teaspoon Italian seasoning",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Cut tops off bell peppers and remove seeds.",
+        "In a bowl, mix ground turkey, quinoa, tomatoes, onions, Italian seasoning, salt, and pepper.",
+        "Stuff each pepper with the turkey mixture.",
+        "Place in a baking dish and bake for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "290",
+        "Protein": "25g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Chicken and Spinach Salad",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups spinach",
+        "1 cup cooked chicken breast, sliced",
+        "1/2 cup cherry tomatoes, halved",
+        "1/4 cup sliced red onion",
+        "2 tablespoons balsamic vinaigrette",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large bowl, combine spinach, chicken, tomatoes, and red onion.",
+        "Drizzle with balsamic vinaigrette and toss to coat.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "25g",
+        "Carbs": "10g",
+        "Fat": "10g",
+        "Fiber": "3g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Tofu and Vegetable Stir-Fry",
+      "prepTime": "15 mins",
+      "cookTime": "10 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 block firm tofu, cubed",
+        "2 cups mixed vegetables (carrots, bell peppers, broccoli)",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add tofu and cook until golden brown.",
+        "Add mixed vegetables and garlic.",
+        "Stir in soy sauce and cook for another 5 minutes.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "15g",
+        "Carbs": "25g",
+        "Fat": "10g",
+        "Fiber": "6g",
+        "Sugar": "7g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Baked Salmon with Dill",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 salmon fillets",
+        "2 tablespoons olive oil",
+        "1 tablespoon lemon juice",
+        "1 tablespoon chopped fresh dill",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Place salmon fillets in a baking dish.",
+        "Drizzle with olive oil and lemon juice.",
+        "Sprinkle with dill, salt, and pepper.",
+        "Bake for 20 minutes or until fish flakes easily with a fork."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "25g",
+        "Carbs": "2g",
+        "Fat": "18g",
+        "Fiber": "0g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Egg White Frittata with Veggies",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "6 egg whites",
+        "1 cup chopped spinach",
+        "1/2 cup diced bell peppers",
+        "1/2 cup diced onions",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "In a bowl, whisk egg whites, salt, and pepper.",
+        "Heat olive oil in an oven-safe skillet over medium heat.",
+        "Add vegetables and cook until softened.",
+        "Pour egg whites over the vegetables.",
+        "Transfer skillet to the oven and bake for 15-20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "18g",
+        "Carbs": "10g",
+        "Fat": "7g",
+        "Fiber": "3g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Baked Chicken Tenders",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken tenders",
+        "1 cup whole wheat breadcrumbs",
+        "1/4 cup grated Parmesan cheese",
+        "1 egg, beaten",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Mix breadcrumbs, Parmesan cheese, salt, and pepper in a bowl.",
+        "Dip chicken tenders in beaten egg, then coat with breadcrumb mixture.",
+        "Place on a baking sheet and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "270",
+        "Protein": "25g",
+        "Carbs": "20g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Quinoa and Black Bean Salad",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cooked quinoa",
+        "1 cup black beans, rinsed and drained",
+        "1/2 cup corn kernels",
+        "1/2 cup diced tomatoes",
+        "1/4 cup chopped cilantro",
+        "2 tablespoons lime juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine quinoa, black beans, corn, tomatoes, and cilantro.",
+        "Drizzle with lime juice and toss to combine.",
+        "Season with salt and pepper and serve chilled."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "280",
+        "Protein": "12g",
+        "Carbs": "45g",
+        "Fat": "7g",
+        "Fiber": "8g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Cabbage Roll Soup",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground beef",
+        "1 head cabbage, chopped",
+        "1 can diced tomatoes",
+        "1 cup beef broth",
+        "1/2 cup diced onions",
+        "1 teaspoon paprika",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a pot, cook ground beef and onions until browned.",
+        "Add cabbage, tomatoes, beef broth, paprika, salt, and pepper.",
+        "Simmer for 30 minutes until cabbage is tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "20g",
+        "Carbs": "20g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Spaghetti Squash with Marinara Sauce",
+      "prepTime": "10 mins",
+      "cookTime": "40 mins",
+      "totalTime": "50 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 large spaghetti squash",
+        "1 cup marinara sauce",
+        "1/4 cup grated Parmesan cheese",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Cut spaghetti squash in half and remove seeds.",
+        "Drizzle with olive oil and season with salt and pepper.",
+        "Place cut side down on a baking sheet and roast for 40 minutes.",
+        "Scrape flesh into strands and top with marinara sauce and Parmesan cheese."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "8g",
+        "Carbs": "25g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "7g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Chicken Fajita Bowl",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken breast, diced",
+        "1 cup bell peppers, sliced",
+        "1/2 cup onions, sliced",
+        "2 tablespoons fajita seasoning",
+        "1 tablespoon olive oil",
+        "1 cup cooked brown rice"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium-high heat.",
+        "Add chicken and cook until browned.",
+        "Add bell peppers, onions, and fajita seasoning.",
+        "Cook until vegetables are tender.",
+        "Serve over brown rice."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "30g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "4g",
+        "Sugar": "7g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Shrimp and Avocado Salad",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound shrimp, peeled and deveined",
+        "2 avocados, diced",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup chopped cilantro",
+        "2 tablespoons lime juice",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add shrimp and cook until pink and opaque.",
+        "In a bowl, combine shrimp, avocados, tomatoes, and cilantro.",
+        "Drizzle with lime juice and toss to combine.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "25g",
+        "Carbs": "15g",
+        "Fat": "18g",
+        "Fiber": "7g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Pork Tenderloin with Roasted Vegetables",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound pork tenderloin",
+        "2 cups mixed vegetables (carrots, bell peppers, onions)",
+        "2 tablespoons olive oil",
+        "1 teaspoon rosemary",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Season pork tenderloin with rosemary, salt, and pepper.",
+        "Place in a baking dish with vegetables.",
+        "Drizzle with olive oil and roast for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "30g",
+        "Carbs": "20g",
+        "Fat": "15g",
+        "Fiber": "4g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Turkey Meatballs in Marinara Sauce",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground turkey",
+        "1/4 cup breadcrumbs",
+        "1/4 cup grated Parmesan cheese",
+        "1 egg",
+        "1/2 cup chopped parsley",
+        "1 cup marinara sauce",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "In a bowl, combine ground turkey, breadcrumbs, Parmesan cheese, egg, parsley, salt, and pepper.",
+        "Form mixture into meatballs and place on a baking sheet.",
+        "Bake for 20 minutes.",
+        "Heat marinara sauce in a pot and add meatballs to the sauce."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "25g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Baked Tilapia with Garlic and Herbs",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 tilapia fillets",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "1 tablespoon chopped fresh parsley",
+        "1 tablespoon chopped fresh basil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Place tilapia fillets on a baking sheet.",
+        "Drizzle with olive oil and sprinkle with garlic, parsley, basil, salt, and pepper.",
+        "Bake for 15 minutes or until fish flakes easily with a fork."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "25g",
+        "Carbs": "2g",
+        "Fat": "12g",
+        "Fiber": "0g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Chickpea and Vegetable Curry",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can chickpeas, drained",
+        "1 cup diced tomatoes",
+        "1 cup mixed vegetables (carrots, bell peppers, peas)",
+        "1 cup coconut milk",
+        "2 tablespoons curry powder",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pot over medium heat.",
+        "Add curry powder and cook for 1 minute.",
+        "Add chickpeas, tomatoes, vegetables, and coconut milk.",
+        "Simmer for 20 minutes, stirring occasionally.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "12g",
+        "Carbs": "35g",
+        "Fat": "15g",
+        "Fiber": "8g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Tuna Salad with Chickpeas",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can tuna, drained",
+        "1 cup chickpeas, rinsed and drained",
+        "1/2 cup diced cucumber",
+        "1/4 cup diced red onion",
+        "2 tablespoons lemon juice",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine tuna, chickpeas, cucumber, and red onion.",
+        "Drizzle with lemon juice and olive oil.",
+        "Toss to combine and season with salt and pepper."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "20g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "6g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Cauliflower Fried Rice",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 head cauliflower, grated into rice-like pieces",
+        "1 cup mixed vegetables (peas, carrots, corn)",
+        "2 eggs, beaten",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a pan over medium-high heat.",
+        "Add vegetables and cook until tender.",
+        "Add cauliflower rice and soy sauce, stir well.",
+        "Push vegetables to the side of the pan and scramble eggs.",
+        "Mix eggs with vegetables and cauliflower rice."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "10g",
+        "Carbs": "20g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Stuffed Zucchini Boats",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 zucchinis, halved and hollowed",
+        "1 cup cooked ground turkey",
+        "1/2 cup marinara sauce",
+        "1/4 cup grated Parmesan cheese",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Mix ground turkey with marinara sauce.",
+        "Fill zucchini halves with turkey mixture.",
+        "Top with Parmesan cheese.",
+        "Place in a baking dish and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "20g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Chicken and Sweet Potato Bake",
+      "prepTime": "10 mins",
+      "cookTime": "35 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound chicken thighs",
+        "2 large sweet potatoes, cubed",
+        "1 tablespoon olive oil",
+        "1 teaspoon smoked paprika",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss sweet potatoes with olive oil, paprika, salt, and pepper.",
+        "Place on a baking sheet with chicken thighs.",
+        "Bake for 35 minutes or until chicken is cooked through and sweet potatoes are tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "320",
+        "Protein": "25g",
+        "Carbs": "30g",
+        "Fat": "15g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Turkey and Vegetable Skillet",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground turkey",
+        "2 cups mixed vegetables (bell peppers, zucchini, carrots)",
+        "1 cup diced tomatoes",
+        "1 tablespoon olive oil",
+        "1 teaspoon Italian seasoning",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add ground turkey and cook until browned.",
+        "Add vegetables, diced tomatoes, and Italian seasoning.",
+        "Cook until vegetables are tender and flavors meld.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "300",
+        "Protein": "25g",
+        "Carbs": "20g",
+        "Fat": "15g",
+        "Fiber": "5g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Spicy Chicken Lettuce Wraps",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound ground chicken",
+        "1 cup diced bell peppers",
+        "1/4 cup chopped onions",
+        "2 tablespoons soy sauce",
+        "1 tablespoon sriracha",
+        "1 tablespoon olive oil",
+        "Lettuce leaves for wrapping"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add ground chicken and cook until browned.",
+        "Add bell peppers, onions, soy sauce, and sriracha.",
+        "Cook until vegetables are tender.",
+        "Serve in lettuce leaves."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "270",
+        "Protein": "25g",
+        "Carbs": "10g",
+        "Fat": "15g",
+        "Fiber": "3g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Beef and Vegetable Stir-Fry",
+      "prepTime": "15 mins",
+      "cookTime": "15 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound beef sirloin, sliced thin",
+        "2 cups mixed vegetables (broccoli, bell peppers, carrots)",
+        "2 tablespoons soy sauce",
+        "1 tablespoon olive oil",
+        "1 teaspoon minced garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over high heat.",
+        "Add garlic and beef, cook until beef is browned.",
+        "Add vegetables and soy sauce.",
+        "Cook until vegetables are tender.",
+        "Season with salt and pepper and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "350",
+        "Protein": "30g",
+        "Carbs": "20g",
+        "Fat": "18g",
+        "Fiber": "4g",
+        "Sugar": "6g"
+      }
+    }
+  ]
+}
