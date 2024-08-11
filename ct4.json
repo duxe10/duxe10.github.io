@@ -1,0 +1,712 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Roasted Brussels Sprouts with Lemon Zest",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound Brussels sprouts, trimmed and halved",
+        "2 tablespoons olive oil",
+        "1 lemon, zested",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss Brussels sprouts with olive oil, salt, and pepper.",
+        "Spread on a baking sheet and roast for 20-25 minutes.",
+        "Remove from oven and sprinkle with lemon zest before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "5g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "5g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Steamed Asparagus with Garlic",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound asparagus, trimmed",
+        "2 cloves garlic, minced",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Steam asparagus until tender, about 5-7 minutes.",
+        "Heat olive oil in a skillet over medium heat and sauté garlic until fragrant.",
+        "Add steamed asparagus to the skillet and toss to coat.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "80",
+        "Protein": "4g",
+        "Carbs": "7g",
+        "Fat": "5g",
+        "Fiber": "4g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Sautéed Spinach with Olive Oil and Garlic",
+      "prepTime": "5 mins",
+      "cookTime": "5 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound fresh spinach leaves",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a large skillet over medium heat.",
+        "Add garlic and cook until fragrant.",
+        "Add spinach and cook until wilted, about 2-3 minutes.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "100",
+        "Protein": "4g",
+        "Carbs": "5g",
+        "Fat": "9g",
+        "Fiber": "3g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Roasted Cauliflower with Turmeric",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 head cauliflower, cut into florets",
+        "2 tablespoons olive oil",
+        "1 teaspoon turmeric",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 425°F (220°C).",
+        "Toss cauliflower with olive oil, turmeric, salt, and pepper.",
+        "Spread on a baking sheet and roast for 25-30 minutes, until golden and tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "5g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "6g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Steamed Green Beans with Almond Slivers",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound green beans, trimmed",
+        "1/4 cup almond slivers",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Steam green beans until tender, about 5-7 minutes.",
+        "Heat olive oil in a skillet and toast almond slivers until golden.",
+        "Add steamed green beans to the skillet and toss with almonds.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "4g",
+        "Carbs": "15g",
+        "Fat": "10g",
+        "Fiber": "6g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Roasted Sweet Potatoes with Rosemary",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound sweet potatoes, peeled and cubed",
+        "2 tablespoons olive oil",
+        "1 tablespoon fresh rosemary, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss sweet potatoes with olive oil, rosemary, salt, and pepper.",
+        "Spread on a baking sheet and roast for 30 minutes, until tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "3g",
+        "Carbs": "40g",
+        "Fat": "8g",
+        "Fiber": "6g",
+        "Sugar": "12g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Grilled Zucchini with Balsamic Glaze",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 zucchinis, sliced",
+        "2 tablespoons olive oil",
+        "1/4 cup balsamic glaze",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Brush zucchini slices with olive oil and season with salt and pepper.",
+        "Grill zucchini for 3-4 minutes per side.",
+        "Drizzle with balsamic glaze before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "3g",
+        "Carbs": "10g",
+        "Fat": "8g",
+        "Fiber": "3g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Quinoa Salad with Cucumber and Tomato",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cooked quinoa",
+        "1 cup diced cucumber",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup red onion, diced",
+        "2 tablespoons olive oil",
+        "2 tablespoons lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a large bowl, combine quinoa, cucumber, cherry tomatoes, and red onion.",
+        "Drizzle with olive oil and lemon juice.",
+        "Season with salt and pepper and toss to combine."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "6g",
+        "Carbs": "25g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Steamed Broccoli with Lemon Juice",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound broccoli florets",
+        "1 tablespoon lemon juice",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Steam broccoli until tender, about 5-7 minutes.",
+        "Drizzle with lemon juice and season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "60",
+        "Protein": "4g",
+        "Carbs": "10g",
+        "Fat": "1g",
+        "Fiber": "4g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Grilled Bell Peppers with Olive Oil",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 bell peppers, sliced",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Brush bell pepper slices with olive oil and season with salt and pepper.",
+        "Grill for 5 minutes per side, until tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "90",
+        "Protein": "2g",
+        "Carbs": "10g",
+        "Fat": "5g",
+        "Fiber": "3g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Roasted Carrots with Thyme",
+      "prepTime": "10 mins",
+      "cookTime": "25 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound carrots, peeled and sliced",
+        "2 tablespoons olive oil",
+        "1 tablespoon fresh thyme, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss carrots with olive oil, thyme, salt, and pepper.",
+        "Spread on a baking sheet and roast for 25 minutes, until tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "2g",
+        "Carbs": "30g",
+        "Fat": "6g",
+        "Fiber": "7g",
+        "Sugar": "12g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Sautéed Kale with Garlic",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 bunch kale, stems removed and leaves chopped",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a large skillet over medium heat.",
+        "Add garlic and cook until fragrant.",
+        "Add kale and cook until wilted, about 5-7 minutes.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "100",
+        "Protein": "4g",
+        "Carbs": "10g",
+        "Fat": "7g",
+        "Fiber": "4g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Spaghetti Squash with Marinara Sauce",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 spaghetti squash, halved and seeded",
+        "2 cups marinara sauce",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Brush spaghetti squash with olive oil and season with salt and pepper.",
+        "Place cut-side down on a baking sheet and roast for 30 minutes.",
+        "Scrape the flesh with a fork to create 'noodles' and top with marinara sauce before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "4g",
+        "Carbs": "25g",
+        "Fat": "5g",
+        "Fiber": "6g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Cauliflower Rice with Fresh Herbs",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 head cauliflower, grated into rice-sized pieces",
+        "2 tablespoons olive oil",
+        "1/4 cup fresh parsley, chopped",
+        "1/4 cup fresh cilantro, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add cauliflower rice and cook for 5-7 minutes, until tender.",
+        "Stir in parsley and cilantro.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "100",
+        "Protein": "3g",
+        "Carbs": "10g",
+        "Fat": "6g",
+        "Fiber": "4g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Steamed Baby Carrots with Dill",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound baby carrots",
+        "2 tablespoons fresh dill, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Steam baby carrots until tender, about 5-7 minutes.",
+        "Toss with fresh dill and season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "80",
+        "Protein": "1g",
+        "Carbs": "20g",
+        "Fat": "0g",
+        "Fiber": "6g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Baked Butternut Squash with Cinnamon",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 butternut squash, peeled and cubed",
+        "2 tablespoons olive oil",
+        "1 teaspoon ground cinnamon",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss butternut squash with olive oil, cinnamon, and salt.",
+        "Spread on a baking sheet and roast for 30 minutes, until tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "2g",
+        "Carbs": "40g",
+        "Fat": "6g",
+        "Fiber": "6g",
+        "Sugar": "12g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Grilled Eggplant with Olive Oil",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 eggplants, sliced",
+        "2 tablespoons olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Brush eggplant slices with olive oil and season with salt and pepper.",
+        "Grill for 5 minutes per side, until tender."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "2g",
+        "Carbs": "10g",
+        "Fat": "8g",
+        "Fiber": "5g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Quinoa with Steamed Vegetables",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cooked quinoa",
+        "2 cups mixed vegetables (e.g., bell peppers, carrots, peas)",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Steam vegetables until tender, about 10 minutes.",
+        "Combine cooked quinoa with steamed vegetables.",
+        "Drizzle with olive oil and season with salt and pepper."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "8g",
+        "Carbs": "30g",
+        "Fat": "6g",
+        "Fiber": "5g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Sautéed Mushrooms with Thyme",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound mushrooms, sliced",
+        "2 tablespoons olive oil",
+        "1 tablespoon fresh thyme, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add mushrooms and cook until golden, about 8 minutes.",
+        "Stir in thyme and season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "4g",
+        "Carbs": "10g",
+        "Fat": "8g",
+        "Fiber": "3g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Baked Acorn Squash with Sage",
+      "prepTime": "10 mins",
+      "cookTime": "30 mins",
+      "totalTime": "40 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 acorn squashes, halved and seeded",
+        "2 tablespoons olive oil",
+        "1 tablespoon fresh sage, chopped",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Brush squash with olive oil and season with sage, salt, and pepper.",
+        "Place cut-side down on a baking sheet and roast for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "160",
+        "Protein": "2g",
+        "Carbs": "40g",
+        "Fat": "6g",
+        "Fiber": "6g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Cucumber Salad with Red Onion and Vinegar",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cucumbers, sliced",
+        "1/4 cup red onion, thinly sliced",
+        "2 tablespoons apple cider vinegar",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "In a bowl, combine cucumber, red onion, apple cider vinegar, and olive oil.",
+        "Toss to coat and season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "50",
+        "Protein": "1g",
+        "Carbs": "10g",
+        "Fat": "2g",
+        "Fiber": "2g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Steamed Snow Peas with Sesame Seeds",
+      "prepTime": "5 mins",
+      "cookTime": "5 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 pound snow peas",
+        "1 tablespoon sesame seeds",
+        "1 teaspoon sesame oil",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Steam snow peas until tender, about 3-5 minutes.",
+        "Toss with sesame oil, sesame seeds, and salt before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "80",
+        "Protein": "4g",
+        "Carbs": "8g",
+        "Fat": "4g",
+        "Fiber": "3g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Roasted Beets with Balsamic Vinegar",
+      "prepTime": "10 mins",
+      "cookTime": "45 mins",
+      "totalTime": "55 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 beets, peeled and cubed",
+        "2 tablespoons olive oil",
+        "2 tablespoons balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss beets with olive oil, salt, and pepper.",
+        "Spread on a baking sheet and roast for 45 minutes.",
+        "Drizzle with balsamic vinegar before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "160",
+        "Protein": "4g",
+        "Carbs": "35g",
+        "Fat": "6g",
+        "Fiber": "6g",
+        "Sugar": "12g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Sautéed Leeks with Garlic",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 leeks, cleaned and sliced",
+        "2 tablespoons olive oil",
+        "2 cloves garlic, minced",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Heat olive oil in a skillet over medium heat.",
+        "Add garlic and cook until fragrant.",
+        "Add leeks and cook until tender, about 8 minutes.",
+        "Season with salt and pepper before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "2g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "3g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Grilled Corn on the Cob with Lime",
+      "prepTime": "5 mins",
+      "cookTime": "10 mins",
+      "totalTime": "15 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 ears of corn, husked",
+        "2 tablespoons olive oil",
+        "1 lime, cut into wedges",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat grill to medium-high heat.",
+        "Brush corn with olive oil and season with salt.",
+        "Grill corn for 3-4 minutes per side, until tender and slightly charred.",
+        "Serve with lime wedges for squeezing over the top."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "4g",
+        "Carbs": "25g",
+        "Fat": "4g",
+        "Fiber": "3g",
+        "Sugar": "5g"
+      }
+    }
+  ]
+}
