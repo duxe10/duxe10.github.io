@@ -1,0 +1,722 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Greek Yogurt with Berries",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 cup plain Greek yogurt",
+        "1/2 cup mixed berries (strawberries, blueberries, raspberries)",
+        "1 tablespoon honey",
+        "1 tablespoon chia seeds"
+      ],
+      "directions": [
+        "Spoon Greek yogurt into a bowl.",
+        "Top with mixed berries, honey, and chia seeds.",
+        "Serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "15g",
+        "Carbs": "30g",
+        "Fat": "8g",
+        "Fiber": "6g",
+        "Sugar": "20g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Edamame with Sea Salt",
+      "prepTime": "5 mins",
+      "cookTime": "5 mins",
+      "totalTime": "10 mins",
+      "servings": 2,
+      "ingredients": [
+        "2 cups edamame (in pods)",
+        "1 tablespoon sea salt",
+        "1 teaspoon olive oil"
+      ],
+      "directions": [
+        "Boil edamame in salted water for 5 minutes.",
+        "Drain and toss with olive oil and sea salt.",
+        "Serve warm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "16g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "8g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Apple Slices with Almond Butter",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 apple, sliced",
+        "2 tablespoons almond butter",
+        "1 teaspoon cinnamon"
+      ],
+      "directions": [
+        "Arrange apple slices on a plate.",
+        "Spread almond butter over each slice.",
+        "Sprinkle with cinnamon and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "4g",
+        "Carbs": "30g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "20g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Cucumber and Hummus",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 cucumber, sliced",
+        "1/2 cup hummus",
+        "Paprika for garnish"
+      ],
+      "directions": [
+        "Arrange cucumber slices on a plate.",
+        "Serve with hummus for dipping.",
+        "Garnish with paprika if desired."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "5g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "5g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Roasted Chickpeas",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 can chickpeas, drained and rinsed",
+        "1 tablespoon olive oil",
+        "1 teaspoon paprika",
+        "1/2 teaspoon garlic powder",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss chickpeas with olive oil, paprika, garlic powder, and salt.",
+        "Spread on a baking sheet and roast for 20 minutes, stirring halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "10g",
+        "Carbs": "30g",
+        "Fat": "8g",
+        "Fiber": "8g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Veggie Sticks with Greek Yogurt Dip",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup sliced carrots",
+        "1 cup sliced celery",
+        "1 cup sliced bell peppers",
+        "1 cup plain Greek yogurt",
+        "1 tablespoon lemon juice",
+        "1 teaspoon dried dill",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Mix Greek yogurt with lemon juice, dill, salt, and pepper.",
+        "Serve with sliced veggies for dipping."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "10g",
+        "Carbs": "20g",
+        "Fat": "5g",
+        "Fiber": "6g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Spicy Roasted Almonds",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups raw almonds",
+        "1 tablespoon olive oil",
+        "1 teaspoon cayenne pepper",
+        "1/2 teaspoon paprika",
+        "1/2 teaspoon garlic powder",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 350°F (175°C).",
+        "Toss almonds with olive oil, cayenne pepper, paprika, garlic powder, and salt.",
+        "Spread on a baking sheet and roast for 15 minutes, stirring occasionally."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "8g",
+        "Carbs": "10g",
+        "Fat": "18g",
+        "Fiber": "4g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Avocado and Tomato Salad",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 avocado, diced",
+        "1 cup cherry tomatoes, halved",
+        "1/4 cup red onion, diced",
+        "1 tablespoon olive oil",
+        "1 tablespoon balsamic vinegar",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Combine avocado, cherry tomatoes, and red onion in a bowl.",
+        "Drizzle with olive oil and balsamic vinegar.",
+        "Season with salt and pepper and toss gently."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "3g",
+        "Carbs": "15g",
+        "Fat": "18g",
+        "Fiber": "7g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Peanut Butter Banana Bites",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 banana, sliced",
+        "2 tablespoons peanut butter",
+        "1 tablespoon chia seeds"
+      ],
+      "directions": [
+        "Spread peanut butter on banana slices.",
+        "Sprinkle with chia seeds and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "5g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "20g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Stuffed Celery Sticks",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 celery stalks, cut into 3-inch pieces",
+        "1/2 cup cream cheese",
+        "1/4 cup chopped walnuts",
+        "1 tablespoon chopped fresh parsley"
+      ],
+      "directions": [
+        "Spread cream cheese into celery sticks.",
+        "Top with chopped walnuts and parsley.",
+        "Serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "4g",
+        "Carbs": "10g",
+        "Fat": "12g",
+        "Fiber": "3g",
+        "Sugar": "3g"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Baked Zucchini Chips",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 zucchinis, sliced thinly",
+        "1 tablespoon olive oil",
+        "1/2 teaspoon garlic powder",
+        "1/4 teaspoon paprika",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 425°F (220°C).",
+        "Toss zucchini slices with olive oil, garlic powder, paprika, and salt.",
+        "Arrange on a baking sheet and bake for 20 minutes, turning halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "3g",
+        "Carbs": "15g",
+        "Fat": "6g",
+        "Fiber": "3g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Cottage Cheese with Pineapple",
+      "prepTime": "5 mins",
+      "cookTime": "0 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 cup low-fat cottage cheese",
+        "1/2 cup pineapple chunks",
+        "1 tablespoon flaxseeds"
+      ],
+      "directions": [
+        "Combine cottage cheese with pineapple chunks.",
+        "Top with flaxseeds and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "15g",
+        "Carbs": "20g",
+        "Fat": "6g",
+        "Fiber": "3g",
+        "Sugar": "15g"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Almond-Crusted Sweet Potato Fries",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 sweet potatoes, peeled and cut into fries",
+        "1/2 cup almond flour",
+        "1/2 teaspoon paprika",
+        "1/2 teaspoon garlic powder",
+        "1 tablespoon olive oil",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 425°F (220°C).",
+        "Toss sweet potato fries with olive oil, almond flour, paprika, garlic powder, salt, and pepper.",
+        "Spread on a baking sheet and bake for 20 minutes, flipping halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "220",
+        "Protein": "5g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "5g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Cherry Tomato and Mozzarella Skewers",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cherry tomatoes",
+        "1 cup mozzarella balls",
+        "1/4 cup fresh basil leaves",
+        "1 tablespoon balsamic glaze"
+      ],
+      "directions": [
+        "Thread cherry tomatoes, mozzarella balls, and basil leaves onto skewers.",
+        "Drizzle with balsamic glaze and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "10g",
+        "Carbs": "10g",
+        "Fat": "12g",
+        "Fiber": "2g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Pumpkin Seeds with Chili Lime",
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "totalTime": "20 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup raw pumpkin seeds",
+        "1 tablespoon olive oil",
+        "1 teaspoon chili powder",
+        "1/2 teaspoon lime zest",
+        "Salt to taste"
+      ],
+      "directions": [
+        "Preheat oven to 350°F (175°C).",
+        "Toss pumpkin seeds with olive oil, chili powder, lime zest, and salt.",
+        "Spread on a baking sheet and roast for 15 minutes, stirring halfway through."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "190",
+        "Protein": "8g",
+        "Carbs": "10g",
+        "Fat": "14g",
+        "Fiber": "2g",
+        "Sugar": "1g"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Carrot and Apple Slaw",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 large carrots, grated",
+        "1 apple, grated",
+        "1 tablespoon lemon juice",
+        "1 tablespoon honey",
+        "1/4 cup chopped walnuts"
+      ],
+      "directions": [
+        "Combine grated carrots and apple in a bowl.",
+        "Mix lemon juice and honey, then toss with carrot and apple mixture.",
+        "Top with chopped walnuts before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "2g",
+        "Carbs": "35g",
+        "Fat": "8g",
+        "Fiber": "6g",
+        "Sugar": "25g"
+      }
+    },
+    {
+      "id": 17,
+      "title": "Quinoa Stuffed Bell Peppers",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 bell peppers, tops cut off and seeds removed",
+        "1 cup cooked quinoa",
+        "1/2 cup black beans, rinsed",
+        "1/2 cup corn kernels",
+        "1/2 cup diced tomatoes",
+        "1/4 cup shredded cheese",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Mix quinoa, black beans, corn, tomatoes, and salt and pepper.",
+        "Stuff bell peppers with the mixture and top with cheese.",
+        "Bake for 30 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "10g",
+        "Carbs": "30g",
+        "Fat": "10g",
+        "Fiber": "7g",
+        "Sugar": "8g"
+      }
+    },
+    {
+      "id": 18,
+      "title": "Spinach and Feta Stuffed Mushrooms",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "12 large mushrooms, stems removed",
+        "1 cup fresh spinach, chopped",
+        "1/2 cup crumbled feta cheese",
+        "1 tablespoon olive oil",
+        "1 clove garlic, minced"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Sauté spinach and garlic in olive oil until wilted.",
+        "Mix spinach with feta cheese and stuff into mushroom caps.",
+        "Place on a baking sheet and bake for 20 minutes."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "8g",
+        "Carbs": "10g",
+        "Fat": "10g",
+        "Fiber": "3g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 19,
+      "title": "Fruit and Nut Energy Balls",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 12,
+      "ingredients": [
+        "1 cup pitted dates",
+        "1/2 cup almonds",
+        "1/4 cup walnuts",
+        "1/4 cup dried apricots",
+        "1 tablespoon chia seeds",
+        "1 tablespoon unsweetened cocoa powder"
+      ],
+      "directions": [
+        "Pulse dates, almonds, walnuts, apricots, chia seeds, and cocoa powder in a food processor until combined.",
+        "Roll mixture into 12 balls.",
+        "Refrigerate until firm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "4g",
+        "Carbs": "20g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "15g"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Chia Pudding with Fresh Fruit",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins (plus chilling time)",
+      "servings": 2,
+      "ingredients": [
+        "1/4 cup chia seeds",
+        "1 cup almond milk",
+        "1 tablespoon maple syrup",
+        "1/2 teaspoon vanilla extract",
+        "1/2 cup fresh fruit (such as berries or mango)"
+      ],
+      "directions": [
+        "Mix chia seeds, almond milk, maple syrup, and vanilla extract in a bowl.",
+        "Refrigerate for at least 2 hours or overnight until thickened.",
+        "Top with fresh fruit before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "200",
+        "Protein": "6g",
+        "Carbs": "30g",
+        "Fat": "8g",
+        "Fiber": "10g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 21,
+      "title": "Stuffed Bell Pepper Nachos",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 4,
+      "ingredients": [
+        "4 bell peppers, sliced into rings",
+        "1 cup cooked ground turkey",
+        "1/2 cup black beans",
+        "1/2 cup shredded cheese",
+        "1/4 cup salsa",
+        "1/4 cup sliced green onions"
+      ],
+      "directions": [
+        "Preheat oven to 375°F (190°C).",
+        "Arrange bell pepper rings on a baking sheet.",
+        "Top with ground turkey, black beans, cheese, and salsa.",
+        "Bake for 20 minutes and garnish with green onions."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "250",
+        "Protein": "20g",
+        "Carbs": "15g",
+        "Fat": "12g",
+        "Fiber": "5g",
+        "Sugar": "5g"
+      }
+    },
+    {
+      "id": 22,
+      "title": "Zucchini Hummus",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cooked and cooled zucchini",
+        "1/2 cup hummus",
+        "1 tablespoon lemon juice",
+        "1 clove garlic",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Blend zucchini, hummus, lemon juice, and garlic in a food processor until smooth.",
+        "Season with salt and pepper.",
+        "Serve with veggies or pita chips."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "6g",
+        "Carbs": "15g",
+        "Fat": "8g",
+        "Fiber": "4g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Mini Caprese Bites",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 4,
+      "ingredients": [
+        "1 cup cherry tomatoes",
+        "1/2 cup fresh mozzarella balls",
+        "1/4 cup fresh basil leaves",
+        "1 tablespoon balsamic glaze"
+      ],
+      "directions": [
+        "Thread cherry tomatoes, mozzarella balls, and basil leaves onto toothpicks.",
+        "Drizzle with balsamic glaze before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "8g",
+        "Carbs": "10g",
+        "Fat": "10g",
+        "Fiber": "2g",
+        "Sugar": "6g"
+      }
+    },
+    {
+      "id": 24,
+      "title": "Garlic Parmesan Roasted Edamame",
+      "prepTime": "10 mins",
+      "cookTime": "20 mins",
+      "totalTime": "30 mins",
+      "servings": 4,
+      "ingredients": [
+        "2 cups shelled edamame",
+        "1 tablespoon olive oil",
+        "2 cloves garlic, minced",
+        "1/4 cup grated Parmesan cheese",
+        "Salt and pepper to taste"
+      ],
+      "directions": [
+        "Preheat oven to 400°F (200°C).",
+        "Toss edamame with olive oil, garlic, salt, and pepper.",
+        "Spread on a baking sheet and roast for 20 minutes.",
+        "Toss with Parmesan cheese before serving."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "12g",
+        "Carbs": "15g",
+        "Fat": "10g",
+        "Fiber": "8g",
+        "Sugar": "4g"
+      }
+    },
+    {
+      "id": 25,
+      "title": "Almond and Date Energy Balls",
+      "prepTime": "10 mins",
+      "cookTime": "0 mins",
+      "totalTime": "10 mins",
+      "servings": 12,
+      "ingredients": [
+        "1 cup pitted dates",
+        "1/2 cup almonds",
+        "1/4 cup unsweetened shredded coconut",
+        "1 tablespoon chia seeds"
+      ],
+      "directions": [
+        "Pulse dates, almonds, coconut, and chia seeds in a food processor until combined.",
+        "Roll mixture into 12 balls.",
+        "Refrigerate until firm."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "5g",
+        "Carbs": "30g",
+        "Fat": "8g",
+        "Fiber": "5g",
+        "Sugar": "20g"
+      }
+    }
+  ]
+}
