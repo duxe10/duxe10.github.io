@@ -1,0 +1,269 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Green Smoothie with Spinach, Banana, and Almond Milk",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "1 cup spinach",
+        "1 banana",
+        "1 cup almond milk",
+        "1 tablespoon chia seeds (optional)"
+      ],
+      "directions": [
+        "Add spinach, banana, and almond milk to a blender.",
+        "Blend until smooth.",
+        "Pour into glasses and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "120",
+        "Protein": "3g",
+        "Carbs": "27g",
+        "Fat": "3g",
+        "Fiber": "4g",
+        "Sugar": "14g"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Iced Green Tea with a Squeeze of Lemon",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "2 green tea bags",
+        "2 cups hot water",
+        "1 lemon, juiced",
+        "Ice cubes"
+      ],
+      "directions": [
+        "Steep green tea bags in hot water for 3-5 minutes.",
+        "Remove tea bags and let the tea cool.",
+        "Add lemon juice and stir.",
+        "Pour over ice and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "5",
+        "Protein": "0g",
+        "Carbs": "1g",
+        "Fat": "0g",
+        "Fiber": "0g",
+        "Sugar": "0g"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Protein Shake with Almond Milk and Berries",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 scoop protein powder (vanilla or berry flavor)",
+        "1 cup almond milk",
+        "1/2 cup mixed berries (fresh or frozen)"
+      ],
+      "directions": [
+        "Add protein powder, almond milk, and mixed berries to a blender.",
+        "Blend until smooth.",
+        "Pour into a glass and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "150",
+        "Protein": "20g",
+        "Carbs": "15g",
+        "Fat": "3g",
+        "Fiber": "5g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Freshly Squeezed Orange Juice",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "4 large oranges"
+      ],
+      "directions": [
+        "Cut the oranges in half and squeeze the juice using a juicer.",
+        "Strain the juice to remove any pulp, if desired.",
+        "Pour into glasses and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "110",
+        "Protein": "2g",
+        "Carbs": "26g",
+        "Fat": "0g",
+        "Fiber": "0g",
+        "Sugar": "22g"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Iced Herbal Tea with Fresh Mint",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "2 herbal tea bags (peppermint or chamomile)",
+        "2 cups hot water",
+        "Fresh mint leaves",
+        "Ice cubes"
+      ],
+      "directions": [
+        "Steep herbal tea bags in hot water for 5 minutes.",
+        "Remove tea bags and let the tea cool.",
+        "Add fresh mint leaves and stir.",
+        "Pour over ice and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "0",
+        "Protein": "0g",
+        "Carbs": "0g",
+        "Fat": "0g",
+        "Fiber": "0g",
+        "Sugar": "0g"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Protein Smoothie with Spinach and Mango",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 scoop protein powder (vanilla flavor)",
+        "1 cup spinach",
+        "1/2 cup mango chunks (fresh or frozen)",
+        "1 cup almond milk"
+      ],
+      "directions": [
+        "Add protein powder, spinach, mango, and almond milk to a blender.",
+        "Blend until smooth.",
+        "Pour into a glass and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "180",
+        "Protein": "20g",
+        "Carbs": "20g",
+        "Fat": "4g",
+        "Fiber": "4g",
+        "Sugar": "16g"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Coconut Water with a Splash of Lime",
+      "prepTime": "2 mins",
+      "totalTime": "2 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 cup coconut water",
+        "1 lime, juiced"
+      ],
+      "directions": [
+        "Pour coconut water into a glass.",
+        "Add fresh lime juice and stir.",
+        "Serve chilled."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "45",
+        "Protein": "0g",
+        "Carbs": "11g",
+        "Fat": "0g",
+        "Fiber": "0g",
+        "Sugar": "9g"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Chia Seed Smoothie with Almond Milk and Berries",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 tablespoon chia seeds",
+        "1 cup almond milk",
+        "1/2 cup mixed berries"
+      ],
+      "directions": [
+        "Add chia seeds, almond milk, and mixed berries to a blender.",
+        "Blend until smooth.",
+        "Let sit for a minute to allow chia seeds to thicken, then serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "140",
+        "Protein": "3g",
+        "Carbs": "20g",
+        "Fat": "5g",
+        "Fiber": "7g",
+        "Sugar": "10g"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Fresh Lemonade with Stevia",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 2,
+      "ingredients": [
+        "4 lemons, juiced",
+        "2 cups cold water",
+        "Stevia to taste",
+        "Ice cubes"
+      ],
+      "directions": [
+        "In a pitcher, combine lemon juice and cold water.",
+        "Add stevia to taste and stir well.",
+        "Pour over ice and serve."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "15",
+        "Protein": "0g",
+        "Carbs": "5g",
+        "Fat": "0g",
+        "Fiber": "0g",
+        "Sugar": "2g"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Cold Brew Coffee with Almond Milk",
+      "prepTime": "5 mins",
+      "totalTime": "5 mins",
+      "servings": 1,
+      "ingredients": [
+        "1 cup cold brew coffee",
+        "1/2 cup almond milk",
+        "Ice cubes"
+      ],
+      "directions": [
+        "Fill a glass with ice cubes.",
+        "Pour cold brew coffee over the ice.",
+        "Add almond milk and stir.",
+        "Serve immediately."
+      ],
+      "image": "https://via.placeholder.com/512",
+      "nutritionFacts": {
+        "Calories": "30",
+        "Protein": "1g",
+        "Carbs": "3g",
+        "Fat": "2g",
+        "Fiber": "0g",
+        "Sugar": "0g"
+      }
+    }
+  ]
+}
